@@ -314,7 +314,6 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
         int iArg = 1;
         while ( iArg < argc )
         {
-            //wprintf( L"ff arg %d: '%ws'\n", iArg, argv[iArg] );
             const WCHAR * pwcArg = argv[iArg];
             WCHAR a0 = pwcArg[0];
     
@@ -346,26 +345,24 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
         printf( "  State        Local address         Foreign address       Host/Company                                            PID    Process\n" );
         std::mutex mtx;
         int passes = 0;
-
         do
         {
-            DWORD cbNeeded = 0;
-            DWORD result = GetExtendedTcpTable( 0, &cbNeeded, FALSE, AF_INET, TCP_TABLE_OWNER_PID_CONNECTIONS, 0 );
-            if ( ERROR_INSUFFICIENT_BUFFER == result )
-                cbNeeded += 8192; // it may grow before calling again!
-            else
+            DWORD cbNeeded = 32 * 1024; // tested with 0
+            vector<byte> tcpTable;
+
+            do
             {
+                tcpTable.resize( cbNeeded );
+                DWORD result = GetExtendedTcpTable( tcpTable.data(), &cbNeeded, FALSE, AF_INET, TCP_TABLE_OWNER_PID_CONNECTIONS, 0 );
+                if ( 0 == result )
+                    break;
+
+                if ( ERROR_INSUFFICIENT_BUFFER == result )
+                    continue;
+
                 printf( "can't get size of list of tcp connections, error %d\n", result );
                 exit( 1 );
-            }
-    
-            vector<byte> tcpTable( cbNeeded );
-            result = GetExtendedTcpTable( tcpTable.data(), &cbNeeded, FALSE, AF_INET, TCP_TABLE_OWNER_PID_CONNECTIONS, 0 );
-            if ( 0 != result )
-            {
-                printf( "can't get list of tcp connections, error %d\n", result );
-                exit( 1 );
-            }
+            } while( true );
     
             MIB_TCPTABLE_OWNER_PID * ptable = (MIB_TCPTABLE_OWNER_PID *) tcpTable.data();
             int limit = ptable->dwNumEntries;
@@ -382,7 +379,7 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
                 procname[ 0 ] = 0;
                 FindProcessName( row.dwOwningPid, procpath, procname );
 
-                const int maxIP = 16 + 6;   // aaa.bbb.ccc.ddd:eeeee
+                const int maxIP = 15 + 6 + 1;   // aaa.bbb.ccc.ddd:eeeee + null termination
                 char localIP[ maxIP ];
                 RtlIpv4AddressToStringA( (const in_addr *) &row.dwLocalAddr, localIP );
     
