@@ -35,6 +35,7 @@ using namespace std;
 #pragma comment( lib, "ws2_32.lib" )
 #pragma comment( lib, "dnsapi.lib" )
 #pragma comment( lib, "advapi32.lib" )
+#pragma comment( lib, "ntdll.lib" )
 
 std::mutex mtxGlobal;
 
@@ -49,6 +50,13 @@ struct procinfo
     
     DWORD pid;
     wstring name;
+};
+
+struct dnsentry
+{
+    dnsentry( string & i, string & n ) : remoteip( i ), remotename( n ) {}
+    string remoteip;
+    string remotename;
 };
 
 bool SetPrivilege( HANDLE hToken, LPCTSTR lpszPrivilege, BOOL bEnablePrivilege ) 
@@ -107,7 +115,7 @@ void ReadPersistentEntries()
     {
         if ( line.length() >= 17 )
         {
-            int sp = line.find_first_of( ' ' );
+            size_t sp = line.find_first_of( ' ' );
             if ( ( string::npos != sp ) && ( ( sp + 1 ) < line.length() ) )
             {
                 string ip( line, 0, sp );
@@ -165,7 +173,7 @@ void FindProcesses( vector<procinfo> & procs )
 {
     vector<DWORD> processes( 8192 );
     DWORD cbNeeded = 0;
-    if ( !EnumProcesses( processes.data(), processes.size() * sizeof DWORD, &cbNeeded ) )
+    if ( !EnumProcesses( processes.data(), (DWORD) processes.size() * sizeof DWORD, &cbNeeded ) )
     {
         printf( "can't enumerate processes; error %d\n", GetLastError() );
         exit( 1 );
@@ -179,7 +187,7 @@ void FindProcesses( vector<procinfo> & procs )
         HANDLE h = OpenProcess( PROCESS_QUERY_LIMITED_INFORMATION, FALSE, processes[ process ] );
         if ( 0 != h ) // many will fail with error_invalid_parameter or access_denied
         {
-            DWORD size = path.size();
+            DWORD size = (DWORD) path.size();
             if ( QueryFullProcessImageName( h, 0, path.data(), &size ) )
             {
                 procinfo pi( processes[ process ], path.data() );
@@ -250,7 +258,9 @@ bool IpToName( char * ip, USHORT port, char * name )
 
     struct sockaddr_in saGNI;
     saGNI.sin_family = AF_INET;
-    saGNI.sin_addr.s_addr = inet_addr( ip );
+    IN_ADDR in_addr;
+    InetPtonA( AF_INET, ip, &in_addr );
+    saGNI.sin_addr.s_addr = in_addr.S_un.S_addr; // inet_addr(ip);
     saGNI.sin_port = port;
 
     char hostname[ NI_MAXHOST ];
@@ -364,11 +374,13 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
     
             MIB_TCPTABLE_OWNER_PID * ptable = (MIB_TCPTABLE_OWNER_PID *) tcpTable.data();
             int limit = ptable->dwNumEntries;
+            vector<dnsentry> newentries;
     
             //for ( int i = 0; i < ptable->dwNumEntries; i++ )
             parallel_for( 0, limit, [&] ( int i )
             {
                 char hostname[ NI_MAXHOST ];
+                hostname[ 0 ] = 0;
                 MIB_TCPROW_OWNER_PID & row = ptable->table[ i ];
 
                 const int maxIP = 15 + 6 + 1;   // aaa.bbb.ccc.ddd:eeeee + null termination
@@ -378,62 +390,76 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
                 char remoteIP[ maxIP ];
                 RtlIpv4AddressToStringA( (const in_addr *) &row.dwRemoteAddr, remoteIP );
 
-                string ipstring( remoteIP );
+                string remoteip( remoteIP );
                 bool inPersistent, inMemory;
 
-                {
-                    lock_guard<mutex> lock( mtx );
-                    string host;
-                    inPersistent = g_persistentEntries.count( ipstring );
-                    inMemory = g_inmemoryEntries.count( ipstring );
+                inPersistent = g_persistentEntries.count( remoteip );
+                inMemory = g_inmemoryEntries.count( remoteip );
 
-                    if ( inPersistent )
-                    {
-                        string host = g_persistentEntries[ ipstring ];
-                        strcpy( hostname, host.c_str() );
-                    }
-                    else if ( inMemory )
-                    {
-                        string host = g_inmemoryEntries[ ipstring ];
-                        strcpy( hostname, host.c_str() );
-                    }
+                if ( inPersistent )
+                {
+                    string host = g_persistentEntries[ remoteip ];
+                    strcpy( hostname, host.c_str() );
+                }
+                else if ( inMemory )
+                {
+                    string host = g_inmemoryEntries[ remoteip ];
+                    strcpy( hostname, host.c_str() );
                 }
 
                 if ( !inPersistent && !inMemory )
-                    IpToName( remoteIP, ntohs( row.dwRemotePort ), hostname );
-
-                if ( 0 == hostname[ 0 ] )
-                    strcpy( hostname, "(unknown)" );
-
-                if ( !inPersistent && strcmp( hostname, "(unknown)" ) )
                 {
-                    string host( hostname );
-                    lock_guard<mutex> lock( mtx );
-                    g_persistentEntries[ ipstring ] = host;
+                    IpToName( remoteIP, ntohs( (u_short) row.dwRemotePort ), hostname );
 
-                    FILE * fp = _wfopen( pwcDNSEntriesFile, L"a" );
-                    if ( fp )
-                    {
-                        fprintf( fp, "%s %s\n", remoteIP, hostname );
-                        fclose( fp );
-                    }
+                    if ( 0 == hostname[ 0 ] )
+                        strcpy( hostname, "(unknown)" );
+                }
+
+                if ( !inMemory || ( !inPersistent && strcmp( hostname, "(unknown)" ) ) )
+                {
+                    // Add to the vector of entries so it can be added to the map later
+
+                    string remotehost( hostname );
+                    dnsentry save( remoteip, remotehost );
+
+                    lock_guard<mutex> lock( mtx );
+                    newentries.push_back( save );
                 }
 
                 if ( !inMemory )
                 {
-                    string host( hostname );
-                    lock_guard<mutex> lock( mtx );
-                    g_inmemoryEntries[ ipstring ] = host;
-
-                    snprintf( localIP + strlen( localIP ), _countof( localIP ) - strlen( localIP ), ":%d", ntohs( row.dwLocalPort ) );
-                    snprintf( remoteIP + strlen( remoteIP ), _countof( remoteIP ) - strlen( remoteIP ), ":%d", ntohs( row.dwRemotePort ) );
-
+                    snprintf( localIP + strlen( localIP ), _countof( localIP ) - strlen( localIP ), ":%d", ntohs( (u_short) row.dwLocalPort ) );
+                    snprintf( remoteIP + strlen( remoteIP ), _countof( remoteIP ) - strlen( remoteIP ), ":%d", ntohs( (u_short) row.dwRemotePort ) );
+    
                     WCHAR procname[ MAX_PATH ];
                     FindProcessName( row.dwOwningPid, procname );
-
+    
+                    lock_guard<mutex> lock( mtx );
                     printf( "  %-12s %-21s %-21s %-54s  %-6d %ws\n", TcpState( row.dwState ), localIP, remoteIP, hostname, row.dwOwningPid, procname );
                 }
-            } );
+            }, static_partitioner() ); // huge performance win over default partitioner; avoid spinlocks
+
+            // Write updates to the global maps and file after the iteration above to avoid lock contention in map lookups.
+            // newentries may contain duplicates and entries may already be in the maps.
+
+            for ( int i = 0; i < newentries.size(); i++ )
+            {
+                dnsentry & e = newentries[ i ];
+                if ( !g_persistentEntries.count( e.remoteip ) && strcmp( "(unknown)", e.remotename.c_str() ) )
+                {
+                    g_persistentEntries[ e.remoteip ] = e.remotename;
+
+                    FILE * fp = _wfopen( pwcDNSEntriesFile, L"a" );
+                    if ( fp )
+                    {
+                        fprintf( fp, "%s %s\n", e.remoteip.c_str(), e.remotename.c_str() );
+                        fclose( fp );
+                    }
+                }
+
+                if ( !g_inmemoryEntries.count( e.remoteip ) )
+                    g_inmemoryEntries[ e.remoteip ] = e.remotename;
+            }
 
             if ( -1 != loopPasses )
             {
