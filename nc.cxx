@@ -192,36 +192,37 @@ void FindProcesses( vector<procinfo> & procs )
         printf( "process %d: %ws\n", procs[i].pid, procs[i].name.c_str() );
 } //FindProcesses
 
-bool FindProcessName( DWORD pid, vector<WCHAR> & path, vector<WCHAR> & name )
+bool FindProcessName( DWORD pid, WCHAR * name )
 {
     if ( 0 == pid )
     {
-        wcscpy( name.data(), L"idle" );
+        wcscpy( name, L"idle" );
         return true;
     }
 
     HANDLE h = OpenProcess( PROCESS_QUERY_LIMITED_INFORMATION, FALSE, pid );
     if ( 0 != h ) // many will fail with error_invalid_parameter or access_denied
     {
-       DWORD size = name.size();
-       if ( QueryFullProcessImageName( h, 0, path.data(), &size ) )
-       {
-           WCHAR * slash = wcsrchr( path.data(), '\\' );
-           if ( slash )
-           {
-               wcscpy( name.data(), slash + 1 );
-
-               WCHAR * period = wcsrchr( name.data(), '.' );
-               if ( period )
-                   *period = 0;
-
-               return true;
-           }
-       }
+        WCHAR path[ MAX_PATH ];
+        DWORD size = _countof( path );
+        if ( QueryFullProcessImageName( h, 0, path, &size ) )
+        {
+            WCHAR * slash = wcsrchr( path, '\\' );
+            if ( slash )
+            {
+                wcscpy( name, slash + 1 );
+ 
+                WCHAR * period = wcsrchr( name, '.' );
+                if ( period )
+                    *period = 0;
+ 
+                return true;
+            }
+        }
     }
 
-    swprintf( name.data(), L"pid %d", pid );
-    return true;
+    wcscpy( name, L"n/a" );
+    return false;
 } //FindProcessName
 
 // This function works terribly -- it returns incorrect results. Don't call it.
@@ -243,7 +244,7 @@ bool IPToHostName( WCHAR * ip, vector<WCHAR> & name )
     return false;
 } //IPToHostName
 
-bool IpToName( char * ip, USHORT port, vector<char> & name )
+bool IpToName( char * ip, USHORT port, char * name )
 {
     name[ 0 ] = 0;
 
@@ -260,11 +261,8 @@ bool IpToName( char * ip, USHORT port, vector<char> & name )
 
     if ( ( 0 == ret ) && ( strcmp( hostname, ip ) ) )
     {
-        if ( name.size() > strlen( hostname ) )
-        {
-            strcpy( name.data(), hostname );
-            return true;
-        }
+        strcpy( name, hostname );
+        return true;
     }
 
     return false;
@@ -308,8 +306,8 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
             exit( 1 );
         }
 
-        // Doesn't allow more processes to be visible, as far as I can tell
-        //SetDebugPrivilege();
+        // Can't see the dashost process name without this. Ha!
+        SetDebugPrivilege();
 
         int iArg = 1;
         while ( iArg < argc )
@@ -370,14 +368,8 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
             //for ( int i = 0; i < ptable->dwNumEntries; i++ )
             parallel_for( 0, limit, [&] ( int i )
             {
-                vector<WCHAR> procpath( MAX_PATH );
-                vector<WCHAR> procname( MAX_PATH );
-                vector<char> hostname( NI_MAXHOST );
-    
+                char hostname[ NI_MAXHOST ];
                 MIB_TCPROW_OWNER_PID & row = ptable->table[ i ];
-                procpath[ 0 ] = 0;
-                procname[ 0 ] = 0;
-                FindProcessName( row.dwOwningPid, procpath, procname );
 
                 const int maxIP = 15 + 6 + 1;   // aaa.bbb.ccc.ddd:eeeee + null termination
                 char localIP[ maxIP ];
@@ -388,61 +380,58 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
 
                 string ipstring( remoteIP );
                 bool inPersistent, inMemory;
+
                 {
                     lock_guard<mutex> lock( mtx );
+                    string host;
                     inPersistent = g_persistentEntries.count( ipstring );
                     inMemory = g_inmemoryEntries.count( ipstring );
-                }
-    
-                if ( inPersistent )
-                {
-                    lock_guard<mutex> lock( mtx );
-                    string host = g_persistentEntries[ ipstring ];
-                    strcpy( hostname.data(), host.c_str() );
-                }
-                else
-                {
-                    if ( inMemory )
+
+                    if ( inPersistent )
                     {
-                        lock_guard<mutex> lock( mtx );
-                        string host = g_inmemoryEntries[ ipstring ];
-                        strcpy( hostname.data(), host.c_str() );
+                        string host = g_persistentEntries[ ipstring ];
+                        strcpy( hostname, host.c_str() );
                     }
-                    else
-                        IpToName( remoteIP, ntohs( row.dwRemotePort ), hostname );
+                    else if ( inMemory )
+                    {
+                        string host = g_inmemoryEntries[ ipstring ];
+                        strcpy( hostname, host.c_str() );
+                    }
                 }
+
+                if ( !inPersistent && !inMemory )
+                    IpToName( remoteIP, ntohs( row.dwRemotePort ), hostname );
 
                 if ( 0 == hostname[ 0 ] )
-                    strcpy( hostname.data(), "(unknown)" );
+                    strcpy( hostname, "(unknown)" );
 
-                if ( !inPersistent && strcmp( hostname.data(), "(unknown)" ) )
+                if ( !inPersistent && strcmp( hostname, "(unknown)" ) )
                 {
-                    string host( hostname.data() );
+                    string host( hostname );
                     lock_guard<mutex> lock( mtx );
                     g_persistentEntries[ ipstring ] = host;
 
                     FILE * fp = _wfopen( pwcDNSEntriesFile, L"a" );
                     if ( fp )
                     {
-                        fprintf( fp, "%s %s\n", remoteIP, hostname.data() );
+                        fprintf( fp, "%s %s\n", remoteIP, hostname );
                         fclose( fp );
                     }
                 }
 
                 if ( !inMemory )
                 {
-                    string host( hostname.data() );
+                    string host( hostname );
                     lock_guard<mutex> lock( mtx );
                     g_inmemoryEntries[ ipstring ] = host;
-                }
 
-                snprintf( localIP + strlen( localIP ), _countof( localIP ) - strlen( localIP ), ":%d", ntohs( row.dwLocalPort ) );
-                snprintf( remoteIP + strlen( remoteIP ), _countof( remoteIP ) - strlen( remoteIP ), ":%d", ntohs( row.dwRemotePort ) );
+                    snprintf( localIP + strlen( localIP ), _countof( localIP ) - strlen( localIP ), ":%d", ntohs( row.dwLocalPort ) );
+                    snprintf( remoteIP + strlen( remoteIP ), _countof( remoteIP ) - strlen( remoteIP ), ":%d", ntohs( row.dwRemotePort ) );
 
-                if ( !inMemory )
-                {
-                    lock_guard<mutex> lock( mtx );
-                    printf( "  %-12s %-21s %-21s %-54s  %-6d %ws\n", TcpState( row.dwState ), localIP, remoteIP, hostname.data(), row.dwOwningPid, procname.data() );
+                    WCHAR procname[ MAX_PATH ];
+                    FindProcessName( row.dwOwningPid, procname );
+
+                    printf( "  %-12s %-21s %-21s %-54s  %-6d %ws\n", TcpState( row.dwState ), localIP, remoteIP, hostname, row.dwOwningPid, procname );
                 }
             } );
 
