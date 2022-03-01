@@ -1,6 +1,8 @@
-// This is in a good state, though I figured out how to get PID info in dns.cs, so I'm not adding more features here for now
+// simple app to iterate through active connections
 
+#ifndef UNICODE
 #define UNICODE
+#endif
 
 #include <stdio.h>
 #include <process.h>
@@ -19,6 +21,8 @@
 #include <mutex>
 #include <chrono>
 #include <unordered_map>
+#include <unordered_set>
+#include <omp.h>
 
 #include <winsock2.h>
 #include <windows.h>
@@ -37,26 +41,26 @@ using namespace std;
 #pragma comment( lib, "advapi32.lib" )
 #pragma comment( lib, "ntdll.lib" )
 
-std::mutex mtxGlobal;
-
 unordered_map<string,string> g_persistentEntries;
-unordered_map<string,string> g_inmemoryEntries;
+unordered_set<string> g_unknownEntries;
 unordered_map<string,string> g_prefixEntries;
 const WCHAR * pwcDNSEntriesFile = L"dns_entries.txt";
+const int maxIP = 15 + 6 + 1;   // aaa.bbb.ccc.ddd:eeeee + null termination
 
-struct procinfo
-{
-    procinfo( DWORD p, WCHAR * n ) : pid( p ), name( n ) {}
-    
-    DWORD pid;
-    wstring name;
-};
+enum ConName { unresolvedCN = 0, persistentCN, unknownCN, revipCN, lookipCN, prefixCN };
 
-struct dnsentry
+struct tcpconnection
 {
-    dnsentry( string & i, string & n ) : remoteip( i ), remotename( n ) {}
-    string remoteip;
-    string remotename;
+    tcpconnection()
+    {
+        newConnection = false;
+        conName = ConName::unresolvedCN;
+    }
+
+    MIB_TCPROW_OWNER_PID tcp;
+    bool newConnection;
+    ConName conName;
+    string remoteName;
 };
 
 bool SetPrivilege( HANDLE hToken, LPCTSTR lpszPrivilege, BOOL bEnablePrivilege ) 
@@ -105,6 +109,24 @@ bool SetDebugPrivilege()
 
     return false;
 } //SetDebugPrivilege
+
+static string FindPrefixEntry( char * ip )
+{
+    char * dot = strchr( ip, '.' );
+    if ( dot )
+    {
+        char * dot2 = strchr( dot + 1, '.' );
+        if ( dot2 )
+        {
+            string prefix( ip, dot2 - ip );
+
+            if ( g_prefixEntries.count( prefix ) )
+                return g_prefixEntries[ prefix ];
+        }
+    }
+
+    return "";
+} //FindPrefixEntry
 
 void ReadPersistentEntries()
 {
@@ -169,37 +191,6 @@ const char * TcpState( DWORD s )
     return "invalid";
 } //TcpState
 
-void FindProcesses( vector<procinfo> & procs )
-{
-    vector<DWORD> processes( 8192 );
-    DWORD cbNeeded = 0;
-    if ( !EnumProcesses( processes.data(), (DWORD) processes.size() * sizeof DWORD, &cbNeeded ) )
-    {
-        printf( "can't enumerate processes; error %d\n", GetLastError() );
-        exit( 1 );
-    }
-
-    DWORD cProcesses = cbNeeded / sizeof DWORD;
-    vector<WCHAR> path( MAX_PATH );
-
-    for ( DWORD process = 0; process < cProcesses; process++ )
-    {
-        HANDLE h = OpenProcess( PROCESS_QUERY_LIMITED_INFORMATION, FALSE, processes[ process ] );
-        if ( 0 != h ) // many will fail with error_invalid_parameter or access_denied
-        {
-            DWORD size = (DWORD) path.size();
-            if ( QueryFullProcessImageName( h, 0, path.data(), &size ) )
-            {
-                procinfo pi( processes[ process ], path.data() );
-                procs.push_back( pi );
-            }
-        }
-    }
-
-    for ( int i = 0; i < procs.size(); i++ )
-        printf( "process %d: %ws\n", procs[i].pid, procs[i].name.c_str() );
-} //FindProcesses
-
 bool FindProcessName( DWORD pid, WCHAR * name )
 {
     if ( 0 == pid )
@@ -224,9 +215,12 @@ bool FindProcessName( DWORD pid, WCHAR * name )
                 if ( period )
                     *period = 0;
  
+                CloseHandle( h );
                 return true;
             }
         }
+
+        CloseHandle( h );
     }
 
     wcscpy( name, L"n/a" );
@@ -278,6 +272,69 @@ bool IpToName( char * ip, USHORT port, char * name )
     return false;
 } //IpToName
 
+static void PrintConnection( tcpconnection & conn )
+{
+    char localIP[ maxIP ];
+    RtlIpv4AddressToStringA( (const in_addr *) &conn.tcp.dwLocalAddr, localIP );
+    char remoteIP[ maxIP ];
+    RtlIpv4AddressToStringA( (const in_addr *) &conn.tcp.dwRemoteAddr, remoteIP );
+
+    snprintf( localIP + strlen( localIP ), _countof( localIP ) - strlen( localIP ), ":%d", ntohs( (u_short) conn.tcp.dwLocalPort ) );
+    snprintf( remoteIP + strlen( remoteIP ), _countof( remoteIP ) - strlen( remoteIP ), ":%d", ntohs( (u_short) conn.tcp.dwRemotePort ) );
+
+    WCHAR procname[ MAX_PATH ];
+    FindProcessName( conn.tcp.dwOwningPid, procname );
+        
+    printf( "  %-12s %-21s %-21s %-54s  %-6d %ws\n", TcpState( conn.tcp.dwState ), localIP, remoteIP, conn.remoteName.c_str(), conn.tcp.dwOwningPid, procname );
+} //PrintConnection
+
+static void InitializePrefixEntries()
+{
+    // most of these are Microsoft services that run on Azure -- Office, Defender, etc.
+
+    g_prefixEntries[ "192.168" ] = "PrivateNetwork";
+    g_prefixEntries[ "13.69" ] = "Microsoft Azure";
+    g_prefixEntries[ "13.78" ] = "Microsoft Azure";
+    g_prefixEntries[ "13.89" ] = "Microsoft Azure";
+    g_prefixEntries[ "13.91" ] = "Microsoft Azure";
+    g_prefixEntries[ "13.105" ] = "Microsoft Azure";
+    g_prefixEntries[ "13.107" ] = "Microsoft Azure";
+    g_prefixEntries[ "20.40" ] = "Microsoft Azure";
+    g_prefixEntries[ "20.42" ] = "Microsoft Azure";
+    g_prefixEntries[ "20.44" ] = "Microsoft Azure";
+    g_prefixEntries[ "20.49" ] = "Microsoft Azure";
+    g_prefixEntries[ "20.50" ] = "Microsoft Azure";
+    g_prefixEntries[ "20.54" ] = "Microsoft Azure";
+    g_prefixEntries[ "20.60" ] = "Microsoft Azure";
+    g_prefixEntries[ "20.69" ] = "Microsoft Azure";
+    g_prefixEntries[ "20.72" ] = "Microsoft Azure";
+    g_prefixEntries[ "20.189" ] = "Microsoft Azure";
+    g_prefixEntries[ "20.190" ] = "Microsoft Azure";
+    g_prefixEntries[ "40.70" ] = "Microsoft Azure";
+    g_prefixEntries[ "40.79" ] = "Microsoft Azure";
+    g_prefixEntries[ "40.90" ] = "Microsoft Azure";
+    g_prefixEntries[ "40.91" ] = "Microsoft Azure";
+    g_prefixEntries[ "40.97" ] = "Microsoft Azure";
+    g_prefixEntries[ "40.125" ] = "Microsoft Azure";
+    g_prefixEntries[ "40.126" ] = "Microsoft Azure";
+    g_prefixEntries[ "51.132" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.96" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.108" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.109" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.111" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.113" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.152" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.160" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.168" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.174" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.182" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.239" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.249" ] = "Microsoft Azure";
+    g_prefixEntries[ "52.137" ] = "Microsoft Azure";
+    g_prefixEntries[ "104.208" ] = "Microsoft Azure";
+    g_prefixEntries[ "104.46" ] = "Microsoft Azure";
+} //InitializePrefixEntries
+
 extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
 {
     _set_se_translator([]( unsigned int u, EXCEPTION_POINTERS * pExp )
@@ -305,6 +362,7 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
 
     bool loop = false;
     int loopPasses = -1;
+    InitializePrefixEntries();
 
     try
     {
@@ -351,8 +409,9 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
         //FindProcesses( procs );
 
         printf( "  State        Local address         Foreign address       Host/Company                                            PID    Process\n" );
-        std::mutex mtx;
         int passes = 0;
+        vector<tcpconnection> prev( 0 );
+
         do
         {
             DWORD cbNeeded = 32 * 1024; // tested with 0
@@ -374,92 +433,123 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
     
             MIB_TCPTABLE_OWNER_PID * ptable = (MIB_TCPTABLE_OWNER_PID *) tcpTable.data();
             int limit = ptable->dwNumEntries;
-            vector<dnsentry> newentries;
-    
-            //for ( int i = 0; i < ptable->dwNumEntries; i++ )
-            parallel_for( 0, limit, [&] ( int i )
+
+            vector<tcpconnection> conns( limit );
+            for ( int i = 0; i < limit; i++ )
             {
-                char hostname[ NI_MAXHOST ];
-                hostname[ 0 ] = 0;
-                MIB_TCPROW_OWNER_PID & row = ptable->table[ i ];
+                tcpconnection & conn = conns[ i ];
+                conn.tcp = ptable->table[ i ];
+                conn.newConnection = false;
+                conn.conName = ConName::unresolvedCN;
+            }
 
-                const int maxIP = 15 + 6 + 1;   // aaa.bbb.ccc.ddd:eeeee + null termination
-                char localIP[ maxIP ];
-                RtlIpv4AddressToStringA( (const in_addr *) &row.dwLocalAddr, localIP );
-    
-                char remoteIP[ maxIP ];
-                RtlIpv4AddressToStringA( (const in_addr *) &row.dwRemoteAddr, remoteIP );
+            vector<int> unresolvedIndexes;
 
-                string remoteip( remoteIP );
-                bool inPersistent, inMemory;
-
-                inPersistent = g_persistentEntries.count( remoteip );
-                inMemory = g_inmemoryEntries.count( remoteip );
-
-                if ( inPersistent )
-                {
-                    string host = g_persistentEntries[ remoteip ];
-                    strcpy( hostname, host.c_str() );
-                }
-                else if ( inMemory )
-                {
-                    string host = g_inmemoryEntries[ remoteip ];
-                    strcpy( hostname, host.c_str() );
-                }
-
-                if ( !inPersistent && !inMemory )
-                {
-                    IpToName( remoteIP, ntohs( (u_short) row.dwRemotePort ), hostname );
-
-                    if ( 0 == hostname[ 0 ] )
-                        strcpy( hostname, "(unknown)" );
-                }
-
-                if ( !inMemory || ( !inPersistent && strcmp( hostname, "(unknown)" ) ) )
-                {
-                    // Add to the vector of entries so it can be added to the map later
-
-                    string remotehost( hostname );
-                    dnsentry save( remoteip, remotehost );
-
-                    lock_guard<mutex> lock( mtx );
-                    newentries.push_back( save );
-                }
-
-                if ( !inMemory )
-                {
-                    snprintf( localIP + strlen( localIP ), _countof( localIP ) - strlen( localIP ), ":%d", ntohs( (u_short) row.dwLocalPort ) );
-                    snprintf( remoteIP + strlen( remoteIP ), _countof( remoteIP ) - strlen( remoteIP ), ":%d", ntohs( (u_short) row.dwRemotePort ) );
-    
-                    WCHAR procname[ MAX_PATH ];
-                    FindProcessName( row.dwOwningPid, procname );
-    
-                    lock_guard<mutex> lock( mtx );
-                    printf( "  %-12s %-21s %-21s %-54s  %-6d %ws\n", TcpState( row.dwState ), localIP, remoteIP, hostname, row.dwOwningPid, procname );
-                }
-            }, static_partitioner() ); // huge performance win over default partitioner; avoid spinlocks
-
-            // Write updates to the global maps and file after the iteration above to avoid lock contention in map lookups.
-            // newentries may contain duplicates and entries may already be in the maps.
-
-            for ( int i = 0; i < newentries.size(); i++ )
+            for ( int i = 0; i < limit; i++ )
             {
-                dnsentry & e = newentries[ i ];
-                if ( !g_persistentEntries.count( e.remoteip ) && strcmp( "(unknown)", e.remotename.c_str() ) )
-                {
-                    g_persistentEntries[ e.remoteip ] = e.remotename;
+                tcpconnection & conn = conns[ i ];
+                bool duplicate = false;
 
-                    FILE * fp = _wfopen( pwcDNSEntriesFile, L"a" );
-                    if ( fp )
+                for ( int p = 0; p < prev.size(); p++ )
+                {
+                    tcpconnection & pr = prev[ p ];
+
+                    if ( 0 == memcmp( & pr.tcp, & conn.tcp, sizeof conn.tcp ) )
                     {
-                        fprintf( fp, "%s %s\n", e.remoteip.c_str(), e.remotename.c_str() );
-                        fclose( fp );
+                        duplicate = true;
+                        break;
                     }
                 }
 
-                if ( !g_inmemoryEntries.count( e.remoteip ) )
-                    g_inmemoryEntries[ e.remoteip ] = e.remotename;
+                if ( duplicate )
+                    continue;
+
+                conn.newConnection = true;
+
+                char remoteIP[ maxIP ];
+                RtlIpv4AddressToStringA( (const in_addr *) &conn.tcp.dwRemoteAddr, remoteIP );
+                string remoteip( remoteIP );
+
+                if ( g_persistentEntries.count( remoteip ) )
+                {
+                    conn.remoteName = g_persistentEntries[ remoteip ];
+                    conn.conName = ConName::persistentCN;
+                    PrintConnection( conn );
+                }
+                else if ( g_unknownEntries.count( remoteip ) )
+                {
+                    conn.remoteName.assign( "(unknown)" );
+                    conn.conName = ConName::unknownCN;
+                }
+
+                if ( ConName::unresolvedCN == conn.conName )
+                    unresolvedIndexes.push_back( i );
             }
+
+            // Perform a reverse DNS lookup for unresolved entries
+
+            int unresolvedCount = unresolvedIndexes.size();
+            //for ( int u = 0; u < unresolvedCount; u++ )
+            parallel_for( 0, unresolvedCount, [&] ( int u )
+            {
+                tcpconnection & conn = conns[ unresolvedIndexes[ u ] ];
+
+                char remoteIP[ maxIP ];
+                RtlIpv4AddressToStringA( (const in_addr *) &conn.tcp.dwRemoteAddr, remoteIP );
+                char hostname[ NI_MAXHOST ];
+                IpToName( remoteIP, ntohs( (u_short) conn.tcp.dwRemotePort ), hostname );
+
+                if ( 0 != hostname[ 0 ] )
+                {
+                    conn.remoteName = hostname;
+                    conn.conName = ConName::revipCN;
+                }
+                else
+                {
+                    conn.remoteName = FindPrefixEntry( remoteIP );
+
+                    if ( conn.remoteName.length() )
+                    {
+                        conn.conName = ConName::prefixCN;
+                    }
+                    else
+                    {
+                        conn.remoteName = "(unknown)";
+                        conn.conName = ConName::unknownCN;
+                    }
+                }
+            } , static_partitioner() ); // huge performance win over default partitioner; avoid spinlocks
+
+            for ( int i = 0; i < limit; i++ )
+            {
+                tcpconnection & conn = conns[ i ];
+
+                if ( conn.newConnection )
+                {
+                    if ( conn.conName == ConName::lookipCN ||
+                         conn.conName == ConName::prefixCN ||
+                         conn.conName == ConName::revipCN )
+                    {
+                        char remoteIP[ maxIP ];
+                        RtlIpv4AddressToStringA( (const in_addr *) &conn.tcp.dwRemoteAddr, remoteIP );
+
+                        FILE * fp = _wfopen( pwcDNSEntriesFile, L"a" );
+                        if ( fp )
+                        {
+                            fprintf( fp, "%s %s\n", remoteIP, conn.remoteName.c_str() );
+                            fclose( fp );
+                        }
+                    }
+                    else if ( ConName::unknownCN == conn.conName )
+                        g_unknownEntries.insert( conn.remoteName );
+
+                    if ( ConName::persistentCN != conn.conName )
+                        PrintConnection( conn );
+                }
+            }
+          
+            prev.clear();
+            prev.swap( conns );
 
             if ( -1 != loopPasses )
             {

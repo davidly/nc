@@ -4,29 +4,44 @@
 100.24.192.156 ec2-100-24-192-156.compute-1.amazonaws.com
 100.24.193.39 ec2-100-24-193-39.compute-1.amazonaws.com
 100.24.248.244 ec2-100-24-248-244.compute-1.amazonaws.com
+100.24.91.81 ec2-100-24-91-81.compute-1.amazonaws.com
+100.26.26.251 ec2-100-26-26-251.compute-1.amazonaws.com
 100.26.87.64 ec2-100-26-87-64.compute-1.amazonaws.com
 100.26.94.123 ec2-100-26-94-123.compute-1.amazonaws.com
+104.100.64.52 a104-100-64-52.deploy.static.akamaitechnologies.com
 104.100.72.111 a104-100-72-111.deploy.static.akamaitechnologies.com
+104.111.63.161 a104-111-63-161.deploy.static.akamaitechnologies.com
 104.112.162.118 a104-112-162-118.deploy.static.akamaitechnologies.com
 104.112.162.212 a104-112-162-212.deploy.static.akamaitechnologies.com
+104.112.163.148 a104-112-163-148.deploy.static.akamaitechnologies.com
 104.112.165.48 a104-112-165-48.deploy.static.akamaitechnologies.com
+104.112.168.155 a104-112-168-155.deploy.static.akamaitechnologies.com
 104.112.168.158 a104-112-168-158.deploy.static.akamaitechnologies.com
 104.112.180.129 a104-112-180-129.deploy.static.akamaitechnologies.com
 104.115.133.16 a104-115-133-16.deploy.static.akamaitechnologies.com
+104.115.138.113 a104-115-138-113.deploy.static.akamaitechnologies.com
 104.115.143.157 a104-115-143-157.deploy.static.akamaitechnologies.com
+104.115.149.57 a104-115-149-57.deploy.static.akamaitechnologies.com
+104.115.149.79 a104-115-149-79.deploy.static.akamaitechnologies.com
 104.115.151.81 a104-115-151-81.deploy.static.akamaitechnologies.com
 104.117.232.188 a104-117-232-188.deploy.static.akamaitechnologies.com
 104.117.232.201 a104-117-232-201.deploy.static.akamaitechnologies.com
 104.117.232.236 a104-117-232-236.deploy.static.akamaitechnologies.com
 104.117.232.245 a104-117-232-245.deploy.static.akamaitechnologies.com
+104.117.232.59 a104-117-232-59.deploy.static.akamaitechnologies.com
 104.117.233.140 a104-117-233-140.deploy.static.akamaitechnologies.com
 104.117.233.152 a104-117-233-152.deploy.static.akamaitechnologies.com
 104.117.233.39 a104-117-233-39.deploy.static.akamaitechnologies.com
+104.117.233.54 a104-117-233-54.deploy.static.akamaitechnologies.com
 104.117.233.86 a104-117-233-86.deploy.static.akamaitechnologies.com
+104.123.206.114 a104-123-206-114.deploy.static.akamaitechnologies.com
 104.126.40.25 a104-126-40-25.deploy.static.akamaitechnologies.com
 104.128.66.203 Kamatera Inc
 104.16.112.154 Unknown Company
+104.16.122.175 Unknown Company
 104.16.123.175 Cloudfare (suspicious)
+104.16.124.175 Unknown Company
+104.16.125.175 Cloudflare
 104.16.126.175 Cloudfare (suspect)
 104.16.148.64 Cloudflare
 104.16.149.64 Cloudflare
@@ -36,6 +51,7 @@
 104.16.190.66 Cloudflare
 104.16.200.58 Unknown Company
 104.16.201.58 Unknown Company
+104.16.203.22 Unknown Company
 104.16.221.29 Cloudflare
 104.16.24.72 Cloudfare alienvault.com
 104.16.6.49 Cloudflare
@@ -50,22 +66,28 @@
 104.17.119.107 Cloudflare
 104.17.120.107 Cloudflare
 104.17.122.18 Cloudflare
+104.17.146.91 Unknown Company
 104.17.208.240 Cloudflare
 104.17.209.240 Cloudflare
 104.17.219.15 Unknown Company
+104.17.243.73 Unknown Company
 104.17.64.50 Unknown Company
 104.17.73.206 Cloudflare
 104.18.0.239 Unknown
 104.18.1.201 substack.com
+104.18.10.175 Cloudflare
 104.18.10.207 Cloudflare (many hosted sites)
 104.18.100.194 Cloudflare (many hosted sites)
 104.18.101.194 Cloudflare (many domains, some with malware)
 104.18.102.194 Cloudflare
 104.18.11.207 Cloudflare
+104.18.12.5 Cloudflare
 104.18.13.242 Cloudflare (many hosted sites)
 104.18.13.5 Cloudflare
 104.18.14.159 Unknown Company
+104.18.16.202 Unknown Company
 104.18.16.6 Unknown Company
+104.18.2.83 Unknown Company
 104.18.20.104 Flarenet (many sites)
 104.18.20.226 Cloudflare
 104.18.21.104 Unknown Company
@@ -73,6 +95,7 @@
 104.18.225.52 Cloudflare
 104.18.23.52 Cloudflare
 104.18.24.172 Unknown Company
+104.18.24.211 Cloudflare
 104.18.25.243 Cloudflare
 104.18.26.250 Cloudflare drizly.com
 104.18.27.27 Cloudflare
@@ -92,6 +115,7 @@
 104.19.150.54 Cloudflare
 104.20.184.68 Cloudflare (onetrust.com)
 104.20.185.68 Cloudflare
+104.20.227.30 Unknown Company
 104.208.16.88 Microsoft Azure
 104.208.16.89 Microsoft Azure
 104.208.16.90 Microsoft Azure
@@ -101,7 +125,10 @@
 104.21.64.192 Cloudflare (many domains)
 104.21.66.248 Cloudfare
 104.21.69.79 Cloudflare
+104.21.74.203 Unknown Company
 104.21.83.84 Cloudflare
+104.212.67.94 ymq01r3a.msedge.net
+104.214.104.116 Microsoft Azure
 104.22.24.87 Cloudflare
 104.22.25.87 Cloudflare
 104.22.32.115 Unknown Company
@@ -148,6 +175,7 @@
 104.26.6.155 Cloudflare
 104.26.7.139 Cloudflare
 104.26.7.155 Cloudflare (many sites)
+104.26.7.71 Cloudflare
 104.26.8.169 Cloudflare
 104.26.8.50 Cloudflare
 104.26.9.169 Cloudflare
@@ -156,40 +184,76 @@
 104.36.113.23 PubMatic
 104.36.113.24 PubMatic
 104.36.113.35 PubMatic
+104.42.79.240 Microsoft Azure
+104.43.136.153 Microsoft Azure
+104.44.88.24 i-by3p-cor002.api.p001.1drv.com
+104.44.88.28 i-by3p-cor001.api.p001.1drv.com
 104.46.162.224 Microsoft Azure
 104.46.162.226 Microsoft Azure
 104.47.49.28 Microsoft Azure
+104.47.55.156 Microsoft Azure
+104.47.59.156 Microsoft Azure
 104.47.66.28 Microsoft Azure
+104.65.171.176 a104-65-171-176.deploy.static.akamaitechnologies.com
 104.65.173.57 a104-65-173-57.deploy.static.akamaitechnologies.com
+104.65.174.220 a104-65-174-220.deploy.static.akamaitechnologies.com
+104.65.178.243 a104-65-178-243.deploy.static.akamaitechnologies.com
+104.65.187.42 a104-65-187-42.deploy.static.akamaitechnologies.com
+104.69.242.44 a104-69-242-44.deploy.static.akamaitechnologies.com
+104.70.127.132 a104-70-127-132.deploy.static.akamaitechnologies.com
 104.70.127.136 a104-70-127-136.deploy.static.akamaitechnologies.com
+104.70.127.148 a104-70-127-148.deploy.static.akamaitechnologies.com
+104.70.127.156 a104-70-127-156.deploy.static.akamaitechnologies.com
+104.70.127.157 a104-70-127-157.deploy.static.akamaitechnologies.com
+104.70.127.166 a104-70-127-166.deploy.static.akamaitechnologies.com
+104.70.127.167 a104-70-127-167.deploy.static.akamaitechnologies.com
+104.70.127.180 a104-70-127-180.deploy.static.akamaitechnologies.com
+104.70.127.182 a104-70-127-182.deploy.static.akamaitechnologies.com
 104.71.132.129 a104-71-132-129.deploy.static.akamaitechnologies.com
+104.71.132.182 a104-71-132-182.deploy.static.akamaitechnologies.com
 104.71.132.22 a104-71-132-22.deploy.static.akamaitechnologies.com
 104.71.132.228 a104-71-132-228.deploy.static.akamaitechnologies.com
 104.71.132.238 a104-71-132-238.deploy.static.akamaitechnologies.com
+104.71.133.155 a104-71-133-155.deploy.static.akamaitechnologies.com
 104.71.133.184 a104-71-133-184.deploy.static.akamaitechnologies.com
 104.71.133.214 a104-71-133-214.deploy.static.akamaitechnologies.com
+104.71.133.76 a104-71-133-76.deploy.static.akamaitechnologies.com
 104.71.212.139 a104-71-212-139.deploy.static.akamaitechnologies.com
+104.71.212.202 a104-71-212-202.deploy.static.akamaitechnologies.com
 104.71.212.211 a104-71-212-211.deploy.static.akamaitechnologies.com
 104.71.212.24 a104-71-212-24.deploy.static.akamaitechnologies.com
 104.71.212.248 a104-71-212-248.deploy.static.akamaitechnologies.com
 104.71.212.25 a104-71-212-25.deploy.static.akamaitechnologies.com
 104.71.212.48 a104-71-212-48.deploy.static.akamaitechnologies.com
+104.71.213.152 a104-71-213-152.deploy.static.akamaitechnologies.com
 104.71.213.161 a104-71-213-161.deploy.static.akamaitechnologies.com
+104.71.213.182 a104-71-213-182.deploy.static.akamaitechnologies.com
 104.71.213.57 a104-71-213-57.deploy.static.akamaitechnologies.com
+104.71.213.87 a104-71-213-87.deploy.static.akamaitechnologies.com
+104.71.226.85 a104-71-226-85.deploy.static.akamaitechnologies.com
 104.73.0.181 a104-73-0-181.deploy.static.akamaitechnologies.com
+104.73.0.194 a104-73-0-194.deploy.static.akamaitechnologies.com
 104.73.0.21 a104-73-0-21.deploy.static.akamaitechnologies.com
+104.73.0.22 a104-73-0-22.deploy.static.akamaitechnologies.com
 104.73.0.227 a104-73-0-227.deploy.static.akamaitechnologies.com
 104.73.0.229 a104-73-0-229.deploy.static.akamaitechnologies.com
 104.73.0.237 a104-73-0-237.deploy.static.akamaitechnologies.com
 104.73.0.39 a104-73-0-39.deploy.static.akamaitechnologies.com
 104.73.0.54 a104-73-0-54.deploy.static.akamaitechnologies.com
+104.73.0.57 a104-73-0-57.deploy.static.akamaitechnologies.com
 104.73.1.153 a104-73-1-153.deploy.static.akamaitechnologies.com
+104.73.1.182 a104-73-1-182.deploy.static.akamaitechnologies.com
+104.73.1.212 a104-73-1-212.deploy.static.akamaitechnologies.com
+104.73.1.32 a104-73-1-32.deploy.static.akamaitechnologies.com
 104.73.1.45 a104-73-1-45.deploy.static.akamaitechnologies.com
 104.73.1.75 a104-73-1-75.deploy.static.akamaitechnologies.com
+104.73.2.224 a104-73-2-224.deploy.static.akamaitechnologies.com
 104.81.183.101 a104-81-183-101.deploy.static.akamaitechnologies.com
 104.81.183.224 a104-81-183-224.deploy.static.akamaitechnologies.com
+104.81.184.133 a104-81-184-133.deploy.static.akamaitechnologies.com
 104.81.184.233 a104-81-184-233.deploy.static.akamaitechnologies.com
 104.81.185.220 a104-81-185-220.deploy.static.akamaitechnologies.com
+104.81.190.18 a104-81-190-18.deploy.static.akamaitechnologies.com
 104.81.191.72 a104-81-191-72.deploy.static.akamaitechnologies.com
 104.86.182.27 a104-86-182-27.deploy.static.akamaitechnologies.com
 104.86.182.35 a104-86-182-35.deploy.static.akamaitechnologies.com
@@ -199,7 +263,11 @@
 104.86.182.48 a104-86-182-48.deploy.static.akamaitechnologies.com
 104.86.182.73 a104-86-182-73.deploy.static.akamaitechnologies.com
 104.86.182.74 a104-86-182-74.deploy.static.akamaitechnologies.com
+104.86.182.75 a104-86-182-75.deploy.static.akamaitechnologies.com
+104.86.182.9 a104-86-182-9.deploy.static.akamaitechnologies.com
 104.86.183.19 a104-86-183-19.deploy.static.akamaitechnologies.com
+104.86.5.150 a104-86-5-150.deploy.static.akamaitechnologies.com
+104.89.51.95 a104-89-51-95.deploy.static.akamaitechnologies.com
 104.90.244.67 a104-90-244-67.deploy.static.akamaitechnologies.com
 104.93.145.8 a104-93-145-8.deploy.static.akamaitechnologies.com
 104.93.15.108 a104-93-15-108.deploy.static.akamaitechnologies.com
@@ -213,6 +281,7 @@
 104.98.114.10 a104-98-114-10.deploy.static.akamaitechnologies.com
 104.98.114.11 a104-98-114-11.deploy.static.akamaitechnologies.com
 104.98.114.136 a104-98-114-136.deploy.static.akamaitechnologies.com
+104.98.114.137 a104-98-114-137.deploy.static.akamaitechnologies.com
 104.98.114.138 a104-98-114-138.deploy.static.akamaitechnologies.com
 104.98.114.144 a104-98-114-144.deploy.static.akamaitechnologies.com
 104.98.114.145 a104-98-114-145.deploy.static.akamaitechnologies.com
@@ -226,6 +295,7 @@
 104.98.114.162 a104-98-114-162.deploy.static.akamaitechnologies.com
 104.98.114.163 a104-98-114-163.deploy.static.akamaitechnologies.com
 104.98.114.168 a104-98-114-168.deploy.static.akamaitechnologies.com
+104.98.114.169 a104-98-114-169.deploy.static.akamaitechnologies.com
 104.98.114.17 a104-98-114-17.deploy.static.akamaitechnologies.com
 104.98.114.170 a104-98-114-170.deploy.static.akamaitechnologies.com
 104.98.114.171 a104-98-114-171.deploy.static.akamaitechnologies.com
@@ -251,6 +321,8 @@
 104.98.114.8 a104-98-114-8.deploy.static.akamaitechnologies.com
 104.98.114.9 a104-98-114-9.deploy.static.akamaitechnologies.com
 104.98.118.169 a104-98-118-169.deploy.static.akamaitechnologies.com
+104.99.65.239 a104-99-65-239.deploy.static.akamaitechnologies.com
+104.99.67.86 a104-99-67-86.deploy.static.akamaitechnologies.com
 104.99.69.209 a104-99-69-209.deploy.static.akamaitechnologies.com
 104.99.72.203 a104-99-72-203.deploy.static.akamaitechnologies.com
 104.99.72.214 a104-99-72-214.deploy.static.akamaitechnologies.com
@@ -261,6 +333,7 @@
 104.99.85.205 a104-99-85-205.deploy.static.akamaitechnologies.com
 104.99.86.146 a104-99-86-146.deploy.static.akamaitechnologies.com
 104.99.90.4 a104-99-90-4.deploy.static.akamaitechnologies.com
+104.99.95.177 a104-99-95-177.deploy.static.akamaitechnologies.com
 107.151.10.10 24 Shells
 107.178.240.89 89.240.178.107.bc.googleusercontent.com
 107.178.246.49 49.246.178.107.bc.googleusercontent.com
@@ -268,21 +341,27 @@
 107.178.254.65 65.254.178.107.bc.googleusercontent.com
 107.20.137.119 ec2-107-20-137-119.compute-1.amazonaws.com
 107.21.107.56 ec2-107-21-107-56.compute-1.amazonaws.com
+107.21.20.160 ec2-107-21-20-160.compute-1.amazonaws.com
 107.21.233.142 ec2-107-21-233-142.compute-1.amazonaws.com
 107.21.95.3 ec2-107-21-95-3.compute-1.amazonaws.com
 107.22.247.231 ec2-107-22-247-231.compute-1.amazonaws.com
 107.22.37.110 ec2-107-22-37-110.compute-1.amazonaws.com
 107.23.138.170 ec2-107-23-138-170.compute-1.amazonaws.com
+107.23.167.134 ec2-107-23-167-134.compute-1.amazonaws.com
+107.23.199.224 ec2-107-23-199-224.compute-1.amazonaws.com
 107.23.223.65 ec2-107-23-223-65.compute-1.amazonaws.com
 107.23.226.245 ec2-107-23-226-245.compute-1.amazonaws.com
 107.23.240.181 ec2-107-23-240-181.compute-1.amazonaws.com
 107.23.50.157 ec2-107-23-50-157.compute-1.amazonaws.com
+108.161.189.78 StackPath LLC
 108.177.126.120 ej-in-f120.1e100.net
 108.177.98.108 pj-in-f108.1e100.net
 108.177.98.109 pj-in-f109.1e100.net
 109.206.161.21 109.206.161.21.serverel.net
+112.215.158.97 XL Axiata
 116.119.66.162 BHARTI Airtel Ltd. Facebook. fpnq7-3.fna.fbcdn.net
 119.161.14.93 e2.ycpi.twb.yahoo.com
+119.161.4.77 e2.ycpi.jpa.yahoo.com
 119.161.8.77 e2.ycpi.hkb.yahoo.com
 124.146.215.43 NTT PC Communications
 124.146.215.51 d.socdm.com
@@ -290,20 +369,31 @@
 13.105.28.1 Microsoft Azure
 13.105.28.16 Microsoft Azure
 13.105.28.18 Microsoft Azure
+13.105.74.49 Microsoft Azure
 13.105.74.50 Microsoft Azure
+13.107.13.80 Microsoft Azure
+13.107.18.254 Microsoft Azure
 13.107.21.200 www.bing.com
 13.107.213.69 Microsoft Azure
 13.107.213.70 Microsoft Azure
+13.107.22.200 Microsoft Azure
+13.107.227.70 Microsoft Azure
 13.107.246.18 Microsoft Azure
 13.107.246.254 Microsoft Azure
+13.107.246.69 Microsoft Azure
 13.107.246.70 Microsoft Azure
+13.107.3.128 Microsoft Azure
 13.107.3.254 Microsoft Azure
+13.107.39.203 Microsoft Azure
 13.107.4.50 Microsoft Azure
 13.107.4.52 Microsoft Azure
 13.107.42.12 1drv.ms
 13.107.42.14 linkedin.com
 13.107.42.16 azureedge.net (config.edge.skype.com)
 13.107.42.18 Microsoft Azure
+13.107.42.24 Microsoft Azure
+13.107.43.12 Microsoft Azure
+13.107.46.80 Microsoft Azure
 13.107.5.80 Microsoft Azure
 13.107.5.88 msedge.net
 13.107.5.91 Microsoft Azure
@@ -311,6 +401,8 @@
 13.107.6.158 bingforbusiness.com
 13.107.6.163 Microsoft Azure
 13.107.6.171 Microsoft Azure
+13.107.6.254 Microsoft Azure
+13.111.71.11 click.s11.exacttarget.com
 13.224.12.250 server-13-224-12-250.sea19.r.cloudfront.net
 13.224.14.101 server-13-224-14-101.sea19.r.cloudfront.net
 13.224.14.102 server-13-224-14-102.sea19.r.cloudfront.net
@@ -335,37 +427,88 @@
 13.224.14.80 server-13-224-14-80.sea19.r.cloudfront.net
 13.224.14.82 server-13-224-14-82.sea19.r.cloudfront.net
 13.224.14.90 server-13-224-14-90.sea19.r.cloudfront.net
+13.224.15.132 server-13-224-15-132.sea19.r.cloudfront.net
 13.224.15.51 server-13-224-15-51.sea19.r.cloudfront.net
+13.224.2.10 server-13-224-2-10.sea19.r.cloudfront.net
 13.224.2.102 server-13-224-2-102.sea19.r.cloudfront.net
+13.224.2.104 server-13-224-2-104.sea19.r.cloudfront.net
+13.224.2.105 server-13-224-2-105.sea19.r.cloudfront.net
+13.224.2.106 server-13-224-2-106.sea19.r.cloudfront.net
 13.224.2.108 server-13-224-2-108.sea19.r.cloudfront.net
 13.224.2.109 server-13-224-2-109.sea19.r.cloudfront.net
+13.224.2.110 server-13-224-2-110.sea19.r.cloudfront.net
+13.224.2.111 server-13-224-2-111.sea19.r.cloudfront.net
 13.224.2.112 server-13-224-2-112.sea19.r.cloudfront.net
+13.224.2.114 server-13-224-2-114.sea19.r.cloudfront.net
+13.224.2.115 server-13-224-2-115.sea19.r.cloudfront.net
 13.224.2.116 server-13-224-2-116.sea19.r.cloudfront.net
+13.224.2.117 server-13-224-2-117.sea19.r.cloudfront.net
+13.224.2.118 server-13-224-2-118.sea19.r.cloudfront.net
+13.224.2.12 server-13-224-2-12.sea19.r.cloudfront.net
+13.224.2.120 server-13-224-2-120.sea19.r.cloudfront.net
+13.224.2.122 server-13-224-2-122.sea19.r.cloudfront.net
+13.224.2.123 server-13-224-2-123.sea19.r.cloudfront.net
 13.224.2.125 server-13-224-2-125.sea19.r.cloudfront.net
+13.224.2.126 server-13-224-2-126.sea19.r.cloudfront.net
+13.224.2.127 server-13-224-2-127.sea19.r.cloudfront.net
+13.224.2.128 server-13-224-2-128.sea19.r.cloudfront.net
+13.224.2.14 server-13-224-2-14.sea19.r.cloudfront.net
+13.224.2.16 server-13-224-2-16.sea19.r.cloudfront.net
+13.224.2.23 server-13-224-2-23.sea19.r.cloudfront.net
+13.224.2.24 server-13-224-2-24.sea19.r.cloudfront.net
+13.224.2.26 server-13-224-2-26.sea19.r.cloudfront.net
+13.224.2.27 server-13-224-2-27.sea19.r.cloudfront.net
+13.224.2.3 server-13-224-2-3.sea19.r.cloudfront.net
+13.224.2.37 server-13-224-2-37.sea19.r.cloudfront.net
+13.224.2.38 server-13-224-2-38.sea19.r.cloudfront.net
 13.224.2.43 server-13-224-2-43.sea19.r.cloudfront.net
+13.224.2.46 server-13-224-2-46.sea19.r.cloudfront.net
+13.224.2.52 server-13-224-2-52.sea19.r.cloudfront.net
+13.224.2.57 server-13-224-2-57.sea19.r.cloudfront.net
+13.224.2.59 server-13-224-2-59.sea19.r.cloudfront.net
+13.224.2.6 server-13-224-2-6.sea19.r.cloudfront.net
+13.224.2.60 server-13-224-2-60.sea19.r.cloudfront.net
 13.224.2.62 server-13-224-2-62.sea19.r.cloudfront.net
 13.224.2.63 server-13-224-2-63.sea19.r.cloudfront.net
 13.224.2.65 server-13-224-2-65.sea19.r.cloudfront.net
 13.224.2.70 server-13-224-2-70.sea19.r.cloudfront.net
 13.224.2.73 server-13-224-2-73.sea19.r.cloudfront.net
+13.224.2.8 server-13-224-2-8.sea19.r.cloudfront.net
+13.224.2.80 server-13-224-2-80.sea19.r.cloudfront.net
+13.224.2.81 server-13-224-2-81.sea19.r.cloudfront.net
+13.224.2.83 server-13-224-2-83.sea19.r.cloudfront.net
+13.224.2.85 server-13-224-2-85.sea19.r.cloudfront.net
+13.224.2.86 server-13-224-2-86.sea19.r.cloudfront.net
+13.224.2.87 server-13-224-2-87.sea19.r.cloudfront.net
 13.224.2.88 server-13-224-2-88.sea19.r.cloudfront.net
+13.224.2.9 server-13-224-2-9.sea19.r.cloudfront.net
+13.224.2.92 server-13-224-2-92.sea19.r.cloudfront.net
+13.224.2.96 server-13-224-2-96.sea19.r.cloudfront.net
 13.224.26.157 server-13-224-26-157.sea19.r.cloudfront.net
 13.224.26.167 server-13-224-26-167.sea19.r.cloudfront.net
+13.224.5.138 server-13-224-5-138.sea19.r.cloudfront.net
 13.224.6.133 server-13-224-6-133.sea19.r.cloudfront.net
 13.224.6.39 server-13-224-6-39.sea19.r.cloudfront.net
 13.224.7.100 server-13-224-7-100.sea19.r.cloudfront.net
+13.224.7.110 server-13-224-7-110.sea19.r.cloudfront.net
 13.224.7.143 server-13-224-7-143.sea19.r.cloudfront.net
 13.224.7.169 server-13-224-7-169.sea19.r.cloudfront.net
+13.224.7.172 server-13-224-7-172.sea19.r.cloudfront.net
 13.224.7.185 server-13-224-7-185.sea19.r.cloudfront.net
 13.224.7.223 server-13-224-7-223.sea19.r.cloudfront.net
+13.224.9.61 server-13-224-9-61.sea19.r.cloudfront.net
 13.225.95.98 server-13-225-95-98.hkg60.r.cloudfront.net
 13.248.140.122 a80a9201ee101bbc3.awsglobalaccelerator.com
 13.248.192.242 a2e81e5b1959e6b14.awsglobalaccelerator.com
+13.52.67.71 ec2-13-52-67-71.us-west-1.compute.amazonaws.com
+13.56.125.30 ec2-13-56-125-30.us-west-1.compute.amazonaws.com
 13.56.132.140 ec2-13-56-132-140.us-west-1.compute.amazonaws.com
+13.56.136.13 ec2-13-56-136-13.us-west-1.compute.amazonaws.com
 13.56.34.220 ec2-13-56-34-220.us-west-1.compute.amazonaws.com
 13.57.120.163 ec2-13-57-120-163.us-west-1.compute.amazonaws.com
 13.57.153.213 ec2-13-57-153-213.us-west-1.compute.amazonaws.com
 13.57.159.75 ec2-13-57-159-75.us-west-1.compute.amazonaws.com
+13.57.45.19 ec2-13-57-45-19.us-west-1.compute.amazonaws.com
 13.57.95.185 ec2-13-57-95-185.us-west-1.compute.amazonaws.com
 13.57.97.210 ec2-13-57-97-210.us-west-1.compute.amazonaws.com
 13.64.180.106 wns.windows.com
@@ -383,6 +526,7 @@
 13.87.187.111 wdcp.microsft.com (windows defender)
 13.87.188.105 pf.checkappexec.microsoft.com
 13.88.42.153 Microsoft Azure
+13.89.105.232 Microsoft Azure
 13.89.178.26 Microsoft Azure
 13.89.178.27 Microsoft Azure
 13.89.179.10 Microsoft Azure
@@ -394,20 +538,28 @@
 130.211.21.250 250.21.211.130.bc.googleusercontent.com
 130.211.23.194 194.23.211.130.bc.googleusercontent.com
 130.211.29.110 110.29.211.130.bc.googleusercontent.com
+130.211.40.216 216.40.211.130.bc.googleusercontent.com
 130.211.9.179 179.9.211.130.bc.googleusercontent.com
 131.253.14.227 bn2b-cor002.api.p001.1drv.com
 131.253.14.229 bn2b-cor004.api.p001.1drv.com
 131.253.14.230 bn2b-cor003.api.p001.1drv.com
+131.253.33.203 a-0003.dc-msedge.net
 132.226.41.106 technoratimedia.com
 132.226.63.138 Oracle Cloud
+135.181.178.148 filter125.adblockplus.org
 135.181.181.204 filter209.filter.eyeo.it
+136.243.81.48 filter218.filter.eyeo.it
 136.243.93.161 filter210.filter.eyeo.it
+137.116.89.182 Microsoft Azure
 138.128.245.31 Kamatera Inc
+138.128.246.213 caruk.eyeency.com
 138.199.9.107 unn-138-199-9-107.datapacket.com
 138.201.253.184 filter113.adblockplus.org
 138.68.25.170 Digital Ocean
 138.91.254.96 Microsoft Azure
+139.140.238.112 dmz-vip.bowdoin.edu
 139.178.90.14 sjc-pkt-gli-03
+139.178.90.62 sjc-pkt-gli-02
 140.82.112.21 lb-140-82-112-21-iad.github.com
 140.82.112.22 lb-140-82-112-22-iad.github.com
 140.82.112.25 lb-140-82-112-25-iad.github.com
@@ -432,17 +584,24 @@
 140.82.114.4 lb-140-82-114-4-iad.github.com
 140.82.114.5 lb-140-82-114-5-iad.github.com
 140.82.114.6 lb-140-82-114-6-iad.github.com
+141.193.213.21  LLC
 141.226.124.48 Taboola.com ltd
 141.226.224.32 Taboola.com ltd
+141.226.224.48 Taboola.com ltd
 141.226.230.48 Taboola.com ltd
+141.95.3.9 p32.id5-sync.com
 141.95.34.104 p33.id5-sync.com
 141.95.99.209 ns3213340.ip-141-95-99.eu
 141.95.99.210 ns3213307.ip-141-95-99.eu
+142.0.160.53 Oracle Corporation
+142.0.160.54 Oracle Corporation
+142.250.107.108 pz-in-f108.1e100.net
 142.250.206.99 del11s20-in-f3.1e100.net
 142.250.217.102 sea09s30-in-f6.1e100.net
 142.250.217.106 sea09s30-in-f10.1e100.net
 142.250.217.110 sea09s30-in-f14.1e100.net
 142.250.217.115 sea09s30-in-f19.1e100.net
+142.250.217.118 sea09s30-in-f22.1e100.net
 142.250.217.65 sea09s29-in-f1.1e100.net
 142.250.217.66 sea09s29-in-f2.1e100.net
 142.250.217.67 sea09s29-in-f3.1e100.net
@@ -460,6 +619,8 @@
 142.250.217.99 sea09s30-in-f3.1e100.net
 142.250.69.193 sea30s08-in-f1.1e100.net
 142.250.69.194 sea30s08-in-f2.1e100.net
+142.250.69.195 sea30s08-in-f3.1e100.net
+142.250.69.196 sea30s08-in-f4.1e100.net
 142.250.69.198 sea30s08-in-f6.1e100.net
 142.250.69.202 sea30s08-in-f10.1e100.net
 142.250.69.206 sea30s08-in-f14.1e100.net
@@ -477,36 +638,51 @@
 142.251.33.110 sea30s10-in-f14.1e100.net
 142.251.33.112 sea30s10-in-f16.1e100.net
 142.251.33.115 sea30s10-in-f19.1e100.net
+142.251.33.116 sea30s10-in-f20.1e100.net
 142.251.33.65 sea09s28-in-f1.1e100.net
 142.251.33.67 sea09s28-in-f3.1e100.net
 142.251.33.70 sea09s28-in-f6.1e100.net
+142.251.33.72 sea09s28-in-f8.1e100.net
 142.251.33.74 sea09s28-in-f10.1e100.net
+142.251.33.77 sea09s28-in-f13.1e100.net
 142.251.33.78 sea09s28-in-f14.1e100.net
 142.251.33.83 sea09s28-in-f19.1e100.net
 142.251.33.86 sea09s28-in-f22.1e100.net
 142.251.33.97 sea30s10-in-f1.1e100.net
 142.251.33.98 sea30s10-in-f2.1e100.net
 142.251.33.99 sea30s10-in-f3.1e100.net
+143.198.136.18 Digital Ocean
 144.217.110.12 www32.cplusplus.com
 144.76.67.119 static.119.67.76.144.clients.your-server.de
+145.40.67.38 sjc-pkt-gli-01
+145.40.77.134 dfw-pkt-gli-06
 145.40.77.234 dfw-pkt-gli-07
 145.40.89.200 Packet Host
+146.184.161.19 Canon USA
+146.184.170.31 Canon USA
 147.135.104.185 ext.sor49.incmdb.net
 147.75.38.124 prebid.a-mo.net (amsterdam)
 149.56.31.125 uht6402.cortb.pl
 15.197.193.217 a12b7a488abeaa9e4.awsglobalaccelerator.com
 15.235.42.104 haproxy-ca-003.roqad.pl
+15.254.13.75 ec2-15-254-13-75.us-west-2.compute.amazonaws.com
 15.254.24.228 ec2-15-254-24-228.us-west-2.compute.amazonaws.com
 15.254.31.157 ec2-15-254-31-157.us-west-2.compute.amazonaws.com
 150.136.25.38 technoratimedia.com
 150.136.26.45 technoratimedia.com
 151.101.0.134 Fastly (disqus.com)
+151.101.0.217 Fastly
 151.101.1.21 Fastly
 151.101.1.26 Fastly (many sites)
+151.101.1.28 Fastly
+151.101.1.35 Fastly
 151.101.1.67 Fastly cnn.com
 151.101.1.69 Fastly
 151.101.128.134 Fastly
+151.101.128.217 Fastly
+151.101.129.21 Fastly
 151.101.129.28 Fastly
+151.101.129.35 Fastly
 151.101.130.133 Fastly (suspicious)
 151.101.130.166 Fastly
 151.101.130.217 Fastly
@@ -518,6 +694,7 @@
 151.101.193.69 Fastly stackexchange.com
 151.101.194.133 Fastly (suspicious)
 151.101.194.166 Fastly
+151.101.2.133 Fastly
 151.101.2.166 Fastly
 151.101.2.217 Fastly (some sites suspect)
 151.101.2.87 Fastly
@@ -529,6 +706,7 @@
 151.101.20.159 Fastly
 151.101.20.176 Fastly stripecdn.com
 151.101.20.193 Fastly
+151.101.20.217 Fastly
 151.101.20.237 Fastly
 151.101.20.238 Fastly
 151.101.20.249 Fastly
@@ -542,6 +720,7 @@
 151.101.21.140 Fastly reddit.map.fastly.net
 151.101.21.16 Fastly
 151.101.21.164 Fastly
+151.101.21.175 Fastly
 151.101.21.188 Fastly
 151.101.21.194 Fastly
 151.101.21.2 Fastly
@@ -550,14 +729,18 @@
 151.101.21.253 Fastly t.wayfair.com
 151.101.21.44 Fastly
 151.101.21.67 Fastly
+151.101.22.109 Fastly
 151.101.22.110 Fastly
 151.101.22.114 Fastly
 151.101.22.132 Fastly
 151.101.22.133 Fastly
+151.101.22.137 Fastly
 151.101.22.164 Fastly
 151.101.22.202 Fastly
 151.101.22.208 Fastly
 151.101.22.217 Fastly
+151.101.22.248 Fastly
+151.101.22.249 Fastly
 151.101.22.49 Fastly
 151.101.22.62 Fastly
 151.101.22.62 garnett.com
@@ -575,6 +758,7 @@
 151.139.128.11 Highwinds Network Group
 152.195.12.131 Verizon Business
 152.195.14.41 Verizon Business
+152.195.19.142 Verizon Business
 152.195.19.30 Verizon Business
 152.195.19.97 Edgecast sni.msft.default.wpc.edgecastcdn.net
 152.195.54.7 Verizon Internet Services
@@ -587,6 +771,7 @@
 152.199.24.184 Verizon Business
 152.199.24.185 Verizon Business
 152.199.24.48 Verizon Business
+152.199.4.184 Verizon Business
 152.199.4.33 Edgecast vo.msecnd.net azureedge.net
 152.199.5.152 Verizon Business
 152.199.5.184 technoratimedia.com
@@ -594,9 +779,14 @@
 152.199.5.24 Verizon Business
 152.199.6.24 Verizon Business
 152.199.6.61 Edgecase media.syn-cdn.com
+153.2.224.71 filexfer.ups.com
+153.2.228.71 filexfer.ups.com
 156.146.53.225 unn-156-146-53-225.cdn77.com
 156.154.202.36 NeuStar
 157.230.197.205 Digital Ocean
+157.240.2.52 instagram-p3-shv-01-ort2.fbcdn.net
+157.240.215.63 instagram-p3-shv-01-ssn1.fbcdn.net
+157.240.241.63 instagram-p3-shv-02-lga3.fbcdn.net
 157.240.3.10 edge-atlas-shv-01-sea1.facebook.com
 157.240.3.174 instagram-p42-shv-01-sea1.fbcdn.net
 157.240.3.29 xx-fbcdn-shv-01-sea1.fbcdn.net
@@ -605,6 +795,7 @@
 157.55.109.224 Microsoft Azure
 157.55.109.230 Microsoft Azure
 158.101.26.148 Oracle Cloud
+159.127.40.144 Conversant
 159.127.41.105 sjc01-usadmm.dotomi.com
 159.127.41.108 sjc01-login.dotomi.com
 159.127.41.169 sjc03-usadmm.dotomi.com
@@ -618,16 +809,25 @@
 159.53.232.39 analytics.chase.com
 159.53.44.69 sites.chase.com
 159.53.85.188 JPMorgan Chase
+161.35.15.77 cdn101.acsbapp.com
+162.159.152.4 Unknown Company
 162.159.153.4 Cloudflare medium.com (some sites with malware)
 162.223.54.6 tag.apxlv.com
 162.247.242.18 bam-6.nr-data.net
 162.247.242.20 bam-8.nr-data.net
+162.247.242.21 bam-9.nr-data.net
 162.247.243.146 Cloudflare
+162.247.243.147 Cloudflare
 162.254.116.117 cr1.hdxen.com
 162.254.116.141 nrpz.hdxen.com
+165.22.129.210 srv-us-ca-13.buysellads.com
 165.22.147.84 Digital Ocean
+167.172.136.187 process100.acsbapp.com
 167.89.115.56 o16789115x56.outbound-mail.sendgrid.net
+167.89.118.52 o16789118x52.outbound-mail.sendgrid.net
 167.89.123.54 o16789123x54.outbound-mail.sendgrid.net
+168.61.144.12 Microsoft Azure
+168.63.250.82 Microsoft Azure
 169.197.150.7 g.deepintent.com
 169.197.150.8 g.deepintent.com
 169.44.180.92 5c.b4.2ca9.ip4.static.sl-reverse.com
@@ -638,10 +838,13 @@
 169.62.126.132 84.7e.3ea9.ip4.static.sl-reverse.com
 169.62.126.133 85.7e.3ea9.ip4.static.sl-reverse.com
 169.62.67.163 a3.43.3ea9.ip4.static.sl-reverse.com
+170.84.144.226 170-84-144-226.directtelecom.net.br
+170.84.30.226 170-84-30-226.host.intlink.com.br
 171.159.116.102 Bank of America
 171.159.116.200 Bank of America
 171.159.118.100 Bank of America
 171.159.118.200 Bank of America
+171.159.228.172 safe-prodva.bankofamerica.com
 171.161.100.100 Bank of America
 171.161.100.102 Bank of America
 171.161.100.103 Bank of America
@@ -658,16 +861,21 @@
 172.217.14.197 sea30s01-in-f5.1e100.net
 172.217.14.198 sea30s01-in-f6.1e100.net
 172.217.14.202 sea30s01-in-f10.1e100.net
+172.217.14.205 sea30s01-in-f13.1e100.net
 172.217.14.206 sea30s01-in-f14.1e100.net
 172.217.14.211 sea30s01-in-f19.1e100.net
 172.217.14.225 sea30s02-in-f1.1e100.net
 172.217.14.226 sea30s02-in-f2.1e100.net
+172.217.14.227 sea30s02-in-f3.1e100.net
 172.217.14.229 sea30s02-in-f5.1e100.net
 172.217.14.230 sea30s02-in-f6.1e100.net
 172.217.14.234 sea30s02-in-f10.1e100.net
 172.217.14.238 sea30s02-in-f14.1e100.net
 172.217.14.243 sea30s02-in-f19.1e100.net
+172.217.14.246 sea30s02-in-f22.1e100.net
+172.217.160.163 bom05s12-in-f3.1e100.net
 172.232.12.27 a172-232-12-27.deploy.static.akamaitechnologies.com
+172.232.12.41 a172-232-12-41.deploy.static.akamaitechnologies.com
 172.232.12.42 a172-232-12-42.deploy.static.akamaitechnologies.com
 172.253.117.108 px-in-f108.1e100.net
 172.253.117.109 px-in-f109.1e100.net
@@ -675,7 +883,10 @@
 172.66.42.233 Cloudflare
 172.67.13.182 Cloudflare
 172.67.165.239 Cloudflare viepumsuword.tk
+172.67.168.31 Cloudflare
 172.67.199.199 Cloudflare
+172.67.206.60 Cloudflare
+172.67.206.76 Cloudflare
 172.67.26.21 Cloudflare ko-fi.com
 172.67.37.186 Cloudflare
 172.67.39.148 Cloudflare
@@ -687,6 +898,7 @@
 172.67.74.233 Cloudflare
 172.67.75.166 Cloudflare
 172.67.75.241 Cloudfare cryptocomputing.ca
+172.67.75.245 Cloudflare
 173.194.152.168 sea30s04-in-f8.1e100.net
 173.194.152.87 sea15s14-in-f7.1e100.net
 173.194.202.108 pf-in-f108.1e100.net
@@ -694,9 +906,12 @@
 173.194.202.189 pf-in-f189.1e100.net
 173.194.203.108 pg-in-f108.1e100.net
 173.194.203.109 pg-in-f109.1e100.net
+173.194.56.6 sea09s31-in-f6.1e100.net
+173.194.56.7 sea09s31-in-f7.1e100.net
 173.194.56.8 sea09s31-in-f8.1e100.net
 173.213.4.101 promo.newegg.com
 173.213.4.17 Cheeta-mail
+173.222.172.8 a173-222-172-8.deploy.static.akamaitechnologies.com
 173.222.174.250 a173-222-174-250.deploy.static.akamaitechnologies.com
 173.222.228.156 a173-222-228-156.deploy.static.akamaitechnologies.com
 173.222.228.175 a173-222-228-175.deploy.static.akamaitechnologies.com
@@ -708,6 +923,7 @@
 173.222.228.236 a173-222-228-236.deploy.static.akamaitechnologies.com
 173.222.228.56 a173-222-228-56.deploy.static.akamaitechnologies.com
 173.222.228.75 a173-222-228-75.deploy.static.akamaitechnologies.com
+173.222.228.86 a173-222-228-86.deploy.static.akamaitechnologies.com
 173.222.229.176 a173-222-229-176.deploy.static.akamaitechnologies.com
 173.222.229.180 a173-222-229-180.deploy.static.akamaitechnologies.com
 173.222.229.214 a173-222-229-214.deploy.static.akamaitechnologies.com
@@ -720,9 +936,13 @@
 173.222.230.48 a173-222-230-48.deploy.static.akamaitechnologies.com
 173.239.59.72 Webair Internet Development Company
 174.129.217.96 ec2-174-129-217-96.compute-1.amazonaws.com
+176.32.103.205 Amazon.com
 176.9.37.52 filter180.adblockplus.org
+177.74.147.33 177.74.147.33-customer-fttx.brphonia.com.br
 178.62.248.152 DigitalOcean (ipmeta.io)
 18.144.106.164 ec2-18-144-106-164.us-west-1.compute.amazonaws.com
+18.190.119.171 ec2-18-190-119-171.us-east-2.compute.amazonaws.com
+18.197.119.51 ec2-18-197-119-51.eu-central-1.compute.amazonaws.com
 18.205.186.65 ec2-18-205-186-65.compute-1.amazonaws.com
 18.207.85.246 ec2-18-207-85-246.compute-1.amazonaws.com
 18.208.237.101 ec2-18-208-237-101.compute-1.amazonaws.com
@@ -736,17 +956,24 @@
 18.211.67.234 ec2-18-211-67-234.compute-1.amazonaws.com
 18.211.92.114 ec2-18-211-92-114.compute-1.amazonaws.com
 18.212.140.196 ec2-18-212-140-196.compute-1.amazonaws.com
+18.213.141.221 ec2-18-213-141-221.compute-1.amazonaws.com
 18.213.146.15 ec2-18-213-146-15.compute-1.amazonaws.com
 18.213.213.255 ec2-18-213-213-255.compute-1.amazonaws.com
+18.213.55.8 ec2-18-213-55-8.compute-1.amazonaws.com
+18.213.61.127 ec2-18-213-61-127.compute-1.amazonaws.com
+18.213.90.98 ec2-18-213-90-98.compute-1.amazonaws.com
 18.214.111.36 ec2-18-214-111-36.compute-1.amazonaws.com
 18.214.125.42 ec2-18-214-125-42.compute-1.amazonaws.com
 18.214.172.65 ec2-18-214-172-65.compute-1.amazonaws.com
+18.214.194.148 ec2-18-214-194-148.compute-1.amazonaws.com
 18.214.254.157 ec2-18-214-254-157.compute-1.amazonaws.com
 18.214.92.18 ec2-18-214-92-18.compute-1.amazonaws.com
 18.215.218.210 ec2-18-215-218-210.compute-1.amazonaws.com
 18.215.76.51 ec2-18-215-76-51.compute-1.amazonaws.com
 18.215.77.225 ec2-18-215-77-225.compute-1.amazonaws.com
 18.215.81.12 ec2-18-215-81-12.compute-1.amazonaws.com
+18.218.6.24 ec2-18-218-6-24.us-east-2.compute.amazonaws.com
+18.219.161.73 ec2-18-219-161-73.us-east-2.compute.amazonaws.com
 18.220.7.254 ec2-18-220-7-254.us-east-2.compute.amazonaws.com
 18.221.218.92 ec2-18-221-218-92.us-east-2.compute.amazonaws.com
 18.224.227.3 ec2-18-224-227-3.us-east-2.compute.amazonaws.com
@@ -762,43 +989,79 @@
 18.235.195.121 ec2-18-235-195-121.compute-1.amazonaws.com
 18.235.224.24 ec2-18-235-224-24.compute-1.amazonaws.com
 18.235.91.242 ec2-18-235-91-242.compute-1.amazonaws.com
+18.65.226.81 server-18-65-226-81.sea73.r.cloudfront.net
 18.65.227.181 server-18-65-227-181.sea73.r.cloudfront.net
+18.65.227.51 server-18-65-227-51.sea73.r.cloudfront.net
 18.65.227.60 server-18-65-227-60.sea73.r.cloudfront.net
+18.65.229.101 server-18-65-229-101.sea73.r.cloudfront.net
+18.65.229.102 server-18-65-229-102.sea73.r.cloudfront.net
 18.65.229.105 server-18-65-229-105.sea73.r.cloudfront.net
+18.65.229.106 server-18-65-229-106.sea73.r.cloudfront.net
 18.65.229.108 server-18-65-229-108.sea73.r.cloudfront.net
+18.65.229.109 server-18-65-229-109.sea73.r.cloudfront.net
+18.65.229.112 server-18-65-229-112.sea73.r.cloudfront.net
+18.65.229.114 server-18-65-229-114.sea73.r.cloudfront.net
 18.65.229.115 server-18-65-229-115.sea73.r.cloudfront.net
+18.65.229.117 server-18-65-229-117.sea73.r.cloudfront.net
+18.65.229.118 server-18-65-229-118.sea73.r.cloudfront.net
+18.65.229.12 server-18-65-229-12.sea73.r.cloudfront.net
+18.65.229.121 server-18-65-229-121.sea73.r.cloudfront.net
 18.65.229.124 server-18-65-229-124.sea73.r.cloudfront.net
 18.65.229.126 server-18-65-229-126.sea73.r.cloudfront.net
 18.65.229.127 server-18-65-229-127.sea73.r.cloudfront.net
 18.65.229.128 server-18-65-229-128.sea73.r.cloudfront.net
 18.65.229.179 server-18-65-229-179.sea73.r.cloudfront.net
 18.65.229.18 server-18-65-229-18.sea73.r.cloudfront.net
+18.65.229.21 server-18-65-229-21.sea73.r.cloudfront.net
 18.65.229.23 server-18-65-229-23.sea73.r.cloudfront.net
+18.65.229.24 server-18-65-229-24.sea73.r.cloudfront.net
+18.65.229.25 server-18-65-229-25.sea73.r.cloudfront.net
 18.65.229.27 server-18-65-229-27.sea73.r.cloudfront.net
+18.65.229.29 server-18-65-229-29.sea73.r.cloudfront.net
+18.65.229.30 server-18-65-229-30.sea73.r.cloudfront.net
 18.65.229.33 server-18-65-229-33.sea73.r.cloudfront.net
 18.65.229.34 server-18-65-229-34.sea73.r.cloudfront.net
 18.65.229.35 server-18-65-229-35.sea73.r.cloudfront.net
+18.65.229.40 server-18-65-229-40.sea73.r.cloudfront.net
 18.65.229.41 server-18-65-229-41.sea73.r.cloudfront.net
 18.65.229.42 server-18-65-229-42.sea73.r.cloudfront.net
 18.65.229.43 server-18-65-229-43.sea73.r.cloudfront.net
+18.65.229.44 server-18-65-229-44.sea73.r.cloudfront.net
 18.65.229.50 server-18-65-229-50.sea73.r.cloudfront.net
+18.65.229.52 server-18-65-229-52.sea73.r.cloudfront.net
 18.65.229.53 server-18-65-229-53.sea73.r.cloudfront.net
+18.65.229.55 server-18-65-229-55.sea73.r.cloudfront.net
 18.65.229.59 server-18-65-229-59.sea73.r.cloudfront.net
 18.65.229.6 server-18-65-229-6.sea73.r.cloudfront.net
 18.65.229.61 server-18-65-229-61.sea73.r.cloudfront.net
+18.65.229.65 server-18-65-229-65.sea73.r.cloudfront.net
+18.65.229.66 server-18-65-229-66.sea73.r.cloudfront.net
+18.65.229.68 server-18-65-229-68.sea73.r.cloudfront.net
 18.65.229.7 server-18-65-229-7.sea73.r.cloudfront.net
 18.65.229.70 server-18-65-229-70.sea73.r.cloudfront.net
 18.65.229.73 server-18-65-229-73.sea73.r.cloudfront.net
+18.65.229.79 server-18-65-229-79.sea73.r.cloudfront.net
 18.65.229.80 server-18-65-229-80.sea73.r.cloudfront.net
+18.65.229.84 server-18-65-229-84.sea73.r.cloudfront.net
+18.65.229.88 server-18-65-229-88.sea73.r.cloudfront.net
+18.65.229.92 server-18-65-229-92.sea73.r.cloudfront.net
 18.65.229.93 server-18-65-229-93.sea73.r.cloudfront.net
+18.65.229.98 server-18-65-229-98.sea73.r.cloudfront.net
+18.65.230.127 server-18-65-230-127.sea73.r.cloudfront.net
+18.65.232.125 server-18-65-232-125.sea73.r.cloudfront.net
 18.65.232.92 server-18-65-232-92.sea73.r.cloudfront.net
+18.65.235.151 server-18-65-235-151.sea73.r.cloudfront.net
+184.26.80.33 a184-26-80-33.deploy.static.akamaitechnologies.com
+184.26.81.47 a184-26-81-47.deploy.static.akamaitechnologies.com
 184.28.154.140 a184-28-154-140.deploy.static.akamaitechnologies.com
+184.28.154.159 a184-28-154-159.deploy.static.akamaitechnologies.com
 184.28.154.166 a184-28-154-166.deploy.static.akamaitechnologies.com
 184.28.154.178 a184-28-154-178.deploy.static.akamaitechnologies.com
 184.28.154.76 a184-28-154-76.deploy.static.akamaitechnologies.com
 184.28.155.30 a184-28-155-30.deploy.static.akamaitechnologies.com
 184.28.155.36 a184-28-155-36.deploy.static.akamaitechnologies.com
 184.28.50.106 a184-28-50-106.deploy.static.akamaitechnologies.com
+184.28.50.17 a184-28-50-17.deploy.static.akamaitechnologies.com
 184.28.50.18 a184-28-50-18.deploy.static.akamaitechnologies.com
 184.28.50.24 a184-28-50-24.deploy.static.akamaitechnologies.com
 184.28.50.42 a184-28-50-42.deploy.static.akamaitechnologies.com
@@ -811,6 +1074,7 @@
 184.31.16.51 a184-31-16-51.deploy.static.akamaitechnologies.com
 184.31.17.229 a184-31-17-229.deploy.static.akamaitechnologies.com
 184.31.17.68 a184-31-17-68.deploy.static.akamaitechnologies.com
+184.72.100.245 ec2-184-72-100-245.compute-1.amazonaws.com
 184.86.194.187 a184-86-194-187.deploy.static.akamaitechnologies.com
 184.86.195.111 a184-86-195-111.deploy.static.akamaitechnologies.com
 184.86.195.118 a184-86-195-118.deploy.static.akamaitechnologies.com
@@ -831,12 +1095,20 @@
 185.199.108.133 cdn-185-199-108-133.github.com
 185.199.108.154 cdn-185-199-108-154.github.com
 185.199.109.133 cdn-185-199-109-133.github.com
+185.199.109.153 cdn-185-199-109-153.github.com
 185.199.109.154 cdn-185-199-109-154.github.com
 185.199.110.133 cdn-185-199-110-133.github.com
 185.199.110.154 cdn-185-199-110-154.github.com
 185.199.111.133 cdn-185-199-111-133.github.com
 185.199.111.154 cdn-185-199-111-154.github.com
+185.230.61.96 td-username-sv5-61-97.wix.com
+185.230.63.186 td-username-sv5-61-169.wix.com
 188.125.90.201 e2.ycpi.rob.yahoo.com
+188.125.94.201 e2.ycpi.seb.yahoo.com
+188.40.129.157 filter182.adblockplus.org
+189.123.31.32 Claro NET
+189.89.160.160 189-89-160-160.STATIC.itsweb.com.br
+191.183.80.160 Claro NET
 192.0.66.136 Automattic
 192.0.73.2 Automattic
 192.0.76.3 Automattic
@@ -846,6 +1118,9 @@
 192.124.249.14 cloudproxy10014.sucuri.net
 192.124.249.158 cloudproxy10158.sucuri.net
 192.124.249.165 cloudproxy10165.sucuri.net
+192.124.249.22 cloudproxy10022.sucuri.net
+192.124.249.36 cloudproxy10036.sucuri.net
+192.124.249.41 cloudproxy10041.sucuri.net
 192.124.249.8 cloudproxy10008.sucuri.net
 192.168.0.1 Default admin login
 192.168.0.163 kitchen-hp
@@ -865,6 +1140,7 @@
 192.184.69.152 Quantcast Corporation
 192.184.69.193 Amazon.com
 192.184.69.231 Quantcast Corporation
+192.193.200.243 Citigroup
 192.208.221.12 Turn
 192.208.221.16 Turn
 192.225.158.1 a-sac.h.online-metrix.net
@@ -886,8 +1162,11 @@
 192.30.255.116 lb-192-30-255-116-sea.github.com
 192.30.255.117 lb-192-30-255-117-sea.github.com
 192.40.34.98 Index Exchange
+192.65.229.43 192-165-229-43.blueshift.net
 192.82.242.208 PubMatic
 192.82.242.209 PubMatic
+193.122.128.135 Oracle Cloud
+193.122.130.38 Oracle Cloud
 194.224.110.188 188.red-194-224-110.customer.static.ccgg.telefonica.net
 195.201.54.247 filter219.filter.eyeo.it
 195.244.31.10 Iguana Worldwide
@@ -899,6 +1178,8 @@
 198.145.13.14 getclicky.com
 198.208.73.147 General Motors
 198.244.169.83 filter156.adblockplus.org
+198.244.173.119 filter145.adblockplus.org
+198.245.89.33 click.fidelityinvestments.com
 198.252.206.25 stackoverflow.com
 198.35.26.112 upload-lb.ulsfo.wikimedia.org
 198.35.26.96 text-lb.ulsfo.wikimedia.org
@@ -918,6 +1199,7 @@
 199.127.204.142  LLC
 199.127.204.147  LLC
 199.15.215.8 Adobe Systems
+199.187.116.153 LivePerson
 199.187.116.90 ca-lpcdn.lpsnmedia.net
 199.187.193.166 H2H Interactif
 199.187.193.177 H2H Interactif
@@ -928,25 +1210,34 @@
 199.187.193.193 H2H Interactif
 199.204.170.136 gbc.criteo.com
 199.204.170.161 Criteo Corp.
+199.204.170.180 Criteo Corp.
 199.204.170.182 Criteo Corp.
 199.204.170.187 Criteo Corp.
 199.204.170.194 us.criteo.com
 199.204.170.228 Criteo Corp.
 199.204.170.246 gcb.criteo.com
 199.204.170.249 da.us.criteo.com
+199.204.170.28 Criteo Corp.
 199.204.170.3 Criteo Corp.
+199.204.170.58 Criteo Corp.
+199.204.170.80 Criteo Corp.
 199.204.170.87 Criteo Corp.
+199.204.170.9 Criteo Corp.
 199.244.50.53 Kamatera Inc
 199.244.50.74 Kamatera Inc
 199.250.160.129 The Trade Desk
 199.250.163.129 The Trade Desk
+20.104.109.44 Microsoft Azure
 20.110.86.75 Microsoft Azure
 20.150.29.228 Microsoft Corporation
 20.150.39.132 Microsoft Corporation
 20.150.43.196 Microsoft Azure
 20.150.50.132 blob.core.windows.net
+20.150.77.100 Microsoft Corporation
+20.150.77.68 Microsoft Corporation
 20.150.88.164 Microsoft Azure
 20.150.95.132 store.core.windows.net
+20.150.95.196 Microsoft Azure
 20.189.173.1 Microsoft Azure
 20.189.173.10 Microsoft Azure
 20.189.173.11 Microsoft Azure
@@ -963,6 +1254,7 @@
 20.189.173.6 Microsoft Azure
 20.189.173.7 events.data.microsoft.com
 20.189.173.9 Microsoft Azure
+20.190.132.42 Microsoft Azure
 20.190.151.131 Microsoft Azure
 20.190.151.132 Microsoft Azure
 20.190.151.133 Microsoft Azure
@@ -979,14 +1271,17 @@
 20.190.154.137 Microsoft Azure
 20.190.154.138 Microsoft Azure
 20.190.154.139 Microsoft Azure
+20.190.154.141 Microsoft Azure
 20.190.154.16 Microsoft Azure
 20.190.154.160 Microsoft Azure
 20.190.154.17 Microsoft Azure
 20.190.154.18 Microsoft Azure
 20.190.154.19 Microsoft Azure
 20.190.4.251 Microsoft Azure
+20.191.46.211 Microsoft Azure
 20.38.96.100 Microsoft Azure
 20.40.202.2 azurewebsites.net
+20.42.128.98 Microsoft Azure
 20.42.65.84 Microsoft Azure
 20.42.65.85 Microsoft Azure
 20.42.65.88 Microsoft Azure
@@ -1016,10 +1311,12 @@
 20.60.133.228 Microsoft Azure
 20.60.161.225 Microsoft Azure
 20.60.178.164 Microsoft Azure
+20.60.178.4 Microsoft Azure
 20.60.178.68 Microsoft Azure
 20.60.179.4 Microsoft Azure
 20.60.18.36 Microsoft Azure
 20.60.180.4 blob.core.windows.net
+20.60.181.193 Microsoft Azure
 20.60.240.33 Microsoft Azure
 20.60.30.68 Microsoft Azure
 20.60.58.97 Microsoft Azure
@@ -1027,6 +1324,8 @@
 20.60.59.235 Microsoft Azure
 20.60.81.107 Microsoft Azure
 20.62.149.92 wdcp.microsoft.com (windows defender)
+20.62.190.188 Microsoft Azure
+20.62.48.180 Microsoft Azure
 20.69.130.185 Microsoft Azure
 20.69.137.228 Microsoft Azure
 20.69.177.48 Microsoft Azure
@@ -1035,13 +1334,19 @@
 20.72.205.209 Microsoft Azure
 20.81.51.95 smartscreen.microsoft.com
 20.81.52.156 smartscreen.microsoft.com
+20.81.7.118 Microsoft Azure
 20.83.130.102 mysql.database.azure.com
 20.83.81.161 update.microsoft.com
 20.83.81.164 Microsoft Azure
 20.85.30.134 Microsoft Azure
+20.86.173.234 Microsoft Azure
+20.88.207.242 Microsoft Azure
 20.96.88.162 Microsoft
 20.98.16.82 smartscreen.microsft.com
+200.114.56.43 ic-dinamica-200-114-56-43.intercable.net.co
+201.0.238.160 201-0-238-160.dial-up.telesp.net.br
 202.241.208.4 IDC Frontier
+202.241.208.57 IDC Frontier
 204.160.103.254 Lumen
 204.2.255.152 mxptint.net
 204.236.185.165 ec2-204-236-185-165.us-west-1.compute.amazonaws.com
@@ -1064,18 +1369,27 @@
 205.180.87.204 sjc06-login.dotomi.com
 205.185.216.10 map2.hwcdn.net
 205.185.216.42 map2.hwcdn.net
+205.251.242.103 s3-console-1.amazonaws.com
 205.251.92.134 Atlantic Metro Communications
+208.111.179.1 https-208-111-179-1.sea.llnw.net
 208.111.179.129 https-208-111-179-129.sea.llnw.net
 208.111.179.151 https-208-111-179-151.sea.llnw.net
 208.111.179.69 https-208-111-179-69.sea.llnw.net
 208.111.179.88 https-208-111-179-88.sea.llnw.net
+208.116.172.107 GTT Communications Inc.
 208.235.248.149 bofaeas-pod5-prod.fiservapps.com
+208.68.39.149 cdn100.acsbapp.com
 208.89.12.87 geo.va-v.livepersonk.akadns.net
 208.91.60.142 autonomousvehicletech.com
+208.92.55.231 Triton Digital
+208.94.153.99 rdr-sdc.southwest.com
+209.104.5.168 asteria.desert.net
+209.17.116.163  LLC
 209.191.163.152 Voxel Hosting
 209.191.163.208 Internap Corporation
 209.191.163.209 Voxel Hosting
 209.191.163.210 Internap Corporation
+209.197.3.16 vip0x010.map2.ssl.hwcdn.net
 209.197.3.19 vip0x013.map2.ssl.hwcdn.net
 209.197.3.8 vip0x008.map2.ssl.hwcdn.net
 209.25.233.253 Cogeco Peer 1
@@ -1085,17 +1399,22 @@
 209.54.177.54 Amazon.com
 209.54.177.91 Amazon.com
 209.54.180.144 Amazon.com
+209.54.180.147 Amazon.com
 209.54.180.3 Amazon.com
 209.54.180.51 Amazon.com
+209.54.180.61 Amazon.com
 209.54.180.63 Amazon.com
 209.54.180.72 aax-us-east.amazon-adsystem.com
 209.54.181.40 Amazon.com
 209.54.181.42 Amazon.com
+209.73.179.139 e2.ycpi.ata.yahoo.com
 212.102.46.113 edge-642.bunnyinfra.net
 212.102.46.9 unn-212-102-46-9.cdn77.com
+212.58.244.17 bbc-vip170.telhc.bbc.co.uk
 212.58.244.39 bbc-vip171.telhc.bbc.co.uk
 212.58.249.201 bbc-vip139.lbh.bbc.co.uk
 212.82.116.200 e1.ycpi.bga.yahoo.com
+212.82.116.201 e2.ycpi.bga.yahoo.com
 212.82.117.200 e1.ycpi.aeb.yahoo.com
 213.180.193.90 bs.yandex.ru
 213.180.204.90 bs.yandex.ru
@@ -1104,34 +1423,59 @@
 216.200.232.253 MediaMath
 216.239.32.3 Google Cloud
 216.239.36.54 google
+216.27.63.20 bronto.com
+216.27.63.5 util002.bronto.com
+216.27.63.7 www002.bronto.com
 216.27.63.9 lb-vip-216-27-63-9.bronto.com
 23.1.106.236 a23-1-106-236.deploy.static.akamaitechnologies.com
 23.1.106.237 a23-1-106-237.deploy.static.akamaitechnologies.com
+23.102.110.248 Microsoft Azure
+23.111.10.140 StackPath Data Center
 23.111.8.18 Highwinds Network Group
 23.14.163.151 a23-14-163-151.deploy.static.akamaitechnologies.com
+23.14.166.136 a23-14-166-136.deploy.static.akamaitechnologies.com
 23.14.166.169 a23-14-166-169.deploy.static.akamaitechnologies.com
 23.14.166.207 a23-14-166-207.deploy.static.akamaitechnologies.com
 23.14.166.43 a23-14-166-43.deploy.static.akamaitechnologies.com
+23.14.171.52 a23-14-171-52.deploy.static.akamaitechnologies.com
 23.14.173.36 a23-14-173-36.deploy.static.akamaitechnologies.com
+23.15.61.243 a23-15-61-243.deploy.static.akamaitechnologies.com
 23.192.117.23 a23-192-117-23.deploy.static.akamaitechnologies.com
+23.192.208.138 a23-192-208-138.deploy.static.akamaitechnologies.com
+23.192.208.23 a23-192-208-23.deploy.static.akamaitechnologies.com
+23.192.208.235 a23-192-208-235.deploy.static.akamaitechnologies.com
 23.192.208.24 a23-192-208-24.deploy.static.akamaitechnologies.com
+23.192.208.242 a23-192-208-242.deploy.static.akamaitechnologies.com
 23.192.208.61 a23-192-208-61.deploy.static.akamaitechnologies.com
 23.192.209.142 a23-192-209-142.deploy.static.akamaitechnologies.com
+23.192.209.172 a23-192-209-172.deploy.static.akamaitechnologies.com
+23.192.209.192 a23-192-209-192.deploy.static.akamaitechnologies.com
 23.192.209.194 a23-192-209-194.deploy.static.akamaitechnologies.com
+23.192.209.32 a23-192-209-32.deploy.static.akamaitechnologies.com
+23.192.209.76 a23-192-209-76.deploy.static.akamaitechnologies.com
+23.192.230.4 a23-192-230-4.deploy.static.akamaitechnologies.com
 23.193.130.22 a23-193-130-22.deploy.static.akamaitechnologies.com
 23.193.132.110 a23-193-132-110.deploy.static.akamaitechnologies.com
 23.193.134.49 a23-193-134-49.deploy.static.akamaitechnologies.com
 23.193.135.239 a23-193-135-239.deploy.static.akamaitechnologies.com
 23.193.139.27 a23-193-139-27.deploy.static.akamaitechnologies.com
+23.193.142.131 a23-193-142-131.deploy.static.akamaitechnologies.com
 23.193.145.211 a23-193-145-211.deploy.static.akamaitechnologies.com
 23.193.145.230 a23-193-145-230.deploy.static.akamaitechnologies.com
 23.193.145.45 a23-193-145-45.deploy.static.akamaitechnologies.com
 23.193.146.179 a23-193-146-179.deploy.static.akamaitechnologies.com
+23.193.148.183 a23-193-148-183.deploy.static.akamaitechnologies.com
 23.193.151.127 a23-193-151-127.deploy.static.akamaitechnologies.com
+23.193.153.75 a23-193-153-75.deploy.static.akamaitechnologies.com
 23.194.100.143 a23-194-100-143.deploy.static.akamaitechnologies.com
 23.194.100.17 a23-194-100-17.deploy.static.akamaitechnologies.com
 23.194.100.208 a23-194-100-208.deploy.static.akamaitechnologies.com
+23.194.100.32 a23-194-100-32.deploy.static.akamaitechnologies.com
+23.194.100.98 a23-194-100-98.deploy.static.akamaitechnologies.com
+23.195.105.192 a23-195-105-192.deploy.static.akamaitechnologies.com
+23.195.105.209 a23-195-105-209.deploy.static.akamaitechnologies.com
 23.195.105.24 a23-195-105-24.deploy.static.akamaitechnologies.com
+23.195.105.41 a23-195-105-41.deploy.static.akamaitechnologies.com
 23.195.105.64 a23-195-105-64.deploy.static.akamaitechnologies.com
 23.195.227.212 a23-195-227-212.deploy.static.akamaitechnologies.com
 23.195.228.42 a23-195-228-42.deploy.static.akamaitechnologies.com
@@ -1154,15 +1498,22 @@
 23.204.103.176 a23-204-103-176.deploy.static.akamaitechnologies.com
 23.204.103.187 a23-204-103-187.deploy.static.akamaitechnologies.com
 23.204.103.193 a23-204-103-193.deploy.static.akamaitechnologies.com
+23.204.103.209 a23-204-103-209.deploy.static.akamaitechnologies.com
 23.204.103.211 a23-204-103-211.deploy.static.akamaitechnologies.com
 23.204.103.42 a23-204-103-42.deploy.static.akamaitechnologies.com
 23.204.103.48 a23-204-103-48.deploy.static.akamaitechnologies.com
+23.204.103.56 a23-204-103-56.deploy.static.akamaitechnologies.com
+23.204.32.124 a23-204-32-124.deploy.static.akamaitechnologies.com
 23.204.38.39 a23-204-38-39.deploy.static.akamaitechnologies.com
+23.204.38.89 a23-204-38-89.deploy.static.akamaitechnologies.com
 23.204.53.203 a23-204-53-203.deploy.static.akamaitechnologies.com
 23.204.56.105 a23-204-56-105.deploy.static.akamaitechnologies.com
 23.204.56.191 a23-204-56-191.deploy.static.akamaitechnologies.com
 23.204.60.115 a23-204-60-115.deploy.static.akamaitechnologies.com
+23.206.0.174 a23-206-0-174.deploy.static.akamaitechnologies.com
+23.206.3.185 a23-206-3-185.deploy.static.akamaitechnologies.com
 23.21.67.174 ec2-23-21-67-174.compute-1.amazonaws.com
+23.210.16.148 a23-210-16-148.deploy.static.akamaitechnologies.com
 23.210.17.109 a23-210-17-109.deploy.static.akamaitechnologies.com
 23.210.17.208 a23-210-17-208.deploy.static.akamaitechnologies.com
 23.210.216.9 a23-210-216-9.deploy.static.akamaitechnologies.com
@@ -1170,6 +1521,7 @@
 23.212.180.127 a23-212-180-127.deploy.static.akamaitechnologies.com
 23.212.180.143 a23-212-180-143.deploy.static.akamaitechnologies.com
 23.212.180.15 a23-212-180-15.deploy.static.akamaitechnologies.com
+23.212.180.168 a23-212-180-168.deploy.static.akamaitechnologies.com
 23.212.180.170 a23-212-180-170.deploy.static.akamaitechnologies.com
 23.212.180.177 a23-212-180-177.deploy.static.akamaitechnologies.com
 23.212.180.22 a23-212-180-22.deploy.static.akamaitechnologies.com
@@ -1194,6 +1546,7 @@
 23.213.175.97 a23-213-175-97.deploy.static.akamaitechnologies.com
 23.213.36.32 a23-213-36-32.deploy.static.akamaitechnologies.com
 23.214.81.159 a23-214-81-159.deploy.static.akamaitechnologies.com
+23.215.176.107 a23-215-176-107.deploy.static.akamaitechnologies.com
 23.215.176.114 a23-215-176-114.deploy.static.akamaitechnologies.com
 23.215.176.115 a23-215-176-115.deploy.static.akamaitechnologies.com
 23.215.176.120 a23-215-176-120.deploy.static.akamaitechnologies.com
@@ -1210,29 +1563,47 @@
 23.215.176.163 a23-215-176-163.deploy.static.akamaitechnologies.com
 23.215.176.91 a23-215-176-91.deploy.static.akamaitechnologies.com
 23.215.176.96 a23-215-176-96.deploy.static.akamaitechnologies.com
+23.215.176.97 a23-215-176-97.deploy.static.akamaitechnologies.com
 23.215.176.98 a23-215-176-98.deploy.static.akamaitechnologies.com
 23.216.145.81 a23-216-145-81.deploy.static.akamaitechnologies.com
 23.216.147.180 a23-216-147-180.deploy.static.akamaitechnologies.com
 23.216.147.203 a23-216-147-203.deploy.static.akamaitechnologies.com
 23.216.147.47 a23-216-147-47.deploy.static.akamaitechnologies.com
+23.216.147.48 a23-216-147-48.deploy.static.akamaitechnologies.com
 23.216.147.50 a23-216-147-50.deploy.static.akamaitechnologies.com
 23.216.147.52 a23-216-147-52.deploy.static.akamaitechnologies.com
 23.216.147.65 a23-216-147-65.deploy.static.akamaitechnologies.com
 23.216.147.66 a23-216-147-66.deploy.static.akamaitechnologies.com
+23.216.147.68 a23-216-147-68.deploy.static.akamaitechnologies.com
 23.216.147.72 a23-216-147-72.deploy.static.akamaitechnologies.com
+23.216.147.76 a23-216-147-76.deploy.static.akamaitechnologies.com
+23.216.147.77 a23-216-147-77.deploy.static.akamaitechnologies.com
 23.216.80.9 a23-216-80-9.deploy.static.akamaitechnologies.com
 23.217.12.49 a23-217-12-49.deploy.static.akamaitechnologies.com
 23.217.15.111 a23-217-15-111.deploy.static.akamaitechnologies.com
 23.218.100.156 a23-218-100-156.deploy.static.akamaitechnologies.com
+23.218.100.179 a23-218-100-179.deploy.static.akamaitechnologies.com
+23.218.100.202 a23-218-100-202.deploy.static.akamaitechnologies.com
 23.218.101.95 a23-218-101-95.deploy.static.akamaitechnologies.com
+23.218.108.144 a23-218-108-144.deploy.static.akamaitechnologies.com
+23.218.108.184 a23-218-108-184.deploy.static.akamaitechnologies.com
 23.218.108.67 a23-218-108-67.deploy.static.akamaitechnologies.com
 23.218.108.89 a23-218-108-89.deploy.static.akamaitechnologies.com
+23.218.109.17 a23-218-109-17.deploy.static.akamaitechnologies.com
 23.218.109.179 a23-218-109-179.deploy.static.akamaitechnologies.com
+23.218.109.220 a23-218-109-220.deploy.static.akamaitechnologies.com
+23.218.109.33 a23-218-109-33.deploy.static.akamaitechnologies.com
+23.218.109.83 a23-218-109-83.deploy.static.akamaitechnologies.com
+23.218.109.92 a23-218-109-92.deploy.static.akamaitechnologies.com
 23.22.246.210 ec2-23-22-246-210.compute-1.amazonaws.com
 23.22.254.206 ec2-23-22-254-206.compute-1.amazonaws.com
 23.22.7.133 ec2-23-22-7-133.compute-1.amazonaws.com
+23.221.236.128 a23-221-236-128.deploy.static.akamaitechnologies.com
+23.221.236.131 a23-221-236-131.deploy.static.akamaitechnologies.com
 23.221.236.136 a23-221-236-136.deploy.static.akamaitechnologies.com
+23.221.236.154 a23-221-236-154.deploy.static.akamaitechnologies.com
 23.221.236.160 a23-221-236-160.deploy.static.akamaitechnologies.com
+23.221.236.168 a23-221-236-168.deploy.static.akamaitechnologies.com
 23.221.236.171 a23-221-236-171.deploy.static.akamaitechnologies.com
 23.222.155.81 a23-222-155-81.deploy.static.akamaitechnologies.com
 23.222.157.157 a23-222-157-157.deploy.static.akamaitechnologies.com
@@ -1249,18 +1620,24 @@
 23.32.46.107 a23-32-46-107.deploy.static.akamaitechnologies.com
 23.32.46.11 a23-32-46-11.deploy.static.akamaitechnologies.com
 23.32.46.112 a23-32-46-112.deploy.static.akamaitechnologies.com
+23.32.46.113 a23-32-46-113.deploy.static.akamaitechnologies.com
 23.32.46.114 a23-32-46-114.deploy.static.akamaitechnologies.com
 23.32.46.120 a23-32-46-120.deploy.static.akamaitechnologies.com
 23.32.46.121 a23-32-46-121.deploy.static.akamaitechnologies.com
 23.32.46.122 a23-32-46-122.deploy.static.akamaitechnologies.com
 23.32.46.123 a23-32-46-123.deploy.static.akamaitechnologies.com
+23.32.46.129 a23-32-46-129.deploy.static.akamaitechnologies.com
+23.32.46.130 a23-32-46-130.deploy.static.akamaitechnologies.com
+23.32.46.131 a23-32-46-131.deploy.static.akamaitechnologies.com
 23.32.46.136 a23-32-46-136.deploy.static.akamaitechnologies.com
 23.32.46.137 a23-32-46-137.deploy.static.akamaitechnologies.com
 23.32.46.139 a23-32-46-139.deploy.static.akamaitechnologies.com
 23.32.46.144 a23-32-46-144.deploy.static.akamaitechnologies.com
+23.32.46.145 a23-32-46-145.deploy.static.akamaitechnologies.com
 23.32.46.146 a23-32-46-146.deploy.static.akamaitechnologies.com
 23.32.46.147 a23-32-46-147.deploy.static.akamaitechnologies.com
 23.32.46.152 a23-32-46-152.deploy.static.akamaitechnologies.com
+23.32.46.155 a23-32-46-155.deploy.static.akamaitechnologies.com
 23.32.46.16 a23-32-46-16.deploy.static.akamaitechnologies.com
 23.32.46.160 a23-32-46-160.deploy.static.akamaitechnologies.com
 23.32.46.163 a23-32-46-163.deploy.static.akamaitechnologies.com
@@ -1268,12 +1645,14 @@
 23.32.46.19 a23-32-46-19.deploy.static.akamaitechnologies.com
 23.32.46.24 a23-32-46-24.deploy.static.akamaitechnologies.com
 23.32.46.25 a23-32-46-25.deploy.static.akamaitechnologies.com
+23.32.46.26 a23-32-46-26.deploy.static.akamaitechnologies.com
 23.32.46.27 a23-32-46-27.deploy.static.akamaitechnologies.com
 23.32.46.32 a23-32-46-32.deploy.static.akamaitechnologies.com
 23.32.46.33 a23-32-46-33.deploy.static.akamaitechnologies.com
 23.32.46.34 a23-32-46-34.deploy.static.akamaitechnologies.com
 23.32.46.35 a23-32-46-35.deploy.static.akamaitechnologies.com
 23.32.46.40 a23-32-46-40.deploy.static.akamaitechnologies.com
+23.32.46.41 a23-32-46-41.deploy.static.akamaitechnologies.com
 23.32.46.42 a23-32-46-42.deploy.static.akamaitechnologies.com
 23.32.46.48 a23-32-46-48.deploy.static.akamaitechnologies.com
 23.32.46.49 a23-32-46-49.deploy.static.akamaitechnologies.com
@@ -1293,6 +1672,7 @@
 23.32.46.81 a23-32-46-81.deploy.static.akamaitechnologies.com
 23.32.46.88 a23-32-46-88.deploy.static.akamaitechnologies.com
 23.32.46.89 a23-32-46-89.deploy.static.akamaitechnologies.com
+23.32.46.90 a23-32-46-90.deploy.static.akamaitechnologies.com
 23.32.46.91 a23-32-46-91.deploy.static.akamaitechnologies.com
 23.32.46.96 a23-32-46-96.deploy.static.akamaitechnologies.com
 23.32.46.97 a23-32-46-97.deploy.static.akamaitechnologies.com
@@ -1301,16 +1681,21 @@
 23.35.98.75 a23-35-98-75.deploy.static.akamaitechnologies.com
 23.35.98.81 a23-35-98-81.deploy.static.akamaitechnologies.com
 23.35.98.82 a23-35-98-82.deploy.static.akamaitechnologies.com
+23.35.98.83 a23-35-98-83.deploy.static.akamaitechnologies.com
 23.35.98.88 a23-35-98-88.deploy.static.akamaitechnologies.com
 23.36.243.82 a23-36-243-82.deploy.static.akamaitechnologies.com
+23.36.244.15 a23-36-244-15.deploy.static.akamaitechnologies.com
 23.36.52.159 a23-36-52-159.deploy.static.akamaitechnologies.com
 23.36.52.221 a23-36-52-221.deploy.static.akamaitechnologies.com
 23.36.52.235 a23-36-52-235.deploy.static.akamaitechnologies.com
+23.36.52.27 a23-36-52-27.deploy.static.akamaitechnologies.com
 23.36.52.28 a23-36-52-28.deploy.static.akamaitechnologies.com
+23.36.52.68 a23-36-52-68.deploy.static.akamaitechnologies.com
 23.36.52.71 a23-36-52-71.deploy.static.akamaitechnologies.com
 23.36.53.136 a23-36-53-136.deploy.static.akamaitechnologies.com
 23.36.53.174 a23-36-53-174.deploy.static.akamaitechnologies.com
 23.36.53.210 a23-36-53-210.deploy.static.akamaitechnologies.com
+23.36.53.213 a23-36-53-213.deploy.static.akamaitechnologies.com
 23.36.53.243 a23-36-53-243.deploy.static.akamaitechnologies.com
 23.36.53.26 a23-36-53-26.deploy.static.akamaitechnologies.com
 23.36.53.33 a23-36-53-33.deploy.static.akamaitechnologies.com
@@ -1319,10 +1704,12 @@
 23.38.191.138 a23-38-191-138.deploy.static.akamaitechnologies.com
 23.38.191.145 a23-38-191-145.deploy.static.akamaitechnologies.com
 23.38.191.152 a23-38-191-152.deploy.static.akamaitechnologies.com
+23.38.191.154 a23-38-191-154.deploy.static.akamaitechnologies.com
 23.38.191.160 a23-38-191-160.deploy.static.akamaitechnologies.com
 23.38.191.161 a23-38-191-161.deploy.static.akamaitechnologies.com
 23.38.191.163 a23-38-191-163.deploy.static.akamaitechnologies.com
 23.38.191.17 a23-38-191-17.deploy.static.akamaitechnologies.com
+23.38.191.176 a23-38-191-176.deploy.static.akamaitechnologies.com
 23.38.191.34 a23-38-191-34.deploy.static.akamaitechnologies.com
 23.38.191.51 a23-38-191-51.deploy.static.akamaitechnologies.com
 23.38.236.127 a23-38-236-127.deploy.static.akamaitechnologies.com
@@ -1330,17 +1717,30 @@
 23.40.197.163 a23-40-197-163.deploy.static.akamaitechnologies.com
 23.40.197.169 a23-40-197-169.deploy.static.akamaitechnologies.com
 23.40.197.194 a23-40-197-194.deploy.static.akamaitechnologies.com
+23.40.41.19 a23-40-41-19.deploy.static.akamaitechnologies.com
+23.40.41.22 a23-40-41-22.deploy.static.akamaitechnologies.com
+23.40.41.41 a23-40-41-41.deploy.static.akamaitechnologies.com
+23.44.160.91 a23-44-160-91.deploy.static.akamaitechnologies.com
+23.44.205.209 a23-44-205-209.deploy.static.akamaitechnologies.com
 23.44.205.219 a23-44-205-219.deploy.static.akamaitechnologies.com
 23.45.228.101 a23-45-228-101.deploy.static.akamaitechnologies.com
+23.45.228.104 a23-45-228-104.deploy.static.akamaitechnologies.com
 23.45.228.11 a23-45-228-11.deploy.static.akamaitechnologies.com
+23.45.228.114 a23-45-228-114.deploy.static.akamaitechnologies.com
 23.45.228.116 a23-45-228-116.deploy.static.akamaitechnologies.com
 23.45.228.120 a23-45-228-120.deploy.static.akamaitechnologies.com
+23.45.228.133 a23-45-228-133.deploy.static.akamaitechnologies.com
+23.45.228.16 a23-45-228-16.deploy.static.akamaitechnologies.com
+23.45.228.209 a23-45-228-209.deploy.static.akamaitechnologies.com
 23.45.228.22 a23-45-228-22.deploy.static.akamaitechnologies.com
 23.45.228.44 a23-45-228-44.deploy.static.akamaitechnologies.com
+23.45.228.6 a23-45-228-6.deploy.static.akamaitechnologies.com
+23.45.229.117 a23-45-229-117.deploy.static.akamaitechnologies.com
 23.45.229.12 a23-45-229-12.deploy.static.akamaitechnologies.com
 23.45.229.14 a23-45-229-14.deploy.static.akamaitechnologies.com
 23.45.229.15 a23-45-229-15.deploy.static.akamaitechnologies.com
 23.45.229.170 a23-45-229-170.deploy.static.akamaitechnologies.com
+23.45.229.189 a23-45-229-189.deploy.static.akamaitechnologies.com
 23.45.229.19 a23-45-229-19.deploy.static.akamaitechnologies.com
 23.45.229.27 a23-45-229-27.deploy.static.akamaitechnologies.com
 23.45.229.42 a23-45-229-42.deploy.static.akamaitechnologies.com
@@ -1352,6 +1752,7 @@
 23.45.230.213 a23-45-230-213.deploy.static.akamaitechnologies.com
 23.45.230.32 a23-45-230-32.deploy.static.akamaitechnologies.com
 23.45.231.254 a23-45-231-254.deploy.static.akamaitechnologies.com
+23.45.231.81 a23-45-231-81.deploy.static.akamaitechnologies.com
 23.5.249.114 a23-5-249-114.deploy.static.akamaitechnologies.com
 23.5.251.101 a23-5-251-101.deploy.static.akamaitechnologies.com
 23.52.169.200 a23-52-169-200.deploy.static.akamaitechnologies.com
@@ -1361,16 +1762,28 @@
 23.53.34.34 a23-53-34-34.deploy.static.akamaitechnologies.com
 23.53.34.51 a23-53-34-51.deploy.static.akamaitechnologies.com
 23.53.34.56 a23-53-34-56.deploy.static.akamaitechnologies.com
+23.54.18.130 a23-54-18-130.deploy.static.akamaitechnologies.com
+23.54.18.138 a23-54-18-138.deploy.static.akamaitechnologies.com
+23.54.18.152 a23-54-18-152.deploy.static.akamaitechnologies.com
+23.54.18.178 a23-54-18-178.deploy.static.akamaitechnologies.com
+23.54.18.202 a23-54-18-202.deploy.static.akamaitechnologies.com
+23.54.18.225 a23-54-18-225.deploy.static.akamaitechnologies.com
 23.54.18.227 a23-54-18-227.deploy.static.akamaitechnologies.com
+23.54.19.147 a23-54-19-147.deploy.static.akamaitechnologies.com
 23.54.19.163 a23-54-19-163.deploy.static.akamaitechnologies.com
+23.54.19.176 a23-54-19-176.deploy.static.akamaitechnologies.com
+23.54.19.178 a23-54-19-178.deploy.static.akamaitechnologies.com
 23.54.19.179 a23-54-19-179.deploy.static.akamaitechnologies.com
 23.54.19.202 a23-54-19-202.deploy.static.akamaitechnologies.com
+23.54.19.48 a23-54-19-48.deploy.static.akamaitechnologies.com
+23.54.19.99 a23-54-19-99.deploy.static.akamaitechnologies.com
 23.54.48.224 a23-54-48-224.deploy.static.akamaitechnologies.com
 23.54.48.24 a23-54-48-24.deploy.static.akamaitechnologies.com
 23.54.48.25 a23-54-48-25.deploy.static.akamaitechnologies.com
 23.54.48.253 a23-54-48-253.deploy.static.akamaitechnologies.com
 23.54.48.31 a23-54-48-31.deploy.static.akamaitechnologies.com
 23.54.49.107 a23-54-49-107.deploy.static.akamaitechnologies.com
+23.54.49.11 a23-54-49-11.deploy.static.akamaitechnologies.com
 23.54.49.175 a23-54-49-175.deploy.static.akamaitechnologies.com
 23.54.49.206 a23-54-49-206.deploy.static.akamaitechnologies.com
 23.54.49.62 a23-54-49-62.deploy.static.akamaitechnologies.com
@@ -1380,6 +1793,7 @@
 23.55.167.18 a23-55-167-18.deploy.static.akamaitechnologies.com
 23.55.167.24 a23-55-167-24.deploy.static.akamaitechnologies.com
 23.55.167.25 a23-55-167-25.deploy.static.akamaitechnologies.com
+23.55.167.32 a23-55-167-32.deploy.static.akamaitechnologies.com
 23.55.167.33 a23-55-167-33.deploy.static.akamaitechnologies.com
 23.55.167.34 a23-55-167-34.deploy.static.akamaitechnologies.com
 23.55.167.8 a23-55-167-8.deploy.static.akamaitechnologies.com
@@ -1388,43 +1802,67 @@
 23.6.110.24 a23-6-110-24.deploy.static.akamaitechnologies.com
 23.6.163.210 a23-6-163-210.deploy.static.akamaitechnologies.com
 23.6.165.193 a23-6-165-193.deploy.static.akamaitechnologies.com
+23.6.168.127 a23-6-168-127.deploy.static.akamaitechnologies.com
+23.6.169.249 a23-6-169-249.deploy.static.akamaitechnologies.com
 23.6.169.40 a23-6-169-40.deploy.static.akamaitechnologies.com
 23.6.170.127 a23-6-170-127.deploy.static.akamaitechnologies.com
 23.6.170.161 a23-6-170-161.deploy.static.akamaitechnologies.com
+23.60.72.143 a23-60-72-143.deploy.static.akamaitechnologies.com
 23.60.72.15 a23-60-72-15.deploy.static.akamaitechnologies.com
+23.60.72.160 a23-60-72-160.deploy.static.akamaitechnologies.com
 23.60.72.31 a23-60-72-31.deploy.static.akamaitechnologies.com
+23.60.72.37 a23-60-72-37.deploy.static.akamaitechnologies.com
 23.60.72.4 a23-60-72-4.deploy.static.akamaitechnologies.com
 23.60.72.62 a23-60-72-62.deploy.static.akamaitechnologies.com
+23.60.72.73 a23-60-72-73.deploy.static.akamaitechnologies.com
 23.60.72.91 a23-60-72-91.deploy.static.akamaitechnologies.com
 23.60.72.94 a23-60-72-94.deploy.static.akamaitechnologies.com
+23.60.72.96 a23-60-72-96.deploy.static.akamaitechnologies.com
+23.60.73.121 a23-60-73-121.deploy.static.akamaitechnologies.com
+23.60.73.125 a23-60-73-125.deploy.static.akamaitechnologies.com
+23.60.73.15 a23-60-73-15.deploy.static.akamaitechnologies.com
 23.60.73.163 a23-60-73-163.deploy.static.akamaitechnologies.com
+23.60.73.232 a23-60-73-232.deploy.static.akamaitechnologies.com
+23.60.74.114 a23-60-74-114.deploy.static.akamaitechnologies.com
 23.62.208.24 a23-62-208-24.deploy.static.akamaitechnologies.com
 23.62.209.141 a23-62-209-141.deploy.static.akamaitechnologies.com
 23.62.209.193 a23-62-209-193.deploy.static.akamaitechnologies.com
+23.62.71.29 a23-62-71-29.deploy.static.akamaitechnologies.com
 23.62.74.64 a23-62-74-64.deploy.static.akamaitechnologies.com
 23.62.75.200 a23-62-75-200.deploy.static.akamaitechnologies.com
 23.62.80.44 a23-62-80-44.deploy.static.akamaitechnologies.com
+23.63.47.52 a23-63-47-52.deploy.static.akamaitechnologies.com
+23.64.194.44 a23-64-194-44.deploy.static.akamaitechnologies.com
 23.64.197.120 a23-64-197-120.deploy.static.akamaitechnologies.com
 23.64.198.144 a23-64-198-144.deploy.static.akamaitechnologies.com
+23.64.198.43 a23-64-198-43.deploy.static.akamaitechnologies.com
 23.64.199.13 a23-64-199-13.deploy.static.akamaitechnologies.com
 23.64.203.167 a23-64-203-167.deploy.static.akamaitechnologies.com
 23.64.204.195 a23-64-204-195.deploy.static.akamaitechnologies.com
 23.64.205.61 a23-64-205-61.deploy.static.akamaitechnologies.com
+23.64.206.145 a23-64-206-145.deploy.static.akamaitechnologies.com
+23.64.206.247 a23-64-206-247.deploy.static.akamaitechnologies.com
 23.64.208.146 a23-64-208-146.deploy.static.akamaitechnologies.com
+23.64.209.12 a23-64-209-12.deploy.static.akamaitechnologies.com
+23.64.213.224 a23-64-213-224.deploy.static.akamaitechnologies.com
 23.64.218.243 a23-64-218-243.deploy.static.akamaitechnologies.com
 23.64.220.193 a23-64-220-193.deploy.static.akamaitechnologies.com
 23.64.221.234 a23-64-221-234.deploy.static.akamaitechnologies.com
 23.64.3.65 a23-64-3-65.deploy.static.akamaitechnologies.com
 23.64.48.126 a23-64-48-126.deploy.static.akamaitechnologies.com
 23.64.51.117 a23-64-51-117.deploy.static.akamaitechnologies.com
+23.74.155.80 a23-74-155-80.deploy.static.akamaitechnologies.com
+23.74.32.73 a23-74-32-73.deploy.static.akamaitechnologies.com
 23.78.157.66 a23-78-157-66.deploy.static.akamaitechnologies.com
 23.83.76.34 Leaseweb USA
 23.83.76.48 Leaseweb USA
 23.83.76.49 Leaseweb USA
+23.88.75.186 static.186.75.88.23.clients.your-server.de
 23.88.75.188 static.188.75.88.23.clients.your-server.de
 23.88.75.189 static.189.75.88.23.clients.your-server.de
 23.99.199.208 Microsoft Azure
 3.122.33.49 ec2-3-122-33-49.eu-central-1.compute.amazonaws.com
+3.128.164.14 ec2-3-128-164-14.us-east-2.compute.amazonaws.com
 3.129.166.249 ec2-3-129-166-249.us-east-2.compute.amazonaws.com
 3.131.39.166 ec2-3-131-39-166.us-east-2.compute.amazonaws.com
 3.134.20.240 ec2-3-134-20-240.us-east-2.compute.amazonaws.com
@@ -1435,10 +1873,14 @@
 3.139.196.65 ec2-3-139-196-65.us-east-2.compute.amazonaws.com
 3.141.228.234 ec2-3-141-228-234.us-east-2.compute.amazonaws.com
 3.143.199.151 ec2-3-143-199-151.us-east-2.compute.amazonaws.com
+3.143.57.79 ec2-3-143-57-79.us-east-2.compute.amazonaws.com
+3.144.50.131 ec2-3-144-50-131.us-east-2.compute.amazonaws.com
 3.144.50.133 ec2-3-144-50-133.us-east-2.compute.amazonaws.com
 3.144.50.135 ec2-3-144-50-135.us-east-2.compute.amazonaws.com
+3.144.50.141 ec2-3-144-50-141.us-east-2.compute.amazonaws.com
 3.144.50.142 ec2-3-144-50-142.us-east-2.compute.amazonaws.com
 3.144.50.143 ec2-3-144-50-143.us-east-2.compute.amazonaws.com
+3.144.50.155 ec2-3-144-50-155.us-east-2.compute.amazonaws.com
 3.15.106.67 ec2-3-15-106-67.us-east-2.compute.amazonaws.com
 3.16.249.81 ec2-3-16-249-81.us-east-2.compute.amazonaws.com
 3.18.181.71 ec2-3-18-181-71.us-east-2.compute.amazonaws.com
@@ -1447,25 +1889,39 @@
 3.20.164.160 ec2-3-20-164-160.us-east-2.compute.amazonaws.com
 3.20.38.62 ec2-3-20-38-62.us-east-2.compute.amazonaws.com
 3.20.69.217 ec2-3-20-69-217.us-east-2.compute.amazonaws.com
+3.208.62.189 ec2-3-208-62-189.compute-1.amazonaws.com
+3.208.70.15 ec2-3-208-70-15.compute-1.amazonaws.com
 3.209.148.199 ec2-3-209-148-199.compute-1.amazonaws.com
 3.209.18.29 ec2-3-209-18-29.compute-1.amazonaws.com
 3.209.40.239 ec2-3-209-40-239.compute-1.amazonaws.com
 3.209.65.109 ec2-3-209-65-109.compute-1.amazonaws.com
 3.21.184.192 ec2-3-21-184-192.us-east-2.compute.amazonaws.com
+3.21.198.216 ec2-3-21-198-216.us-east-2.compute.amazonaws.com
 3.210.151.157 ec2-3-210-151-157.compute-1.amazonaws.com
 3.210.160.8 ec2-3-210-160-8.compute-1.amazonaws.com
 3.210.172.188 ec2-3-210-172-188.compute-1.amazonaws.com
+3.210.4.50 ec2-3-210-4-50.compute-1.amazonaws.com
 3.210.99.203 ec2-3-210-99-203.compute-1.amazonaws.com
 3.211.104.31 ec2-3-211-104-31.compute-1.amazonaws.com
+3.211.176.233 ec2-3-211-176-233.compute-1.amazonaws.com
 3.211.187.44 ec2-3-211-187-44.compute-1.amazonaws.com
+3.211.215.25 ec2-3-211-215-25.compute-1.amazonaws.com
+3.212.180.221 ec2-3-212-180-221.compute-1.amazonaws.com
 3.212.89.65 ec2-3-212-89-65.compute-1.amazonaws.com
 3.213.138.15 ec2-3-213-138-15.compute-1.amazonaws.com
+3.213.152.93 ec2-3-213-152-93.compute-1.amazonaws.com
+3.213.162.6 ec2-3-213-162-6.compute-1.amazonaws.com
 3.213.6.222 ec2-3-213-6-222.compute-1.amazonaws.com
+3.214.91.80 ec2-3-214-91-80.compute-1.amazonaws.com
+3.215.27.153 ec2-3-215-27-153.compute-1.amazonaws.com
 3.215.99.170 ec2-3-215-99-170.compute-1.amazonaws.com
 3.216.159.172 ec2-3-216-159-172.compute-1.amazonaws.com
 3.216.238.234 ec2-3-216-238-234.compute-1.amazonaws.com
 3.216.41.81 ec2-3-216-41-81.compute-1.amazonaws.com
 3.216.6.50 ec2-3-216-6-50.compute-1.amazonaws.com
+3.217.113.2 ec2-3-217-113-2.compute-1.amazonaws.com
+3.217.129.2 ec2-3-217-129-2.compute-1.amazonaws.com
+3.218.253.103 ec2-3-218-253-103.compute-1.amazonaws.com
 3.219.107.219 ec2-3-219-107-219.compute-1.amazonaws.com
 3.22.93.193 ec2-3-22-93-193.us-east-2.compute.amazonaws.com
 3.220.123.74 ec2-3-220-123-74.compute-1.amazonaws.com
@@ -1475,26 +1931,41 @@
 3.221.144.253 ec2-3-221-144-253.compute-1.amazonaws.com
 3.221.223.218 ec2-3-221-223-218.compute-1.amazonaws.com
 3.221.23.137 ec2-3-221-23-137.compute-1.amazonaws.com
+3.222.120.131 ec2-3-222-120-131.compute-1.amazonaws.com
 3.222.126.25 ec2-3-222-126-25.compute-1.amazonaws.com
 3.222.181.26 ec2-3-222-181-26.compute-1.amazonaws.com
 3.222.199.172 ec2-3-222-199-172.compute-1.amazonaws.com
 3.222.49.36 ec2-3-222-49-36.compute-1.amazonaws.com
 3.222.80.166 ec2-3-222-80-166.compute-1.amazonaws.com
+3.223.10.232 ec2-3-223-10-232.compute-1.amazonaws.com
 3.223.178.156 ec2-3-223-178-156.compute-1.amazonaws.com
+3.224.164.141 ec2-3-224-164-141.compute-1.amazonaws.com
 3.224.47.34 ec2-3-224-47-34.compute-1.amazonaws.com
 3.225.133.12 ec2-3-225-133-12.compute-1.amazonaws.com
+3.225.136.82 ec2-3-225-136-82.compute-1.amazonaws.com
+3.225.82.197 ec2-3-225-82-197.compute-1.amazonaws.com
 3.226.102.243 ec2-3-226-102-243.compute-1.amazonaws.com
+3.226.166.212 ec2-3-226-166-212.compute-1.amazonaws.com
 3.227.114.99 ec2-3-227-114-99.compute-1.amazonaws.com
+3.227.164.232 ec2-3-227-164-232.compute-1.amazonaws.com
 3.227.93.166 ec2-3-227-93-166.compute-1.amazonaws.com
 3.228.26.19 ec2-3-228-26-19.compute-1.amazonaws.com
 3.228.88.71 ec2-3-228-88-71.compute-1.amazonaws.com
+3.229.229.241 ec2-3-229-229-241.compute-1.amazonaws.com
+3.229.53.246 ec2-3-229-53-246.compute-1.amazonaws.com
 3.23.28.172 ec2-3-23-28-172.us-east-2.compute.amazonaws.com
+3.230.62.22 ec2-3-230-62-22.compute-1.amazonaws.com
+3.231.143.108 ec2-3-231-143-108.compute-1.amazonaws.com
 3.231.143.13 ec2-3-231-143-13.compute-1.amazonaws.com
+3.231.143.16 ec2-3-231-143-16.compute-1.amazonaws.com
 3.231.143.17 ec2-3-231-143-17.compute-1.amazonaws.com
+3.231.143.20 ec2-3-231-143-20.compute-1.amazonaws.com
 3.231.143.22 ec2-3-231-143-22.compute-1.amazonaws.com
 3.231.143.23 ec2-3-231-143-23.compute-1.amazonaws.com
 3.231.143.24 ec2-3-231-143-24.compute-1.amazonaws.com
+3.231.143.26 ec2-3-231-143-26.compute-1.amazonaws.com
 3.231.143.29 ec2-3-231-143-29.compute-1.amazonaws.com
+3.231.143.32 ec2-3-231-143-32.compute-1.amazonaws.com
 3.231.143.33 ec2-3-231-143-33.compute-1.amazonaws.com
 3.231.143.34 ec2-3-231-143-34.compute-1.amazonaws.com
 3.231.143.9 ec2-3-231-143-9.compute-1.amazonaws.com
@@ -1505,7 +1976,10 @@
 3.233.147.176 ec2-3-233-147-176.compute-1.amazonaws.com
 3.233.147.177 ec2-3-233-147-177.compute-1.amazonaws.com
 3.233.22.19 ec2-3-233-22-19.compute-1.amazonaws.com
+3.233.43.181 ec2-3-233-43-181.compute-1.amazonaws.com
 3.234.129.143 ec2-3-234-129-143.compute-1.amazonaws.com
+3.234.149.51 ec2-3-234-149-51.compute-1.amazonaws.com
+3.234.25.89 ec2-3-234-25-89.compute-1.amazonaws.com
 3.234.8.37 ec2-3-234-8-37.compute-1.amazonaws.com
 3.234.87.14 ec2-3-234-87-14.compute-1.amazonaws.com
 3.235.160.3 ec2-3-235-160-3.compute-1.amazonaws.com
@@ -1521,6 +1995,7 @@
 3.93.88.191 ec2-3-93-88-191.compute-1.amazonaws.com
 3.96.5.142 ec2-3-96-5-142.ca-central-1.compute.amazonaws.com
 31.172.81.159 First Colo GmbH
+31.172.81.160 First Colo GmbH
 34.102.136.180 180.136.102.34.bc.googleusercontent.com
 34.102.147.248 248.147.102.34.bc.googleusercontent.com
 34.102.149.62 62.149.102.34.bc.googleusercontent.com
@@ -1534,13 +2009,19 @@
 34.107.254.252 252.254.107.34.bc.googleusercontent.com
 34.111.151.213 213.151.111.34.bc.googleusercontent.com
 34.111.8.32 32.8.111.34.bc.googleusercontent.com
+34.117.239.71 71.239.117.34.bc.googleusercontent.com
 34.117.252.205 205.252.117.34.bc.googleusercontent.com
+34.117.30.199 199.30.117.34.bc.googleusercontent.com
 34.117.39.58 58.39.117.34.bc.googleusercontent.com
 34.117.4.53 53.4.117.34.bc.googleusercontent.com
 34.120.135.108 108.135.120.34.bc.googleusercontent.com
+34.120.15.67 67.15.120.34.bc.googleusercontent.com
 34.120.155.137 137.155.120.34.bc.googleusercontent.com
 34.120.195.249 249.195.120.34.bc.googleusercontent.com
+34.120.203.98 98.203.120.34.bc.googleusercontent.com
+34.120.229.174 174.229.120.34.bc.googleusercontent.com
 34.120.253.250 250.253.120.34.bc.googleusercontent.com
+34.120.4.21 21.4.120.34.bc.googleusercontent.com
 34.120.58.62 62.58.120.34.bc.googleusercontent.com
 34.120.70.128 128.70.120.34.bc.googleusercontent.com
 34.149.130.207 207.130.149.34.bc.googleusercontent.com
@@ -1556,30 +2037,40 @@
 34.193.242.108 ec2-34-193-242-108.compute-1.amazonaws.com
 34.193.32.115 ec2-34-193-32-115.compute-1.amazonaws.com
 34.193.81.8 ec2-34-193-81-8.compute-1.amazonaws.com
+34.194.163.193 ec2-34-194-163-193.compute-1.amazonaws.com
 34.194.202.217 ec2-34-194-202-217.compute-1.amazonaws.com
 34.194.219.222 ec2-34-194-219-222.compute-1.amazonaws.com
 34.194.254.195 ec2-34-194-254-195.compute-1.amazonaws.com
 34.194.80.62 ec2-34-194-80-62.compute-1.amazonaws.com
 34.195.236.148 ec2-34-195-236-148.compute-1.amazonaws.com
+34.195.242.63 ec2-34-195-242-63.compute-1.amazonaws.com
 34.195.245.151 ec2-34-195-245-151.compute-1.amazonaws.com
 34.195.63.170 ec2-34-195-63-170.compute-1.amazonaws.com
 34.196.0.51 ec2-34-196-0-51.compute-1.amazonaws.com
 34.196.198.112 ec2-34-196-198-112.compute-1.amazonaws.com
+34.196.222.123 ec2-34-196-222-123.compute-1.amazonaws.com
 34.196.36.29 ec2-34-196-36-29.compute-1.amazonaws.com
+34.196.46.66 ec2-34-196-46-66.compute-1.amazonaws.com
 34.196.69.154 ec2-34-196-69-154.compute-1.amazonaws.com
+34.196.79.176 ec2-34-196-79-176.compute-1.amazonaws.com
 34.196.82.58 ec2-34-196-82-58.compute-1.amazonaws.com
 34.197.148.4 ec2-34-197-148-4.compute-1.amazonaws.com
 34.197.192.192 ec2-34-197-192-192.compute-1.amazonaws.com
+34.197.21.132 ec2-34-197-21-132.compute-1.amazonaws.com
 34.197.223.158 ec2-34-197-223-158.compute-1.amazonaws.com
 34.197.89.192 ec2-34-197-89-192.compute-1.amazonaws.com
 34.197.98.191 ec2-34-197-98-191.compute-1.amazonaws.com
+34.199.160.76 ec2-34-199-160-76.compute-1.amazonaws.com
 34.199.207.17 ec2-34-199-207-17.compute-1.amazonaws.com
+34.199.30.155 ec2-34-199-30-155.compute-1.amazonaws.com
+34.199.73.11 ec2-34-199-73-11.compute-1.amazonaws.com
 34.200.203.101 ec2-34-200-203-101.compute-1.amazonaws.com
 34.200.27.93 ec2-34-200-27-93.compute-1.amazonaws.com
 34.201.253.16 ec2-34-201-253-16.compute-1.amazonaws.com
 34.202.171.235 ec2-34-202-171-235.compute-1.amazonaws.com
 34.202.24.13 ec2-34-202-24-13.compute-1.amazonaws.com
 34.202.70.163 ec2-34-202-70-163.compute-1.amazonaws.com
+34.203.1.70 ec2-34-203-1-70.compute-1.amazonaws.com
 34.203.131.135 ec2-34-203-131-135.compute-1.amazonaws.com
 34.203.43.79 ec2-34-203-43-79.compute-1.amazonaws.com
 34.203.93.212 ec2-34-203-93-212.compute-1.amazonaws.com
@@ -1589,7 +2080,9 @@
 34.206.122.86 ec2-34-206-122-86.compute-1.amazonaws.com
 34.206.194.87 ec2-34-206-194-87.compute-1.amazonaws.com
 34.206.33.80 ec2-34-206-33-80.compute-1.amazonaws.com
+34.206.96.78 ec2-34-206-96-78.compute-1.amazonaws.com
 34.207.33.72 ec2-34-207-33-72.compute-1.amazonaws.com
+34.207.38.86 ec2-34-207-38-86.compute-1.amazonaws.com
 34.208.146.23 ec2-34-208-146-23.us-west-2.compute.amazonaws.com
 34.208.159.122 ec2-34-208-159-122.us-west-2.compute.amazonaws.com
 34.208.185.226 ec2-34-208-185-226.us-west-2.compute.amazonaws.com
@@ -1633,6 +2126,7 @@
 34.224.243.79 ec2-34-224-243-79.compute-1.amazonaws.com
 34.226.104.236 ec2-34-226-104-236.compute-1.amazonaws.com
 34.226.111.203 ec2-34-226-111-203.compute-1.amazonaws.com
+34.226.12.80 ec2-34-226-12-80.compute-1.amazonaws.com
 34.226.181.34 ec2-34-226-181-34.compute-1.amazonaws.com
 34.226.30.36 ec2-34-226-30-36.compute-1.amazonaws.com
 34.226.51.171 ec2-34-226-51-171.compute-1.amazonaws.com
@@ -1642,13 +2136,19 @@
 34.230.197.238 ec2-34-230-197-238.compute-1.amazonaws.com
 34.231.116.207 ec2-34-231-116-207.compute-1.amazonaws.com
 34.231.155.190 ec2-34-231-155-190.compute-1.amazonaws.com
+34.231.251.31 ec2-34-231-251-31.compute-1.amazonaws.com
+34.231.74.71 ec2-34-231-74-71.compute-1.amazonaws.com
 34.232.0.50 ec2-34-232-0-50.compute-1.amazonaws.com
 34.232.140.51 ec2-34-232-140-51.compute-1.amazonaws.com
 34.232.58.170 ec2-34-232-58-170.compute-1.amazonaws.com
 34.232.6.101 ec2-34-232-6-101.compute-1.amazonaws.com
+34.232.92.67 ec2-34-232-92-67.compute-1.amazonaws.com
 34.233.171.12 ec2-34-233-171-12.compute-1.amazonaws.com
 34.233.243.218 ec2-34-233-243-218.compute-1.amazonaws.com
 34.233.48.154 ec2-34-233-48-154.compute-1.amazonaws.com
+34.234.221.164 ec2-34-234-221-164.compute-1.amazonaws.com
+34.234.39.165 ec2-34-234-39-165.compute-1.amazonaws.com
+34.235.174.191 ec2-34-235-174-191.compute-1.amazonaws.com
 34.235.184.95 ec2-34-235-184-95.compute-1.amazonaws.com
 34.235.193.214 ec2-34-235-193-214.compute-1.amazonaws.com
 34.235.253.107 ec2-34-235-253-107.compute-1.amazonaws.com
@@ -1660,10 +2160,14 @@
 34.237.215.246 ec2-34-237-215-246.compute-1.amazonaws.com
 34.237.23.137 ec2-34-237-23-137.compute-1.amazonaws.com
 34.237.24.9 ec2-34-237-24-9.compute-1.amazonaws.com
+34.237.61.1 ec2-34-237-61-1.compute-1.amazonaws.com
 34.238.168.123 ec2-34-238-168-123.compute-1.amazonaws.com
 34.238.200.25 ec2-34-238-200-25.compute-1.amazonaws.com
 34.238.213.165 ec2-34-238-213-165.compute-1.amazonaws.com
 34.238.224.62 ec2-34-238-224-62.compute-1.amazonaws.com
+34.239.109.150 ec2-34-239-109-150.compute-1.amazonaws.com
+34.239.221.169 ec2-34-239-221-169.compute-1.amazonaws.com
+34.239.29.88 ec2-34-239-29-88.compute-1.amazonaws.com
 34.239.95.111 ec2-34-239-95-111.compute-1.amazonaws.com
 34.242.239.176 ec2-34-242-239-176.eu-west-1.compute.amazonaws.com
 34.249.22.17 ec2-34-249-22-17.eu-west-1.compute.amazonaws.com
@@ -1686,20 +2190,27 @@
 34.98.64.218 218.64.98.34.bc.googleusercontent.com
 34.98.67.3 3.67.98.34.bc.googleusercontent.com
 34.98.72.95 95.72.98.34.bc.googleusercontent.com
+34.98.74.57 57.74.98.34.bc.googleusercontent.com
+35.153.155.13 ec2-35-153-155-13.compute-1.amazonaws.com
 35.155.164.41 ec2-35-155-164-41.us-west-2.compute.amazonaws.com
 35.155.237.94 ec2-35-155-237-94.us-west-2.compute.amazonaws.com
+35.156.236.11 ec2-35-156-236-11.eu-central-1.compute.amazonaws.com
 35.158.61.24 ec2-35-158-61-24.eu-central-1.compute.amazonaws.com
 35.160.1.0 ec2-35-160-1-0.us-west-2.compute.amazonaws.com
 35.160.142.50 ec2-35-160-142-50.us-west-2.compute.amazonaws.com
 35.160.158.130 ec2-35-160-158-130.us-west-2.compute.amazonaws.com
+35.160.171.157 ec2-35-160-171-157.us-west-2.compute.amazonaws.com
 35.160.213.86 ec2-35-160-213-86.us-west-2.compute.amazonaws.com
+35.160.217.165 ec2-35-160-217-165.us-west-2.compute.amazonaws.com
 35.160.220.147 ec2-35-160-220-147.us-west-2.compute.amazonaws.com
 35.160.254.205 ec2-35-160-254-205.us-west-2.compute.amazonaws.com
 35.160.49.53 ec2-35-160-49-53.us-west-2.compute.amazonaws.com
 35.161.29.14 ec2-35-161-29-14.us-west-2.compute.amazonaws.com
 35.161.38.63 ec2-35-161-38-63.us-west-2.compute.amazonaws.com
 35.161.43.44 ec2-35-161-43-44.us-west-2.compute.amazonaws.com
+35.161.54.44 ec2-35-161-54-44.us-west-2.compute.amazonaws.com
 35.161.62.239 ec2-35-161-62-239.us-west-2.compute.amazonaws.com
+35.161.76.144 ec2-35-161-76-144.us-west-2.compute.amazonaws.com
 35.162.136.20 ec2-35-162-136-20.us-west-2.compute.amazonaws.com
 35.162.153.143 ec2-35-162-153-143.us-west-2.compute.amazonaws.com
 35.162.163.109 ec2-35-162-163-109.us-west-2.compute.amazonaws.com
@@ -1710,11 +2221,15 @@
 35.163.128.173 ec2-35-163-128-173.us-west-2.compute.amazonaws.com
 35.163.227.144 ec2-35-163-227-144.us-west-2.compute.amazonaws.com
 35.163.230.208 ec2-35-163-230-208.us-west-2.compute.amazonaws.com
+35.163.231.226 ec2-35-163-231-226.us-west-2.compute.amazonaws.com
 35.163.61.108 ec2-35-163-61-108.us-west-2.compute.amazonaws.com
+35.163.75.93 ec2-35-163-75-93.us-west-2.compute.amazonaws.com
+35.164.119.147 ec2-35-164-119-147.us-west-2.compute.amazonaws.com
 35.164.133.191 ec2-35-164-133-191.us-west-2.compute.amazonaws.com
 35.164.208.95 ec2-35-164-208-95.us-west-2.compute.amazonaws.com
 35.164.211.210 ec2-35-164-211-210.us-west-2.compute.amazonaws.com
 35.164.24.141 ec2-35-164-24-141.us-west-2.compute.amazonaws.com
+35.165.106.175 ec2-35-165-106-175.us-west-2.compute.amazonaws.com
 35.165.152.149 ec2-35-165-152-149.us-west-2.compute.amazonaws.com
 35.165.187.216 ec2-35-165-187-216.us-west-2.compute.amazonaws.com
 35.165.238.246 ec2-35-165-238-246.us-west-2.compute.amazonaws.com
@@ -1724,9 +2239,14 @@
 35.166.150.193 ec2-35-166-150-193.us-west-2.compute.amazonaws.com
 35.166.164.103 ec2-35-166-164-103.us-west-2.compute.amazonaws.com
 35.166.164.2 ec2-35-166-164-2.us-west-2.compute.amazonaws.com
+35.166.82.138 ec2-35-166-82-138.us-west-2.compute.amazonaws.com
 35.168.158.117 ec2-35-168-158-117.compute-1.amazonaws.com
+35.169.114.250 ec2-35-169-114-250.compute-1.amazonaws.com
 35.169.190.11 ec2-35-169-190-11.compute-1.amazonaws.com
+35.169.207.155 ec2-35-169-207-155.compute-1.amazonaws.com
 35.169.25.66 ec2-35-169-25-66.compute-1.amazonaws.com
+35.169.93.8 ec2-35-169-93-8.compute-1.amazonaws.com
+35.170.106.187 ec2-35-170-106-187.compute-1.amazonaws.com
 35.170.185.65 ec2-35-170-185-65.compute-1.amazonaws.com
 35.171.201.144 ec2-35-171-201-144.compute-1.amazonaws.com
 35.171.204.33 ec2-35-171-204-33.compute-1.amazonaws.com
@@ -1740,25 +2260,30 @@
 35.174.151.106 pi0-lba1-4-ue1.aws.pardot.com
 35.174.186.89 ec2-35-174-186-89.compute-1.amazonaws.com
 35.174.217.176 ec2-35-174-217-176.compute-1.amazonaws.com
+35.174.243.23 ec2-35-174-243-23.compute-1.amazonaws.com
 35.186.193.173 173.193.186.35.bc.googleusercontent.com
+35.186.194.58 58.194.186.35.bc.googleusercontent.com
 35.186.202.217 217.202.186.35.bc.googleusercontent.com
 35.186.208.48 48.208.186.35.bc.googleusercontent.com
 35.186.219.42 42.219.186.35.bc.googleusercontent.com
 35.186.220.184 184.220.186.35.bc.googleusercontent.com
 35.186.221.8 8.221.186.35.bc.googleusercontent.com
 35.186.223.76 76.223.186.35.bc.googleusercontent.com
+35.186.224.19 19.224.186.35.bc.googleusercontent.com
 35.186.224.25 25.224.186.35.bc.googleusercontent.com
 35.186.225.155 155.225.186.35.bc.googleusercontent.com
 35.186.226.184 184.226.186.35.bc.googleusercontent.com
 35.186.226.36 36.226.186.35.bc.googleusercontent.com
 35.186.236.213 213.236.186.35.bc.googleusercontent.com
 35.186.237.72 72.237.186.35.bc.googleusercontent.com
+35.186.238.101 101.238.186.35.bc.googleusercontent.com
 35.186.249.72 72.249.186.35.bc.googleusercontent.com
 35.186.253.211 211.253.186.35.bc.googleusercontent.com
 35.186.255.72 72.255.186.35.bc.googleusercontent.com
 35.188.42.15 15.42.188.35.bc.googleusercontent.com
 35.190.2.255 255.2.190.35.bc.googleusercontent.com
 35.190.29.52 52.29.190.35.bc.googleusercontent.com
+35.190.43.15 15.43.190.35.bc.googleusercontent.com
 35.190.59.101 101.59.190.35.bc.googleusercontent.com
 35.190.60.146 146.60.190.35.bc.googleusercontent.com
 35.190.7.190 190.7.190.35.bc.googleusercontent.com
@@ -1767,23 +2292,32 @@
 35.190.80.1 1.80.190.35.bc.googleusercontent.com
 35.190.80.193 193.80.190.35.bc.googleusercontent.com
 35.190.90.30 30.90.190.35.bc.googleusercontent.com
+35.190.91.111 111.91.190.35.bc.googleusercontent.com
 35.190.91.160 160.91.190.35.bc.googleusercontent.com
+35.190.94.178 178.94.190.35.bc.googleusercontent.com
+35.196.86.86 86.86.196.35.bc.googleusercontent.com
 35.201.103.212 212.103.201.35.bc.googleusercontent.com
 35.201.108.179 179.108.201.35.bc.googleusercontent.com
 35.201.111.96 96.111.201.35.bc.googleusercontent.com
+35.201.112.186 186.112.201.35.bc.googleusercontent.com
 35.201.112.223 223.112.201.35.bc.googleusercontent.com
+35.201.119.28 28.119.201.35.bc.googleusercontent.com
 35.201.124.240 240.124.201.35.bc.googleusercontent.com
 35.201.67.47 47.67.201.35.bc.googleusercontent.com
 35.201.71.192 192.71.201.35.bc.googleusercontent.com
+35.201.81.73 73.81.201.35.bc.googleusercontent.com
 35.201.82.98 98.82.201.35.bc.googleusercontent.com
 35.201.96.133 133.96.201.35.bc.googleusercontent.com
 35.207.24.140 140.24.207.35.bc.googleusercontent.com
 35.208.249.213 213.249.208.35.bc.googleusercontent.com
+35.211.178.172 172.178.211.35.bc.googleusercontent.com
+35.211.20.91 91.20.211.35.bc.googleusercontent.com
 35.212.133.238 238.133.212.35.bc.googleusercontent.com
 35.212.200.165 165.200.212.35.bc.googleusercontent.com
 35.212.211.70 70.211.212.35.bc.googleusercontent.com
 35.212.212.222 222.212.212.35.bc.googleusercontent.com
 35.212.245.211 211.245.212.35.bc.googleusercontent.com
+35.212.247.87 87.247.212.35.bc.googleusercontent.com
 35.212.250.127 127.250.212.35.bc.googleusercontent.com
 35.213.109.249 249.109.213.35.bc.googleusercontent.com
 35.226.2.182 182.2.226.35.bc.googleusercontent.com
@@ -1802,6 +2336,7 @@
 35.238.176.72 72.176.238.35.bc.googleusercontent.com
 35.238.68.86 86.68.238.35.bc.googleusercontent.com
 35.241.45.217 217.45.241.35.bc.googleusercontent.com
+35.241.45.82 82.45.241.35.bc.googleusercontent.com
 35.241.57.45 45.57.241.35.bc.googleusercontent.com
 35.241.9.51 51.9.241.35.bc.googleusercontent.com
 35.244.142.80 80.142.244.35.bc.googleusercontent.com
@@ -1813,35 +2348,45 @@
 35.244.221.19 19.221.244.35.bc.googleusercontent.com
 35.71.131.137 a6370ebea231e0c9a.awsglobalaccelerator.com
 35.71.139.29 afb83dd09526a6517.awsglobalaccelerator.com
+35.80.215.203 ec2-35-80-215-203.us-west-2.compute.amazonaws.com
+35.81.113.133 ec2-35-81-113-133.us-west-2.compute.amazonaws.com
 35.81.137.52 ec2-35-81-137-52.us-west-2.compute.amazonaws.com
 35.81.18.11 ec2-35-81-18-11.us-west-2.compute.amazonaws.com
+35.81.25.21 ec2-35-81-25-21.us-west-2.compute.amazonaws.com
 35.81.86.185 ec2-35-81-86-185.us-west-2.compute.amazonaws.com
 35.81.86.21 ec2-35-81-86-21.us-west-2.compute.amazonaws.com
+35.82.102.32 ec2-35-82-102-32.us-west-2.compute.amazonaws.com
 35.82.105.187 ec2-35-82-105-187.us-west-2.compute.amazonaws.com
 35.82.130.51 ec2-35-82-130-51.us-west-2.compute.amazonaws.com
 35.82.141.38 ec2-35-82-141-38.us-west-2.compute.amazonaws.com
 35.82.147.58 ec2-35-82-147-58.us-west-2.compute.amazonaws.com
 35.82.173.2 ec2-35-82-173-2.us-west-2.compute.amazonaws.com
 35.82.218.17 ec2-35-82-218-17.us-west-2.compute.amazonaws.com
+35.82.228.150 ec2-35-82-228-150.us-west-2.compute.amazonaws.com
 35.82.53.52 ec2-35-82-53-52.us-west-2.compute.amazonaws.com
 35.83.104.42 ec2-35-83-104-42.us-west-2.compute.amazonaws.com
+35.83.12.146 ec2-35-83-12-146.us-west-2.compute.amazonaws.com
 35.83.138.209 ec2-35-83-138-209.us-west-2.compute.amazonaws.com
 35.83.184.212 ec2-35-83-184-212.us-west-2.compute.amazonaws.com
 35.84.45.27 ec2-35-84-45-27.us-west-2.compute.amazonaws.com
 35.85.110.251 ec2-35-85-110-251.us-west-2.compute.amazonaws.com
+35.86.51.210 ec2-35-86-51-210.us-west-2.compute.amazonaws.com
 37.157.2.235 Adform A/S
 37.157.2.237 track.adform.net (denmark)
 37.157.2.238 Adform.net (denmark)
+37.157.2.239 Adform A/S
 37.157.4.23 Adform A/S
 37.157.4.24 adform.net
 37.157.4.25 Adform A/S
 37.157.4.40 Adform A/S
 37.157.5.142 Adform A/S
 37.157.6.245 Adform A/S
+37.157.6.247 Adform A/S
 37.157.6.252 jstrp.adform.net
 37.157.6.253 istrp.adform.net
 38.111.219.29 ads.us.e-planning.net
 38.133.127.127 outbrain.org
+38.133.127.159 Outbrain
 38.133.127.191 Outbrain
 38.133.127.31 outbrain.com
 38.133.127.63 outbrain.com
@@ -1853,23 +2398,33 @@
 38.98.139.151 Freewheel Media
 38.98.139.49 Freewheel Media
 40.100.140.2 Microsoft Azure
+40.100.148.2 Microsoft Azure
+40.101.7.2 Microsoft Azure
 40.112.160.29 Microsoft Azure
+40.112.243.44 Microsoft Azure
 40.114.105.100 Microsoft location-inference-eastus.cloudapp.net
+40.119.46.46 Microsoft Azure
+40.121.47.19 Microsoft Azure
 40.125.100.166 Microsoft Azure
 40.125.120.53 Microsoft Azure
 40.125.122.151 Microsoft Azure
 40.125.122.176 Microsoft Azure
+40.125.125.220 Microsoft Azure
 40.126.26.132 Microsoft Azure
 40.126.26.133 Microsoft Azure
 40.126.26.134 Microsoft Azure
 40.126.26.135 Microsoft Azure
 40.126.26.32 Microsoft Azure
+40.126.4.40 Microsoft Azure
 40.64.128.224 Microsoft Azure
 40.65.111.94 Microsoft Azure
 40.65.209.51 tsfe.trafficshaping.dsp.mp.microsoft.com
 40.70.229.150 Microsoft Azure
 40.78.253.199 Microsoft Azure
 40.78.253.202 Microsoft Azure
+40.78.253.203 Microsoft Azure
+40.78.253.204 Microsoft Azure
+40.78.254.1 Microsoft Azure
 40.78.63.86 smartscreen.microsoft.com
 40.78.98.201 Microsoft Azure
 40.79.189.58 Microsoft Azure
@@ -1878,14 +2433,20 @@
 40.79.197.35 events.data.microsoft.com
 40.79.207.80 Microsoft Azure
 40.79.207.82 Microsoft Azure
+40.83.160.29 Microsoft Azure
 40.83.240.146 Microsoft Azure
+40.84.185.67 Microsoft Azure
+40.87.19.190 Microsoft Azure
 40.90.130.192 Microsoft Azure
+40.90.130.194 Microsoft Azure
 40.90.130.197 Microsoft Azure
 40.90.130.199 Microsoft Azure
 40.90.130.203 Microsoft Azure
 40.90.133.112 Microsoft Azure
 40.90.136.163 i-sn3p-cor002.api.p001.1drv.com
+40.90.136.19 i-bl6p-cor002.api.p001.1drv.com
 40.90.218.0 Microsoft Azure
+40.90.64.61 Microsoft Azure
 40.90.9.180 Microsoft Azure
 40.91.112.76 Microsoft Azure
 40.91.76.181 Microsoft Azure
@@ -1901,6 +2462,7 @@
 40.97.119.178 Microsoft Azure
 40.97.119.194 Microsoft Azure
 40.97.119.82 Microsoft Azure
+40.97.120.130 Microsoft Azure
 40.97.132.18 Microsoft Azure
 40.97.132.194 Microsoft Azure
 40.97.132.2 Microsoft Azure
@@ -1950,7 +2512,10 @@
 40.97.85.82 Microsoft Azure
 40.97.85.98 Microsoft Azure
 40.99.10.50 Microsoft Azure
+43.251.41.5 LivePerson
+44.193.125.215 ec2-44-193-125-215.compute-1.amazonaws.com
 44.193.158.234 ec2-44-193-158-234.compute-1.amazonaws.com
+44.193.185.37 ec2-44-193-185-37.compute-1.amazonaws.com
 44.193.191.16 ec2-44-193-191-16.compute-1.amazonaws.com
 44.194.17.145 ec2-44-194-17-145.compute-1.amazonaws.com
 44.194.49.161 ec2-44-194-49-161.compute-1.amazonaws.com
@@ -1958,29 +2523,38 @@
 44.195.117.16 ec2-44-195-117-16.compute-1.amazonaws.com
 44.195.145.224 ec2-44-195-145-224.compute-1.amazonaws.com
 44.195.64.169 ec2-44-195-64-169.compute-1.amazonaws.com
+44.196.101.144 ec2-44-196-101-144.compute-1.amazonaws.com
+44.196.16.107 ec2-44-196-16-107.compute-1.amazonaws.com
 44.196.51.251 ec2-44-196-51-251.compute-1.amazonaws.com
 44.197.13.127 ec2-44-197-13-127.compute-1.amazonaws.com
+44.197.38.247 ec2-44-197-38-247.compute-1.amazonaws.com
 44.197.92.143 ec2-44-197-92-143.compute-1.amazonaws.com
 44.198.146.118 ec2-44-198-146-118.compute-1.amazonaws.com
 44.198.171.22 ec2-44-198-171-22.compute-1.amazonaws.com
 44.199.168.34 ec2-44-199-168-34.compute-1.amazonaws.com
 44.200.208.73 ec2-44-200-208-73.compute-1.amazonaws.com
+44.224.10.57 ec2-44-224-10-57.us-west-2.compute.amazonaws.com
 44.224.167.161 ec2-44-224-167-161.us-west-2.compute.amazonaws.com
 44.224.170.235 ec2-44-224-170-235.us-west-2.compute.amazonaws.com
 44.225.106.23 ec2-44-225-106-23.us-west-2.compute.amazonaws.com
 44.225.180.45 ec2-44-225-180-45.us-west-2.compute.amazonaws.com
 44.225.94.212 ec2-44-225-94-212.us-west-2.compute.amazonaws.com
+44.226.136.159 ec2-44-226-136-159.us-west-2.compute.amazonaws.com
 44.226.243.121 ec2-44-226-243-121.us-west-2.compute.amazonaws.com
 44.226.50.156 ec2-44-226-50-156.us-west-2.compute.amazonaws.com
 44.228.10.25 ec2-44-228-10-25.us-west-2.compute.amazonaws.com
+44.228.158.8 ec2-44-228-158-8.us-west-2.compute.amazonaws.com
 44.228.212.236 ec2-44-228-212-236.us-west-2.compute.amazonaws.com
 44.229.55.78 ec2-44-229-55-78.us-west-2.compute.amazonaws.com
 44.229.89.136 ec2-44-229-89-136.us-west-2.compute.amazonaws.com
 44.230.72.22 ec2-44-230-72-22.us-west-2.compute.amazonaws.com
+44.231.18.128 ec2-44-231-18-128.us-west-2.compute.amazonaws.com
 44.231.243.144 ec2-44-231-243-144.us-west-2.compute.amazonaws.com
 44.231.85.20 ec2-44-231-85-20.us-west-2.compute.amazonaws.com
 44.232.178.240 ec2-44-232-178-240.us-west-2.compute.amazonaws.com
+44.233.239.94 ec2-44-233-239-94.us-west-2.compute.amazonaws.com
 44.233.253.0 ec2-44-233-253-0.us-west-2.compute.amazonaws.com
+44.235.129.166 ec2-44-235-129-166.us-west-2.compute.amazonaws.com
 44.235.167.123 ec2-44-235-167-123.us-west-2.compute.amazonaws.com
 44.235.174.205 ec2-44-235-174-205.us-west-2.compute.amazonaws.com
 44.235.179.16 ec2-44-235-179-16.us-west-2.compute.amazonaws.com
@@ -1989,13 +2563,16 @@
 44.235.55.208 ec2-44-235-55-208.us-west-2.compute.amazonaws.com
 44.236.11.202 ec2-44-236-11-202.us-west-2.compute.amazonaws.com
 44.236.129.143 ec2-44-236-129-143.us-west-2.compute.amazonaws.com
+44.236.158.34 ec2-44-236-158-34.us-west-2.compute.amazonaws.com
 44.236.159.47 ec2-44-236-159-47.us-west-2.compute.amazonaws.com
+44.236.168.144 ec2-44-236-168-144.us-west-2.compute.amazonaws.com
 44.236.177.221 ec2-44-236-177-221.us-west-2.compute.amazonaws.com
 44.236.204.10 ec2-44-236-204-10.us-west-2.compute.amazonaws.com
 44.236.21.223 ec2-44-236-21-223.us-west-2.compute.amazonaws.com
 44.236.21.39 ec2-44-236-21-39.us-west-2.compute.amazonaws.com
 44.236.28.122 ec2-44-236-28-122.us-west-2.compute.amazonaws.com
 44.236.50.49 ec2-44-236-50-49.us-west-2.compute.amazonaws.com
+44.237.111.213 ec2-44-237-111-213.us-west-2.compute.amazonaws.com
 44.237.137.66 ec2-44-237-137-66.us-west-2.compute.amazonaws.com
 44.237.139.252 ec2-44-237-139-252.us-west-2.compute.amazonaws.com
 44.237.151.190 ec2-44-237-151-190.us-west-2.compute.amazonaws.com
@@ -2007,7 +2584,9 @@
 44.237.38.127 ec2-44-237-38-127.us-west-2.compute.amazonaws.com
 44.237.64.86 ec2-44-237-64-86.us-west-2.compute.amazonaws.com
 44.238.102.200 ec2-44-238-102-200.us-west-2.compute.amazonaws.com
+44.238.166.69 ec2-44-238-166-69.us-west-2.compute.amazonaws.com
 44.238.216.98 ec2-44-238-216-98.us-west-2.compute.amazonaws.com
+44.238.237.40 ec2-44-238-237-40.us-west-2.compute.amazonaws.com
 44.238.254.197 ec2-44-238-254-197.us-west-2.compute.amazonaws.com
 44.238.29.211 ec2-44-238-29-211.us-west-2.compute.amazonaws.com
 44.238.62.40 ec2-44-238-62-40.us-west-2.compute.amazonaws.com
@@ -2016,20 +2595,28 @@
 44.238.97.140 ec2-44-238-97-140.us-west-2.compute.amazonaws.com
 44.238.97.181 ec2-44-238-97-181.us-west-2.compute.amazonaws.com
 44.239.120.244 ec2-44-239-120-244.us-west-2.compute.amazonaws.com
+44.239.126.21 ec2-44-239-126-21.us-west-2.compute.amazonaws.com
 44.239.130.205 ec2-44-239-130-205.us-west-2.compute.amazonaws.com
 44.239.145.70 ec2-44-239-145-70.us-west-2.compute.amazonaws.com
+44.239.149.55 ec2-44-239-149-55.us-west-2.compute.amazonaws.com
 44.239.156.0 ec2-44-239-156-0.us-west-2.compute.amazonaws.com
 44.239.164.41 ec2-44-239-164-41.us-west-2.compute.amazonaws.com
+44.239.165.147 ec2-44-239-165-147.us-west-2.compute.amazonaws.com
 44.239.202.78 ec2-44-239-202-78.us-west-2.compute.amazonaws.com
+44.239.252.149 ec2-44-239-252-149.us-west-2.compute.amazonaws.com
 44.239.30.236 ec2-44-239-30-236.us-west-2.compute.amazonaws.com
 44.239.66.101 ec2-44-239-66-101.us-west-2.compute.amazonaws.com
 44.239.99.229 ec2-44-239-99-229.us-west-2.compute.amazonaws.com
 44.240.109.50 ec2-44-240-109-50.us-west-2.compute.amazonaws.com
 44.240.138.193 ec2-44-240-138-193.us-west-2.compute.amazonaws.com
 44.240.162.218 ec2-44-240-162-218.us-west-2.compute.amazonaws.com
+44.240.181.5 ec2-44-240-181-5.us-west-2.compute.amazonaws.com
 44.240.211.251 ec2-44-240-211-251.us-west-2.compute.amazonaws.com
+44.240.223.79 ec2-44-240-223-79.us-west-2.compute.amazonaws.com
 44.240.244.83 ec2-44-240-244-83.us-west-2.compute.amazonaws.com
 44.240.72.199 ec2-44-240-72-199.us-west-2.compute.amazonaws.com
+44.240.75.19 ec2-44-240-75-19.us-west-2.compute.amazonaws.com
+44.241.112.157 ec2-44-241-112-157.us-west-2.compute.amazonaws.com
 44.241.146.57 ec2-44-241-146-57.us-west-2.compute.amazonaws.com
 44.241.147.26 ec2-44-241-147-26.us-west-2.compute.amazonaws.com
 44.241.243.245 ec2-44-241-243-245.us-west-2.compute.amazonaws.com
@@ -2042,6 +2629,7 @@
 45.133.44.4 AT&T Internet Services
 45.35.192.162 sync.resetdigital.com
 45.54.49.5 anycast.net
+45.55.47.38 srv-us-ny-13.buysellads.com
 45.63.64.135 45.63.64.135.vultr.com
 46.105.202.126 OVH SAS
 46.4.61.116 filter211.filter.eyeo.it
@@ -2049,15 +2637,19 @@
 47.252.78.131 Alibaba
 49.12.132.49 filter184.adblockplus.org
 5.9.240.5 filter174.adblockplus.org
+5.9.42.46 filter170.adblockplus.org
 5.9.43.105 filter172.adblockplus.org
 50.112.162.16 ec2-50-112-162-16.us-west-2.compute.amazonaws.com
 50.112.180.29 ec2-50-112-180-29.us-west-2.compute.amazonaws.com
+50.112.26.20 ec2-50-112-26-20.us-west-2.compute.amazonaws.com
 50.16.121.35 ec2-50-16-121-35.compute-1.amazonaws.com
 50.16.174.192 ec2-50-16-174-192.compute-1.amazonaws.com
 50.16.218.57 ec2-50-16-218-57.compute-1.amazonaws.com
 50.16.28.142 ec2-50-16-28-142.compute-1.amazonaws.com
+50.16.30.16 ec2-50-16-30-16.compute-1.amazonaws.com
 50.17.142.142 ec2-50-17-142-142.compute-1.amazonaws.com
 50.17.207.51 ec2-50-17-207-51.compute-1.amazonaws.com
+50.17.209.159 ec2-50-17-209-159.compute-1.amazonaws.com
 50.17.212.240 ec2-50-17-212-240.compute-1.amazonaws.com
 50.18.10.184 ec2-50-18-10-184.us-west-1.compute.amazonaws.com
 50.18.206.161 ec2-50-18-206-161.us-west-1.compute.amazonaws.com
@@ -2065,11 +2657,14 @@
 50.18.252.20 ec2-50-18-252-20.us-west-1.compute.amazonaws.com
 50.19.69.187 ec2-50-19-69-187.compute-1.amazonaws.com
 50.19.84.91 ec2-50-19-84-91.compute-1.amazonaws.com
+50.19.94.57 ec2-50-19-94-57.compute-1.amazonaws.com
+50.201.114.160 50-201-114-160-static.hfc.comcastbusiness.net
 50.31.142.127 chidc2.outbrain.org
 50.31.142.159 chidc2.outbrain.org
 50.31.142.191 chidc2.outbrain.org
 50.31.142.223 chidc2.outbrain.org
 50.31.142.255 chidc2.outbrain.org
+50.31.142.31 chidc2.outbrain.org
 50.57.31.206 Rackspace Hosting
 51.104.15.252 Microsoft Azure
 51.104.15.253 events.data.microsoft.com
@@ -2078,6 +2673,9 @@
 51.132.193.104 events.data.microsoft.com
 51.132.193.105 Microsoft Azure
 51.143.105.194 Microsoft Azure
+51.161.117.180 ns572508.ip-51-161-117.net
+51.195.122.236 filter141.adblockplus.org
+51.195.126.202 filter197.adblockplus.org
 51.195.5.231 p35.id5-sync.com
 51.195.5.234 p36.id5-sync.com
 51.222.239.230 ip230.ip-51-222-239.net
@@ -2086,22 +2684,29 @@
 51.222.39.185 ip185.ip-51-222-39.net
 51.222.39.186 ip186.ip-51-222-39.net
 51.222.39.187 ip187.ip-51-222-39.net
+51.255.236.117 filter154.adblockplus.org
 51.38.118.231 filter142.adblockplus.org
 51.75.146.199 p12.id5-sync.com
 51.81.155.42 ext.sor24.incmdb.net
+51.89.20.86 p18.id5-sync.com
 51.89.21.20 p14.id5-sync.com
 51.89.21.30 p25.id5-sync.com
 51.89.21.31 p22.id5-sync.com
+51.89.21.8 p29.id5-sync.com
 51.89.42.86 p26.id5-sync.com
 51.89.42.88 p27.id5-sync.com
 51.89.7.198 p20.id5-sync.com
 51.89.7.199 p21.id5-sync.com
+51.89.7.202 p37.id5-sync.com
 51.89.7.205 p28.id5-sync.com
 52.0.166.156 ec2-52-0-166-156.compute-1.amazonaws.com
+52.0.170.167 ec2-52-0-170-167.compute-1.amazonaws.com
+52.0.204.120 ec2-52-0-204-120.compute-1.amazonaws.com
 52.0.211.241 ec2-52-0-211-241.compute-1.amazonaws.com
 52.1.16.41 ec2-52-1-16-41.compute-1.amazonaws.com
 52.1.163.28 ec2-52-1-163-28.compute-1.amazonaws.com
 52.1.164.170 ec2-52-1-164-170.compute-1.amazonaws.com
+52.1.191.156 ec2-52-1-191-156.compute-1.amazonaws.com
 52.1.208.65 ec2-52-1-208-65.compute-1.amazonaws.com
 52.10.107.227 ec2-52-10-107-227.us-west-2.compute.amazonaws.com
 52.10.149.115 ec2-52-10-149-115.us-west-2.compute.amazonaws.com
@@ -2113,6 +2718,8 @@
 52.108.72.0 Microsoft Azure
 52.108.78.24 Microsoft Azure
 52.109.0.29 roaming.officeapps.live.com
+52.109.0.58 Microsoft Azure
+52.109.116.33 Microsoft Azure
 52.109.12.18 Microsoft Azure
 52.109.12.19 Microsoft Azure
 52.109.12.20 nexusrules.officeapps.live.com
@@ -2121,6 +2728,7 @@
 52.109.2.0 config.officeapps.live.com
 52.109.2.1 Microsoft Azure
 52.109.2.130 Microsoft Azure
+52.109.2.190 Microsoft Azure
 52.109.2.52 Microsoft Azure
 52.109.2.55 Microsoft Azure
 52.109.2.88 Microsoft Azure
@@ -2130,6 +2738,7 @@
 52.109.20.76 Microsoft Azure
 52.109.20.77 Microsoft Azure
 52.109.20.77 activity.office.com
+52.109.20.8 Microsoft Azure
 52.109.24.11 Microsoft Azure
 52.109.24.20 Microsoft Azure
 52.109.24.21 Microsoft Azure
@@ -2154,6 +2763,7 @@
 52.111.246.10 Microsoft Azure
 52.111.246.13 Microsoft Azure
 52.113.194.132 Microsoft Azure
+52.113.195.132 Microsoft Azure
 52.113.196.254 Microsoft Azure
 52.119.175.27 Amazon.com
 52.12.255.51 ec2-52-12-255-51.us-west-2.compute.amazonaws.com
@@ -2163,8 +2773,10 @@
 52.137.103.96 prod.do.dsp.mp.microsoft.com
 52.137.106.217 settings.data.microsoft.com
 52.137.108.250 Microsoft Azure
+52.137.110.235 Microsoft Azure
 52.14.215.57 ec2-52-14-215-57.us-east-2.compute.amazonaws.com
 52.14.71.247 ec2-52-14-71-247.us-east-2.compute.amazonaws.com
+52.141.218.213 Microsoft Azure
 52.143.80.209 prod.do.dsp.mp.microsoft.com
 52.143.81.222 Microsoft Azure
 52.143.86.214 prod.do.dsp.mp.microsoft.com
@@ -2173,10 +2785,12 @@
 52.152.110.14 Microsoft Azure
 52.153.255.201 smartscreen.microsoft.com
 52.153.255.222 smartscreen.microsoft.com
+52.154.174.214 Microsoft Azure
 52.156.147.113 Microsoft Azure
 52.160.103.231 Microsoft Azure
 52.160.40.218 Microsoft Azure
 52.167.85.21 Microsoft a.clarity.ms
+52.167.88.112 Microsoft Azure
 52.168.112.66 Microsoft Azure
 52.168.112.67 events.data.microsoft.com
 52.168.117.169 Microsoft Azure
@@ -2187,6 +2801,8 @@
 52.173.139.1 Microsoft Azure
 52.174.47.89 Microsoft Azure
 52.175.198.74 Microsoft Azure
+52.176.61.32 Microsoft Azure
+52.177.241.160 Microsoft Azure
 52.178.17.2 server1.pipe.aria.microsoft.com
 52.178.17.3 Microsoft Azure
 52.180.66.122 wdcp.microsoft.com (windows defender)
@@ -2194,20 +2810,31 @@
 52.182.143.208 Microsoft Azure
 52.182.143.210 Microsoft Azure
 52.182.143.211 Microsoft Azure
+52.182.143.212 Microsoft Azure
+52.184.216.226 Microsoft Azure
 52.184.231.91 Microsoft Azure
 52.188.50.245 dmd.metaservices.microsoft.com
+52.19.175.219 ec2-52-19-175-219.eu-west-1.compute.amazonaws.com
 52.2.162.145 ec2-52-2-162-145.compute-1.amazonaws.com
 52.2.182.54 ec2-52-2-182-54.compute-1.amazonaws.com
+52.2.192.48 ec2-52-2-192-48.compute-1.amazonaws.com
+52.2.215.210 ec2-52-2-215-210.compute-1.amazonaws.com
 52.2.219.0 ec2-52-2-219-0.compute-1.amazonaws.com
 52.20.166.114 ec2-52-20-166-114.compute-1.amazonaws.com
 52.20.174.233 ec2-52-20-174-233.compute-1.amazonaws.com
 52.20.239.4 ec2-52-20-239-4.compute-1.amazonaws.com
 52.20.40.56 ec2-52-20-40-56.compute-1.amazonaws.com
+52.20.68.233 ec2-52-20-68-233.compute-1.amazonaws.com
 52.20.69.254 ec2-52-20-69-254.compute-1.amazonaws.com
 52.200.175.154 ec2-52-200-175-154.compute-1.amazonaws.com
 52.200.205.250 ec2-52-200-205-250.compute-1.amazonaws.com
+52.200.248.226 ec2-52-200-248-226.compute-1.amazonaws.com
 52.201.138.19 ec2-52-201-138-19.compute-1.amazonaws.com
+52.201.15.87 ec2-52-201-15-87.compute-1.amazonaws.com
+52.201.166.82 ec2-52-201-166-82.compute-1.amazonaws.com
 52.201.175.247 ec2-52-201-175-247.compute-1.amazonaws.com
+52.201.203.85 ec2-52-201-203-85.compute-1.amazonaws.com
+52.201.68.224 ec2-52-201-68-224.compute-1.amazonaws.com
 52.202.107.210 ec2-52-202-107-210.compute-1.amazonaws.com
 52.202.13.238 ec2-52-202-13-238.compute-1.amazonaws.com
 52.202.182.98 ec2-52-202-182-98.compute-1.amazonaws.com
@@ -2222,39 +2849,60 @@
 52.204.250.135 ec2-52-204-250-135.compute-1.amazonaws.com
 52.204.55.244 ec2-52-204-55-244.compute-1.amazonaws.com
 52.205.18.50 ec2-52-205-18-50.compute-1.amazonaws.com
+52.205.48.68 ec2-52-205-48-68.compute-1.amazonaws.com
 52.206.107.56 ec2-52-206-107-56.compute-1.amazonaws.com
 52.206.150.38 ec2-52-206-150-38.compute-1.amazonaws.com
+52.207.113.182 ec2-52-207-113-182.compute-1.amazonaws.com
 52.207.113.206 ec2-52-207-113-206.compute-1.amazonaws.com
 52.208.220.247 ec2-52-208-220-247.eu-west-1.compute.amazonaws.com
 52.208.238.170 ec2-52-208-238-170.eu-west-1.compute.amazonaws.com
 52.21.104.248 ec2-52-21-104-248.compute-1.amazonaws.com
+52.21.99.225 ec2-52-21-99-225.compute-1.amazonaws.com
 52.210.197.159 ec2-52-210-197-159.eu-west-1.compute.amazonaws.com
 52.211.3.121 ec2-52-211-3-121.eu-west-1.compute.amazonaws.com
 52.216.101.99 s3-w.us-east-1.amazonaws.com
 52.216.114.133 s3.us-east-1.amazonaws.com
+52.216.115.37 s3.us-east-1.amazonaws.com
 52.216.138.29 s3.us-east-1.amazonaws.com
+52.216.140.70 s3.us-east-1.amazonaws.com
 52.216.154.228 s3-w.us-east-1.amazonaws.com
 52.216.16.219 s3.us-east-1.amazonaws.com
+52.216.168.253 s3.us-east-1.amazonaws.com
+52.216.178.61 s3.us-east-1.amazonaws.com
 52.216.225.235 s3.us-east-1.amazonaws.com
+52.216.242.62 s3.us-east-1.amazonaws.com
+52.216.8.205 s3.us-east-1.amazonaws.com
+52.216.80.72 s3-w.us-east-1.amazonaws.com
+52.216.96.29 s3.us-east-1.amazonaws.com
 52.216.98.53 s3.us-east-1.amazonaws.com
 52.217.0.174 s3.us-east-1.amazonaws.com
 52.217.103.52 s3-w.us-east-1.amazonaws.com
 52.217.105.14 s3.us-east-1.amazonaws.com
+52.217.106.158 s3.us-east-1.amazonaws.com
 52.217.132.8 s3.us-east-1.amazonaws.com
 52.217.134.208 s3.us-east-1.amazonaws.com
 52.217.138.248 s3.us-east-1.amazonaws.com
+52.217.141.81 s3-w.us-east-1.amazonaws.com
 52.217.161.216 s3.us-east-1.amazonaws.com
 52.217.17.246 s3.us-east-1.amazonaws.com
+52.217.174.0 s3.us-east-1.amazonaws.com
+52.217.198.121 s3-w.us-east-1.amazonaws.com
 52.217.200.8 s3.us-east-1.amazonaws.com
 52.217.205.49 s3-w.us-east-1.amazonaws.com
+52.217.206.121 s3-w.us-east-1.amazonaws.com
 52.217.231.32 s3.us-east-1.amazonaws.com
 52.217.36.14 s3.us-east-1.amazonaws.com
 52.217.66.52 s3-w.us-east-1.amazonaws.com
+52.217.68.102 s3.us-east-1.amazonaws.com
+52.217.88.206 s3.us-east-1.amazonaws.com
 52.217.9.94 s3.us-east-1.amazonaws.com
 52.217.92.150 s3.us-east-1.amazonaws.com
 52.217.93.38 s3.us-east-1.amazonaws.com
+52.217.96.190 s3.us-east-1.amazonaws.com
 52.218.216.104 s3-us-west-2.amazonaws.com
+52.219.121.106 s3-us-west-1-r-w.amazonaws.com
 52.22.164.15 ec2-52-22-164-15.compute-1.amazonaws.com
+52.22.172.91 ec2-52-22-172-91.compute-1.amazonaws.com
 52.22.193.24 ec2-52-22-193-24.compute-1.amazonaws.com
 52.223.22.214 afb83dd09526a6517.awsglobalaccelerator.com
 52.223.241.1 Twitch Interactive
@@ -2262,11 +2910,14 @@
 52.23.113.215 ec2-52-23-113-215.compute-1.amazonaws.com
 52.23.32.15 ec2-52-23-32-15.compute-1.amazonaws.com
 52.232.226.150 Microsoft Azure
+52.239.151.138 Microsoft Azure
+52.239.161.42 Microsoft Azure
 52.239.174.228 Microsoft Azure
 52.239.174.4 Microsoft Azure
 52.239.175.4 Microsoft Azure
 52.239.242.148 Microsoft Azure
 52.24.118.113 ec2-52-24-118-113.us-west-2.compute.amazonaws.com
+52.24.16.36 ec2-52-24-16-36.us-west-2.compute.amazonaws.com
 52.24.5.228 ec2-52-24-5-228.us-west-2.compute.amazonaws.com
 52.24.50.16 ec2-52-24-50-16.us-west-2.compute.amazonaws.com
 52.242.97.97 Microsoft Azure
@@ -2282,6 +2933,7 @@
 52.25.255.36 ec2-52-25-255-36.us-west-2.compute.amazonaws.com
 52.25.41.52 ec2-52-25-41-52.us-west-2.compute.amazonaws.com
 52.25.83.109 ec2-52-25-83-109.us-west-2.compute.amazonaws.com
+52.251.19.158 Microsoft Azure
 52.26.121.116 ec2-52-26-121-116.us-west-2.compute.amazonaws.com
 52.26.159.249 ec2-52-26-159-249.us-west-2.compute.amazonaws.com
 52.26.188.229 ec2-52-26-188-229.us-west-2.compute.amazonaws.com
@@ -2305,6 +2957,7 @@
 52.33.213.147 ec2-52-33-213-147.us-west-2.compute.amazonaws.com
 52.33.247.83 ec2-52-33-247-83.us-west-2.compute.amazonaws.com
 52.33.53.208 ec2-52-33-53-208.us-west-2.compute.amazonaws.com
+52.33.66.202 ec2-52-33-66-202.us-west-2.compute.amazonaws.com
 52.34.208.188 ec2-52-34-208-188.us-west-2.compute.amazonaws.com
 52.34.53.1 ec2-52-34-53-1.us-west-2.compute.amazonaws.com
 52.34.68.111 ec2-52-34-68-111.us-west-2.compute.amazonaws.com
@@ -2313,12 +2966,17 @@
 52.35.194.104 ec2-52-35-194-104.us-west-2.compute.amazonaws.com
 52.35.2.181 ec2-52-35-2-181.us-west-2.compute.amazonaws.com
 52.35.216.198 ec2-52-35-216-198.us-west-2.compute.amazonaws.com
+52.35.253.175 ec2-52-35-253-175.us-west-2.compute.amazonaws.com
 52.35.255.6 ec2-52-35-255-6.us-west-2.compute.amazonaws.com
 52.35.50.182 ec2-52-35-50-182.us-west-2.compute.amazonaws.com
 52.36.124.159 ec2-52-36-124-159.us-west-2.compute.amazonaws.com
+52.36.173.12 ec2-52-36-173-12.us-west-2.compute.amazonaws.com
 52.36.230.128 ec2-52-36-230-128.us-west-2.compute.amazonaws.com
 52.36.253.128 ec2-52-36-253-128.us-west-2.compute.amazonaws.com
+52.36.70.233 ec2-52-36-70-233.us-west-2.compute.amazonaws.com
 52.37.162.167 ec2-52-37-162-167.us-west-2.compute.amazonaws.com
+52.37.215.22 ec2-52-37-215-22.us-west-2.compute.amazonaws.com
+52.37.43.184 ec2-52-37-43-184.us-west-2.compute.amazonaws.com
 52.37.86.195 ec2-52-37-86-195.us-west-2.compute.amazonaws.com
 52.38.56.237 ec2-52-38-56-237.us-west-2.compute.amazonaws.com
 52.39.34.238 ec2-52-39-34-238.us-west-2.compute.amazonaws.com
@@ -2328,13 +2986,17 @@
 52.4.173.16 ec2-52-4-173-16.compute-1.amazonaws.com
 52.4.237.174 ec2-52-4-237-174.compute-1.amazonaws.com
 52.40.172.46 ec2-52-40-172-46.us-west-2.compute.amazonaws.com
+52.40.18.118 ec2-52-40-18-118.us-west-2.compute.amazonaws.com
 52.40.2.171 ec2-52-40-2-171.us-west-2.compute.amazonaws.com
+52.40.214.129 ec2-52-40-214-129.us-west-2.compute.amazonaws.com
 52.40.26.179 ec2-52-40-26-179.us-west-2.compute.amazonaws.com
 52.40.58.161 ec2-52-40-58-161.us-west-2.compute.amazonaws.com
 52.40.67.149 ec2-52-40-67-149.us-west-2.compute.amazonaws.com
 52.40.74.108 ec2-52-40-74-108.us-west-2.compute.amazonaws.com
+52.40.93.193 ec2-52-40-93-193.us-west-2.compute.amazonaws.com
 52.41.145.90 ec2-52-41-145-90.us-west-2.compute.amazonaws.com
 52.41.235.76 ec2-52-41-235-76.us-west-2.compute.amazonaws.com
+52.41.31.74 ec2-52-41-31-74.us-west-2.compute.amazonaws.com
 52.41.97.153 ec2-52-41-97-153.us-west-2.compute.amazonaws.com
 52.42.180.228 ec2-52-42-180-228.us-west-2.compute.amazonaws.com
 52.42.182.179 ec2-52-42-182-179.us-west-2.compute.amazonaws.com
@@ -2354,6 +3016,7 @@
 52.44.238.197 ec2-52-44-238-197.compute-1.amazonaws.com
 52.44.84.180 ec2-52-44-84-180.compute-1.amazonaws.com
 52.45.104.18 ec2-52-45-104-18.compute-1.amazonaws.com
+52.45.196.192 ec2-52-45-196-192.compute-1.amazonaws.com
 52.45.200.86 ec2-52-45-200-86.compute-1.amazonaws.com
 52.45.201.131 ec2-52-45-201-131.compute-1.amazonaws.com
 52.45.240.193 ec2-52-45-240-193.compute-1.amazonaws.com
@@ -2367,8 +3030,10 @@
 52.46.154.242 Amazon
 52.46.155.114 Amazon.com
 52.46.158.51 Amazon.com
+52.49.95.72 ec2-52-49-95-72.eu-west-1.compute.amazonaws.com
 52.5.128.216 ec2-52-5-128-216.compute-1.amazonaws.com
 52.5.13.197 ec2-52-5-13-197.compute-1.amazonaws.com
+52.5.139.147 ec2-52-5-139-147.compute-1.amazonaws.com
 52.5.169.131 ec2-52-5-169-131.compute-1.amazonaws.com
 52.5.177.252 ec2-52-5-177-252.compute-1.amazonaws.com
 52.5.35.164 ec2-52-5-35-164.compute-1.amazonaws.com
@@ -2402,7 +3067,9 @@
 52.6.0.77 ec2-52-6-0-77.compute-1.amazonaws.com
 52.6.179.165 ec2-52-6-179-165.compute-1.amazonaws.com
 52.6.180.24 ec2-52-6-180-24.compute-1.amazonaws.com
+52.6.81.119 ec2-52-6-81-119.compute-1.amazonaws.com
 52.60.182.80 ec2-52-60-182-80.ca-central-1.compute.amazonaws.com
+52.71.125.41 ec2-52-71-125-41.compute-1.amazonaws.com
 52.71.187.127 ec2-52-71-187-127.compute-1.amazonaws.com
 52.71.50.185 ec2-52-71-50-185.compute-1.amazonaws.com
 52.72.15.170 ec2-52-72-15-170.compute-1.amazonaws.com
@@ -2410,9 +3077,11 @@
 52.72.165.5 ec2-52-72-165-5.compute-1.amazonaws.com
 52.72.192.11 ec2-52-72-192-11.compute-1.amazonaws.com
 52.72.213.39 ec2-52-72-213-39.compute-1.amazonaws.com
+52.72.58.170 ec2-52-72-58-170.compute-1.amazonaws.com
 52.73.103.179 ec2-52-73-103-179.compute-1.amazonaws.com
 52.73.222.75 ec2-52-73-222-75.compute-1.amazonaws.com
 52.73.58.59 ec2-52-73-58-59.compute-1.amazonaws.com
+52.8.109.92 ec2-52-8-109-92.us-west-1.compute.amazonaws.com
 52.8.116.255 ec2-52-8-116-255.us-west-1.compute.amazonaws.com
 52.8.118.216 ec2-52-8-118-216.us-west-1.compute.amazonaws.com
 52.8.131.30 ec2-52-8-131-30.us-west-1.compute.amazonaws.com
@@ -2427,23 +3096,41 @@
 52.8.60.209 ec2-52-8-60-209.us-west-1.compute.amazonaws.com
 52.84.159.10 server-52-84-159-10.sea19.r.cloudfront.net
 52.84.159.100 server-52-84-159-100.sea19.r.cloudfront.net
+52.84.159.101 server-52-84-159-101.sea19.r.cloudfront.net
+52.84.159.102 server-52-84-159-102.sea19.r.cloudfront.net
 52.84.159.103 server-52-84-159-103.sea19.r.cloudfront.net
 52.84.159.106 server-52-84-159-106.sea19.r.cloudfront.net
 52.84.159.107 server-52-84-159-107.sea19.r.cloudfront.net
 52.84.159.108 server-52-84-159-108.sea19.r.cloudfront.net
 52.84.159.109 server-52-84-159-109.sea19.r.cloudfront.net
+52.84.159.11 server-52-84-159-11.sea19.r.cloudfront.net
 52.84.159.110 server-52-84-159-110.sea19.r.cloudfront.net
+52.84.159.111 server-52-84-159-111.sea19.r.cloudfront.net
+52.84.159.113 server-52-84-159-113.sea19.r.cloudfront.net
 52.84.159.114 server-52-84-159-114.sea19.r.cloudfront.net
+52.84.159.117 server-52-84-159-117.sea19.r.cloudfront.net
 52.84.159.118 server-52-84-159-118.sea19.r.cloudfront.net
 52.84.159.119 server-52-84-159-119.sea19.r.cloudfront.net
 52.84.159.12 server-52-84-159-12.sea19.r.cloudfront.net
 52.84.159.120 server-52-84-159-120.sea19.r.cloudfront.net
+52.84.159.121 server-52-84-159-121.sea19.r.cloudfront.net
 52.84.159.122 server-52-84-159-122.sea19.r.cloudfront.net
 52.84.159.123 server-52-84-159-123.sea19.r.cloudfront.net
+52.84.159.124 server-52-84-159-124.sea19.r.cloudfront.net
+52.84.159.125 server-52-84-159-125.sea19.r.cloudfront.net
+52.84.159.126 server-52-84-159-126.sea19.r.cloudfront.net
+52.84.159.127 server-52-84-159-127.sea19.r.cloudfront.net
 52.84.159.129 server-52-84-159-129.sea19.r.cloudfront.net
+52.84.159.13 server-52-84-159-13.sea19.r.cloudfront.net
 52.84.159.15 server-52-84-159-15.sea19.r.cloudfront.net
+52.84.159.2 server-52-84-159-2.sea19.r.cloudfront.net
+52.84.159.20 server-52-84-159-20.sea19.r.cloudfront.net
 52.84.159.21 server-52-84-159-21.sea19.r.cloudfront.net
+52.84.159.23 server-52-84-159-23.sea19.r.cloudfront.net
+52.84.159.28 server-52-84-159-28.sea19.r.cloudfront.net
+52.84.159.29 server-52-84-159-29.sea19.r.cloudfront.net
 52.84.159.3 server-52-84-159-3.sea19.r.cloudfront.net
+52.84.159.34 server-52-84-159-34.sea19.r.cloudfront.net
 52.84.159.35 server-52-84-159-35.sea19.r.cloudfront.net
 52.84.159.36 server-52-84-159-36.sea19.r.cloudfront.net
 52.84.159.37 server-52-84-159-37.sea19.r.cloudfront.net
@@ -2451,50 +3138,80 @@
 52.84.159.39 server-52-84-159-39.sea19.r.cloudfront.net
 52.84.159.4 server-52-84-159-4.sea19.r.cloudfront.net
 52.84.159.40 server-52-84-159-40.sea19.r.cloudfront.net
+52.84.159.42 server-52-84-159-42.sea19.r.cloudfront.net
+52.84.159.44 server-52-84-159-44.sea19.r.cloudfront.net
+52.84.159.45 server-52-84-159-45.sea19.r.cloudfront.net
 52.84.159.47 server-52-84-159-47.sea19.r.cloudfront.net
 52.84.159.48 server-52-84-159-48.sea19.r.cloudfront.net
 52.84.159.49 server-52-84-159-49.sea19.r.cloudfront.net
 52.84.159.5 server-52-84-159-5.sea19.r.cloudfront.net
 52.84.159.50 server-52-84-159-50.sea19.r.cloudfront.net
 52.84.159.51 server-52-84-159-51.sea19.r.cloudfront.net
+52.84.159.52 server-52-84-159-52.sea19.r.cloudfront.net
+52.84.159.53 server-52-84-159-53.sea19.r.cloudfront.net
 52.84.159.55 server-52-84-159-55.sea19.r.cloudfront.net
 52.84.159.57 server-52-84-159-57.sea19.r.cloudfront.net
+52.84.159.58 server-52-84-159-58.sea19.r.cloudfront.net
+52.84.159.59 server-52-84-159-59.sea19.r.cloudfront.net
 52.84.159.6 server-52-84-159-6.sea19.r.cloudfront.net
 52.84.159.61 server-52-84-159-61.sea19.r.cloudfront.net
 52.84.159.65 server-52-84-159-65.sea19.r.cloudfront.net
+52.84.159.68 server-52-84-159-68.sea19.r.cloudfront.net
 52.84.159.74 server-52-84-159-74.sea19.r.cloudfront.net
 52.84.159.75 server-52-84-159-75.sea19.r.cloudfront.net
+52.84.159.76 server-52-84-159-76.sea19.r.cloudfront.net
 52.84.159.77 server-52-84-159-77.sea19.r.cloudfront.net
+52.84.159.78 server-52-84-159-78.sea19.r.cloudfront.net
 52.84.159.8 server-52-84-159-8.sea19.r.cloudfront.net
 52.84.159.80 server-52-84-159-80.sea19.r.cloudfront.net
 52.84.159.81 server-52-84-159-81.sea19.r.cloudfront.net
 52.84.159.84 server-52-84-159-84.sea19.r.cloudfront.net
 52.84.159.87 server-52-84-159-87.sea19.r.cloudfront.net
+52.84.159.89 server-52-84-159-89.sea19.r.cloudfront.net
 52.84.159.90 server-52-84-159-90.sea19.r.cloudfront.net
 52.84.159.91 server-52-84-159-91.sea19.r.cloudfront.net
 52.84.159.93 server-52-84-159-93.sea19.r.cloudfront.net
+52.84.159.96 server-52-84-159-96.sea19.r.cloudfront.net
 52.84.159.97 server-52-84-159-97.sea19.r.cloudfront.net
 52.84.159.99 server-52-84-159-99.sea19.r.cloudfront.net
 52.84.160.148 server-52-84-160-148.sea19.r.cloudfront.net
 52.84.160.162 server-52-84-160-162.sea19.r.cloudfront.net
+52.84.160.164 server-52-84-160-164.sea19.r.cloudfront.net
+52.84.160.183 server-52-84-160-183.sea19.r.cloudfront.net
+52.84.160.184 server-52-84-160-184.sea19.r.cloudfront.net
 52.84.160.189 server-52-84-160-189.sea19.r.cloudfront.net
 52.84.160.200 server-52-84-160-200.sea19.r.cloudfront.net
+52.84.160.207 server-52-84-160-207.sea19.r.cloudfront.net
+52.84.160.211 server-52-84-160-211.sea19.r.cloudfront.net
+52.84.160.212 server-52-84-160-212.sea19.r.cloudfront.net
+52.84.160.22 server-52-84-160-22.sea19.r.cloudfront.net
+52.84.160.23 server-52-84-160-23.sea19.r.cloudfront.net
+52.84.160.61 server-52-84-160-61.sea19.r.cloudfront.net
 52.84.160.95 server-52-84-160-95.sea19.r.cloudfront.net
+52.84.162.219 server-52-84-162-219.sea19.r.cloudfront.net
 52.84.169.118 server-52-84-169-118.sea19.r.cloudfront.net
 52.84.169.88 server-52-84-169-88.sea19.r.cloudfront.net
 52.84.182.78 server-52-84-182-78.sea19.r.cloudfront.net
+52.84.192.48 server-52-84-192-48.sea19.r.cloudfront.net
+52.84.192.60 server-52-84-192-60.sea19.r.cloudfront.net
+52.84.192.61 server-52-84-192-61.sea19.r.cloudfront.net
 52.86.105.134 ec2-52-86-105-134.compute-1.amazonaws.com
+52.86.125.50 ec2-52-86-125-50.compute-1.amazonaws.com
 52.86.150.190 ec2-52-86-150-190.compute-1.amazonaws.com
+52.86.8.99 ec2-52-86-8-99.compute-1.amazonaws.com
 52.86.88.22 ec2-52-86-88-22.compute-1.amazonaws.com
+52.87.114.195 ec2-52-87-114-195.compute-1.amazonaws.com
 52.88.10.218 ec2-52-88-10-218.us-west-2.compute.amazonaws.com
 52.88.128.19 ec2-52-88-128-19.us-west-2.compute.amazonaws.com
 52.88.143.200 ec2-52-88-143-200.us-west-2.compute.amazonaws.com
 52.88.152.172 ec2-52-88-152-172.us-west-2.compute.amazonaws.com
 52.88.201.174 ec2-52-88-201-174.us-west-2.compute.amazonaws.com
 52.88.214.212 ec2-52-88-214-212.us-west-2.compute.amazonaws.com
+52.88.223.20 ec2-52-88-223-20.us-west-2.compute.amazonaws.com
 52.88.231.91 ec2-52-88-231-91.us-west-2.compute.amazonaws.com
 52.88.252.250 ec2-52-88-252-250.us-west-2.compute.amazonaws.com
 52.88.69.43 ec2-52-88-69-43.us-west-2.compute.amazonaws.com
+52.88.75.152 ec2-52-88-75-152.us-west-2.compute.amazonaws.com
 52.88.76.89 ec2-52-88-76-89.us-west-2.compute.amazonaws.com
 52.89.172.107 ec2-52-89-172-107.us-west-2.compute.amazonaws.com
 52.9.109.215 ec2-52-9-109-215.us-west-1.compute.amazonaws.com
@@ -2508,8 +3225,11 @@
 52.9.235.145 ec2-52-9-235-145.us-west-1.compute.amazonaws.com
 52.9.39.18 ec2-52-9-39-18.us-west-1.compute.amazonaws.com
 52.9.58.228 ec2-52-9-58-228.us-west-1.compute.amazonaws.com
+52.9.62.130 ec2-52-9-62-130.us-west-1.compute.amazonaws.com
 52.9.68.72 ec2-52-9-68-72.us-west-1.compute.amazonaws.com
+52.9.8.116 ec2-52-9-8-116.us-west-1.compute.amazonaws.com
 52.9.93.174 ec2-52-9-93-174.us-west-1.compute.amazonaws.com
+52.91.137.194 ec2-52-91-137-194.compute-1.amazonaws.com
 52.91.215.149 ec2-52-91-215-149.compute-1.amazonaws.com
 52.91.254.52 ec2-52-91-254-52.compute-1.amazonaws.com
 52.92.131.216 s3-us-west-2.amazonaws.com
@@ -2551,6 +3271,7 @@
 52.96.164.82 Microsoft Azure
 52.96.165.18 Microsoft Azure
 52.96.165.2 Microsoft Azure
+52.96.165.50 Microsoft Azure
 52.96.166.34 Microsoft
 52.96.166.50 measure.office.com / outlook.com
 52.96.166.66 Microsoft Azure
@@ -2558,11 +3279,15 @@
 52.96.184.146 Microsoft Azure
 52.96.223.50 Microsoft Corporation
 52.96.228.194 Microsoft Azure
+52.96.29.82 Microsoft Azure
+52.96.88.226 Microsoft Azure
 52.96.91.34 Microsoft Azure
 52.96.91.50 Microsoft Corporation
 52.97.11.130 Microsoft Azure
 52.97.137.210 Microsoft Corporation
+52.97.142.2 Microsoft Corporation
 52.97.186.114 measure.office.com / outlook.com
+52.97.64.194 Microsoft Azure
 52.98.128.130 Microsoft Corporation
 52.98.63.18 Microsoft Corporation
 52.98.63.34 measure.office.com / outlook.com
@@ -2571,15 +3296,20 @@
 54.144.112.99 ec2-54-144-112-99.compute-1.amazonaws.com
 54.144.216.159 ec2-54-144-216-159.compute-1.amazonaws.com
 54.144.73.197 ec2-54-144-73-197.compute-1.amazonaws.com
+54.145.223.11 ec2-54-145-223-11.compute-1.amazonaws.com
 54.146.101.225 ec2-54-146-101-225.compute-1.amazonaws.com
 54.146.195.72 ec2-54-146-195-72.compute-1.amazonaws.com
+54.147.42.42 ec2-54-147-42-42.compute-1.amazonaws.com
 54.148.132.242 ec2-54-148-132-242.us-west-2.compute.amazonaws.com
+54.148.133.2 ec2-54-148-133-2.us-west-2.compute.amazonaws.com
+54.148.180.41 ec2-54-148-180-41.us-west-2.compute.amazonaws.com
 54.148.49.161 ec2-54-148-49-161.us-west-2.compute.amazonaws.com
 54.149.1.15 ec2-54-149-1-15.us-west-2.compute.amazonaws.com
 54.149.107.141 ec2-54-149-107-141.us-west-2.compute.amazonaws.com
 54.149.130.168 ec2-54-149-130-168.us-west-2.compute.amazonaws.com
 54.149.204.124 ec2-54-149-204-124.us-west-2.compute.amazonaws.com
 54.149.219.160 ec2-54-149-219-160.us-west-2.compute.amazonaws.com
+54.149.241.156 ec2-54-149-241-156.us-west-2.compute.amazonaws.com
 54.149.81.236 ec2-54-149-81-236.us-west-2.compute.amazonaws.com
 54.152.104.18 ec2-54-152-104-18.compute-1.amazonaws.com
 54.153.103.110 ec2-54-153-103-110.us-west-1.compute.amazonaws.com
@@ -2590,15 +3320,20 @@
 54.156.228.83 ec2-54-156-228-83.compute-1.amazonaws.com
 54.156.26.12 ec2-54-156-26-12.compute-1.amazonaws.com
 54.156.48.24 ec2-54-156-48-24.compute-1.amazonaws.com
+54.157.54.2 ec2-54-157-54-2.compute-1.amazonaws.com
 54.158.148.83 ec2-54-158-148-83.compute-1.amazonaws.com
 54.158.164.13 ec2-54-158-164-13.compute-1.amazonaws.com
 54.158.67.235 ec2-54-158-67-235.compute-1.amazonaws.com
 54.158.94.225 ec2-54-158-94-225.compute-1.amazonaws.com
 54.159.174.121 ec2-54-159-174-121.compute-1.amazonaws.com
+54.159.251.109 ec2-54-159-251-109.compute-1.amazonaws.com
 54.159.46.163 ec2-54-159-46-163.compute-1.amazonaws.com
 54.159.47.124 ec2-54-159-47-124.compute-1.amazonaws.com
+54.159.94.231 ec2-54-159-94-231.compute-1.amazonaws.com
 54.160.197.138 ec2-54-160-197-138.compute-1.amazonaws.com
 54.160.67.78 ec2-54-160-67-78.compute-1.amazonaws.com
+54.161.101.221 ec2-54-161-101-221.compute-1.amazonaws.com
+54.161.240.112 ec2-54-161-240-112.compute-1.amazonaws.com
 54.161.91.12 ec2-54-161-91-12.compute-1.amazonaws.com
 54.162.130.165 ec2-54-162-130-165.compute-1.amazonaws.com
 54.162.176.126 ec2-54-162-176-126.compute-1.amazonaws.com
@@ -2610,12 +3345,15 @@
 54.164.220.21 ec2-54-164-220-21.compute-1.amazonaws.com
 54.164.39.250 ec2-54-164-39-250.compute-1.amazonaws.com
 54.164.7.0 ec2-54-164-7-0.compute-1.amazonaws.com
+54.165.146.243 ec2-54-165-146-243.compute-1.amazonaws.com
 54.165.175.224 ec2-54-165-175-224.compute-1.amazonaws.com
 54.165.29.228 ec2-54-165-29-228.compute-1.amazonaws.com
 54.166.244.71 ec2-54-166-244-71.compute-1.amazonaws.com
+54.166.35.225 ec2-54-166-35-225.compute-1.amazonaws.com
 54.167.222.166 ec2-54-167-222-166.compute-1.amazonaws.com
 54.167.72.5 ec2-54-167-72-5.compute-1.amazonaws.com
 54.171.141.165 ec2-54-171-141-165.eu-west-1.compute.amazonaws.com
+54.172.113.199 ec2-54-172-113-199.compute-1.amazonaws.com
 54.172.127.239 ec2-54-172-127-239.compute-1.amazonaws.com
 54.172.13.178 ec2-54-172-13-178.compute-1.amazonaws.com
 54.172.28.116 ec2-54-172-28-116.compute-1.amazonaws.com
@@ -2641,11 +3379,13 @@
 54.183.67.174 ec2-54-183-67-174.us-west-1.compute.amazonaws.com
 54.183.81.98 ec2-54-183-81-98.us-west-1.compute.amazonaws.com
 54.183.87.42 ec2-54-183-87-42.us-west-1.compute.amazonaws.com
+54.184.58.211 ec2-54-184-58-211.us-west-2.compute.amazonaws.com
 54.185.130.75 ec2-54-185-130-75.us-west-2.compute.amazonaws.com
 54.185.231.82 ec2-54-185-231-82.us-west-2.compute.amazonaws.com
 54.185.83.167 ec2-54-185-83-167.us-west-2.compute.amazonaws.com
 54.186.106.83 ec2-54-186-106-83.us-west-2.compute.amazonaws.com
 54.186.206.207 ec2-54-186-206-207.us-west-2.compute.amazonaws.com
+54.186.217.253 ec2-54-186-217-253.us-west-2.compute.amazonaws.com
 54.186.42.192 ec2-54-186-42-192.us-west-2.compute.amazonaws.com
 54.187.188.178 ec2-54-187-188-178.us-west-2.compute.amazonaws.com
 54.187.225.247 ec2-54-187-225-247.us-west-2.compute.amazonaws.com
@@ -2653,7 +3393,9 @@
 54.188.127.239 ec2-54-188-127-239.us-west-2.compute.amazonaws.com
 54.188.160.17 ec2-54-188-160-17.us-west-2.compute.amazonaws.com
 54.189.96.76 ec2-54-189-96-76.us-west-2.compute.amazonaws.com
+54.190.131.174 ec2-54-190-131-174.us-west-2.compute.amazonaws.com
 54.190.201.76 ec2-54-190-201-76.us-west-2.compute.amazonaws.com
+54.190.232.52 ec2-54-190-232-52.us-west-2.compute.amazonaws.com
 54.190.234.216 ec2-54-190-234-216.us-west-2.compute.amazonaws.com
 54.191.104.229 ec2-54-191-104-229.us-west-2.compute.amazonaws.com
 54.191.147.15 ec2-54-191-147-15.us-west-2.compute.amazonaws.com
@@ -2672,20 +3414,29 @@
 54.201.20.192 ec2-54-201-20-192.us-west-2.compute.amazonaws.com
 54.202.213.219 ec2-54-202-213-219.us-west-2.compute.amazonaws.com
 54.203.95.134 ec2-54-203-95-134.us-west-2.compute.amazonaws.com
+54.204.101.67 ec2-54-204-101-67.compute-1.amazonaws.com
+54.204.152.163 ec2-54-204-152-163.compute-1.amazonaws.com
 54.204.202.163 ec2-54-204-202-163.compute-1.amazonaws.com
 54.204.237.88 ec2-54-204-237-88.compute-1.amazonaws.com
+54.204.56.244 ec2-54-204-56-244.compute-1.amazonaws.com
+54.205.227.48 ec2-54-205-227-48.compute-1.amazonaws.com
 54.205.51.82 ec2-54-205-51-82.compute-1.amazonaws.com
 54.205.57.65 ec2-54-205-57-65.compute-1.amazonaws.com
 54.205.72.9 ec2-54-205-72-9.compute-1.amazonaws.com
 54.205.82.35 ec2-54-205-82-35.compute-1.amazonaws.com
 54.205.86.248 ec2-54-205-86-248.compute-1.amazonaws.com
+54.208.105.145 ec2-54-208-105-145.compute-1.amazonaws.com
 54.208.135.61 ec2-54-208-135-61.compute-1.amazonaws.com
 54.208.200.8 ec2-54-208-200-8.compute-1.amazonaws.com
+54.208.200.84 ec2-54-208-200-84.compute-1.amazonaws.com
+54.208.206.65 ec2-54-208-206-65.compute-1.amazonaws.com
+54.208.44.81 ec2-54-208-44-81.compute-1.amazonaws.com
 54.208.86.132 ec2-54-208-86-132.compute-1.amazonaws.com
 54.209.11.252 ec2-54-209-11-252.compute-1.amazonaws.com
 54.209.14.113 ec2-54-209-14-113.compute-1.amazonaws.com
 54.209.156.66 ec2-54-209-156-66.compute-1.amazonaws.com
 54.209.245.119 ec2-54-209-245-119.compute-1.amazonaws.com
+54.209.92.216 ec2-54-209-92-216.compute-1.amazonaws.com
 54.210.103.255 ec2-54-210-103-255.compute-1.amazonaws.com
 54.211.198.181 ec2-54-211-198-181.compute-1.amazonaws.com
 54.212.118.13 ec2-54-212-118-13.us-west-2.compute.amazonaws.com
@@ -2697,6 +3448,7 @@
 54.213.21.190 ec2-54-213-21-190.us-west-2.compute.amazonaws.com
 54.213.213.78 ec2-54-213-213-78.us-west-2.compute.amazonaws.com
 54.213.239.246 ec2-54-213-239-246.us-west-2.compute.amazonaws.com
+54.213.39.33 ec2-54-213-39-33.us-west-2.compute.amazonaws.com
 54.213.96.186 ec2-54-213-96-186.us-west-2.compute.amazonaws.com
 54.215.132.59 ec2-54-215-132-59.us-west-1.compute.amazonaws.com
 54.215.203.121 ec2-54-215-203-121.us-west-1.compute.amazonaws.com
@@ -2710,15 +3462,21 @@
 54.221.34.96 ec2-54-221-34-96.compute-1.amazonaws.com
 54.221.63.70 ec2-54-221-63-70.compute-1.amazonaws.com
 54.224.36.233 ec2-54-224-36-233.compute-1.amazonaws.com
+54.224.71.103 ec2-54-224-71-103.compute-1.amazonaws.com
 54.225.152.45 ec2-54-225-152-45.compute-1.amazonaws.com
 54.227.187.23 ec2-54-227-187-23.compute-1.amazonaws.com
+54.231.136.56 s3.us-east-1.amazonaws.com
+54.231.137.40 s3.us-east-1.amazonaws.com
 54.231.140.232 s3.us-east-1.amazonaws.com
+54.231.159.0 s3.us-east-1.amazonaws.com
 54.231.159.56 s3.us-east-1.amazonaws.com
 54.231.193.152 s3.us-east-1.amazonaws.com
 54.231.195.48 s3.us-east-1.amazonaws.com
 54.231.200.176 s3.us-east-1.amazonaws.com
 54.231.41.67 s3-w.us-east-1.amazonaws.com
+54.234.50.35 ec2-54-234-50-35.compute-1.amazonaws.com
 54.234.88.163 ec2-54-234-88-163.compute-1.amazonaws.com
+54.235.133.64 ec2-54-235-133-64.compute-1.amazonaws.com
 54.235.15.197 ec2-54-235-15-197.compute-1.amazonaws.com
 54.236.117.107 ec2-54-236-117-107.compute-1.amazonaws.com
 54.236.173.100 ec2-54-236-173-100.compute-1.amazonaws.com
@@ -2726,15 +3484,19 @@
 54.236.193.228 ec2-54-236-193-228.compute-1.amazonaws.com
 54.236.73.86 ec2-54-236-73-86.compute-1.amazonaws.com
 54.237.172.114 ec2-54-237-172-114.compute-1.amazonaws.com
+54.239.28.85 Amazon.com
 54.239.37.23 Amazon.com
 54.239.37.45 Amazon.com
 54.239.38.253 Amazon.com
+54.241.132.58 ec2-54-241-132-58.us-west-1.compute.amazonaws.com
 54.241.161.132 ec2-54-241-161-132.us-west-1.compute.amazonaws.com
 54.241.185.158 ec2-54-241-185-158.us-west-1.compute.amazonaws.com
 54.241.19.42 ec2-54-241-19-42.us-west-1.compute.amazonaws.com
 54.241.194.76 ec2-54-241-194-76.us-west-1.compute.amazonaws.com
 54.241.229.72 ec2-54-241-229-72.us-west-1.compute.amazonaws.com
+54.241.249.245 ec2-54-241-249-245.us-west-1.compute.amazonaws.com
 54.241.91.9 ec2-54-241-91-9.us-west-1.compute.amazonaws.com
+54.242.161.182 ec2-54-242-161-182.compute-1.amazonaws.com
 54.242.246.80 ec2-54-242-246-80.compute-1.amazonaws.com
 54.242.95.62 ec2-54-242-95-62.compute-1.amazonaws.com
 54.243.106.181 ec2-54-243-106-181.compute-1.amazonaws.com
@@ -2742,6 +3504,7 @@
 54.243.123.52 ec2-54-243-123-52.compute-1.amazonaws.com
 54.243.183.196 ec2-54-243-183-196.compute-1.amazonaws.com
 54.243.83.228 ec2-54-243-83-228.compute-1.amazonaws.com
+54.245.105.146 ec2-54-245-105-146.us-west-2.compute.amazonaws.com
 54.36.109.156 p07.id5-sync.com
 54.36.109.166 p10.id5-sync.com
 54.36.109.186 p06.id5-sync.com
@@ -2757,25 +3520,32 @@
 54.68.234.138 ec2-54-68-234-138.us-west-2.compute.amazonaws.com
 54.68.29.35 ec2-54-68-29-35.us-west-2.compute.amazonaws.com
 54.68.66.18 ec2-54-68-66-18.us-west-2.compute.amazonaws.com
+54.68.73.43 ec2-54-68-73-43.us-west-2.compute.amazonaws.com
 54.69.129.239 ec2-54-69-129-239.us-west-2.compute.amazonaws.com
 54.69.183.163 ec2-54-69-183-163.us-west-2.compute.amazonaws.com
 54.69.214.140 ec2-54-69-214-140.us-west-2.compute.amazonaws.com
 54.69.237.125 ec2-54-69-237-125.us-west-2.compute.amazonaws.com
 54.69.90.139 ec2-54-69-90-139.us-west-2.compute.amazonaws.com
+54.69.90.244 ec2-54-69-90-244.us-west-2.compute.amazonaws.com
+54.70.167.40 ec2-54-70-167-40.us-west-2.compute.amazonaws.com
 54.70.174.130 ec2-54-70-174-130.us-west-2.compute.amazonaws.com
 54.70.189.59 ec2-54-70-189-59.us-west-2.compute.amazonaws.com
 54.71.124.47 ec2-54-71-124-47.us-west-2.compute.amazonaws.com
 54.71.209.234 ec2-54-71-209-234.us-west-2.compute.amazonaws.com
 54.71.32.39 ec2-54-71-32-39.us-west-2.compute.amazonaws.com
+54.72.186.148 ec2-54-72-186-148.eu-west-1.compute.amazonaws.com
 54.80.147.122 ec2-54-80-147-122.compute-1.amazonaws.com
 54.80.149.42 ec2-54-80-149-42.compute-1.amazonaws.com
 54.80.202.30 ec2-54-80-202-30.compute-1.amazonaws.com
 54.80.32.197 ec2-54-80-32-197.compute-1.amazonaws.com
 54.81.163.76 ec2-54-81-163-76.compute-1.amazonaws.com
 54.81.184.157 ec2-54-81-184-157.compute-1.amazonaws.com
+54.82.140.43 ec2-54-82-140-43.compute-1.amazonaws.com
 54.82.73.144 ec2-54-82-73-144.compute-1.amazonaws.com
 54.83.110.109 ec2-54-83-110-109.compute-1.amazonaws.com
+54.83.13.4 ec2-54-83-13-4.compute-1.amazonaws.com
 54.83.75.24 ec2-54-83-75-24.compute-1.amazonaws.com
+54.84.23.222 ec2-54-84-23-222.compute-1.amazonaws.com
 54.84.31.238 ec2-54-84-31-238.compute-1.amazonaws.com
 54.84.73.7 ec2-54-84-73-7.compute-1.amazonaws.com
 54.85.124.132 ec2-54-85-124-132.compute-1.amazonaws.com
@@ -2784,15 +3554,23 @@
 54.86.119.171 ec2-54-86-119-171.compute-1.amazonaws.com
 54.86.181.77 ec2-54-86-181-77.compute-1.amazonaws.com
 54.86.196.175 ec2-54-86-196-175.compute-1.amazonaws.com
+54.87.192.123 ec2-54-87-192-123.compute-1.amazonaws.com
+54.87.219.138 ec2-54-87-219-138.compute-1.amazonaws.com
 54.87.249.218 ec2-54-87-249-218.compute-1.amazonaws.com
 54.87.61.185 ec2-54-87-61-185.compute-1.amazonaws.com
+54.88.154.11 ec2-54-88-154-11.compute-1.amazonaws.com
 54.88.18.204 ec2-54-88-18-204.compute-1.amazonaws.com
 54.88.30.42 ec2-54-88-30-42.compute-1.amazonaws.com
 54.88.65.136 ec2-54-88-65-136.compute-1.amazonaws.com
+54.88.95.169 ec2-54-88-95-169.compute-1.amazonaws.com
 54.89.30.31 ec2-54-89-30-31.compute-1.amazonaws.com
+54.90.140.145 ec2-54-90-140-145.compute-1.amazonaws.com
+54.90.194.224 ec2-54-90-194-224.compute-1.amazonaws.com
 54.90.233.89 ec2-54-90-233-89.compute-1.amazonaws.com
+54.91.234.66 ec2-54-91-234-66.compute-1.amazonaws.com
 54.91.31.123 ec2-54-91-31-123.compute-1.amazonaws.com
 54.93.80.4 ec2-54-93-80-4.eu-central-1.compute.amazonaws.com
+60.250.3.135 60-250-3-135.hinet-ip.hinet.net
 63.251.109.130 DoubleVerify
 63.251.109.131 doubleverify.com
 63.251.109.133 DoubleVerify
@@ -2805,18 +3583,25 @@
 63.251.14.14 SingleHop LLC
 63.251.14.3 SingleHop LLC
 63.33.136.74 ec2-63-33-136-74.eu-west-1.compute.amazonaws.com
+64.202.112.255 nydc1.outbrain.org
 64.202.112.31 nydc1.outbrain.org
 64.202.112.63 nydc1.outbrain.org
 64.38.119.27 Bidtellect
 64.4.54.254 Microsoft web.vortex.data.msn.cn
 64.74.236.127 chidc2.outbrain.org
 64.74.236.159 chidc2.outbrain.org
+64.74.236.191 chidc2.outbrain.org
 64.74.236.255 chidc2.outbrain.org
 64.74.236.31 chidc2.outbrain.org
 64.74.236.95 chidc2.outbrain.org
+64.79.149.238 Windstream Communications
+64.79.149.239 Windstream Communications
 64.94.115.8 cdce.sef004.internap.com
 65.108.42.14 filter185.adblockplus.org
 65.21.195.13 filter189.adblockplus.org
+65.21.232.198 filter176.adblockplus.org
+65.21.236.8 filter178.adblockplus.org
+65.21.35.75 filter220.filter.eyeo.it
 65.52.5.117 smartscreen.microsoft.com
 65.8.158.10 server-65-8-158-10.sfo53.r.cloudfront.net
 65.8.158.100 server-65-8-158-100.sfo53.r.cloudfront.net
@@ -3049,7 +3834,9 @@
 65.8.169.229 server-65-8-169-229.sfo53.r.cloudfront.net
 65.8.17.183 server-65-8-17-183.sfo53.r.cloudfront.net
 65.8.17.92 server-65-8-17-92.sfo53.r.cloudfront.net
+65.8.236.73 server-65-8-236-73.den52.r.cloudfront.net
 65.8.66.34 server-65-8-66-34.yvr50.r.cloudfront.net
+66.150.1.229 Southwest Airlines Co.
 66.225.223.127 sadc1.outbrain.org
 66.225.223.159 sadc1.outbrain.org
 66.225.223.191 sadc1.outbrain.org
@@ -3063,12 +3850,20 @@
 67.202.105.21 ip21.67-202-105.static.steadfastdns.net
 67.202.105.22 ip22.67-202-105.static.steadfastdns.net
 67.202.105.23 ip23.67-202-105.static.steadfastdns.net
+67.202.105.24 ip24.67-202-105.static.steadfastdns.net
 67.202.105.31 ip31.67-202-105.static.steadfastdns.net
 67.202.105.32 ip32.67-202-105.static.steadfastdns.net
 67.202.105.33 ip33.67-202-105.static.steadfastdns.net
 67.202.105.34 ip34.67-202-105.static.steadfastdns.net
 67.202.24.18 ec2-67-202-24-18.compute-1.amazonaws.com
+67.217.81.10 b-app12-04.boldchat.com
+67.217.81.13 b-app12-05.boldchat.com
+67.217.81.22 b-app12-08.boldchat.com
+67.217.81.31 b-app12-11.boldchat.com
+67.217.81.37 b-app12-13.boldchat.com
+67.217.81.7 b-app12-03.boldchat.com
 67.220.191.154 24 Shells
+67.221.239.85 67-221-239-85.www.allegiancetech.com
 68.180.134.73 e1.ycpi.mib.yahoo.com
 68.67.129.85 prebid.lax1.adnexus.net
 68.67.148.37 46.ratbait.prod.lax1.adnexus.net
@@ -3083,12 +3878,15 @@
 69.192.198.115 a69-192-198-115.deploy.static.akamaitechnologies.com
 69.192.198.197 a69-192-198-197.deploy.static.akamaitechnologies.com
 69.192.201.147 a69-192-201-147.deploy.static.akamaitechnologies.com
+69.192.205.188 a69-192-205-188.deploy.static.akamaitechnologies.com
 69.2.99.80 redirects.live.advance.net
 69.67.146.106 doubleverify.com
 69.67.146.107 DoubleVerify
 69.67.146.109 DoubleVerify
 69.67.146.111 iq.doubleverify.com
 69.67.146.112 DoubleVerify
+69.67.146.113 DoubleVerify
+69.67.146.114 DoubleVerify
 69.67.146.115 DoubleVerify
 69.90.133.51 zone31.gridzones.com
 69.90.133.55 zone35.gridzones.com
@@ -3096,6 +3894,7 @@
 70.42.32.159 nydc1.outbrain.org
 70.42.32.191 nydc1.outbrain.org
 70.42.32.223 nydc1.outbrain.org
+70.42.32.255 nydc1.outbrain.org
 70.42.32.95 nydc1.outbrain.org
 72.21.195.65 s3.us-east-1.amazonaws.com
 72.21.81.187 Verizon Business
@@ -3112,6 +3911,7 @@
 72.25.64.8 netblock-72-25-64-8.dslextreme.com
 72.34.250.75 XFERNET
 72.44.42.195 ec2-72-44-42-195.compute-1.amazonaws.com
+74.114.90.46 cppreference.com
 74.119.118.132 Criteo Corp.
 74.119.118.134 Criteo Corp.
 74.119.118.135 pix.da1.vip.prod.criteo.com
@@ -3121,6 +3921,7 @@
 74.119.118.149 Criteo Corp.
 74.119.118.151 bidder.da1.vip.prod.criteo.com
 74.119.118.154 Criteo Corp.
+74.119.118.155 Criteo Corp.
 74.119.118.70 Criteo Corp.
 74.119.118.73 Criteo Corp.
 74.121.143.240 data.mathtag.com
@@ -3129,9 +3930,13 @@
 74.125.135.109 pl-in-f109.1e100.net
 74.125.142.108 pv-in-f108.1e100.net
 74.125.142.109 ie-in-f109.1e100.net
+74.125.142.95 ie-in-f95.1e100.net
 74.125.195.101 pw-in-f101.1e100.net
 74.125.195.108 wj-in-f108.1e100.net
 74.125.195.109 wj-in-f109.1e100.net
+74.125.195.121 pw-in-f121.1e100.net
+74.125.195.139 pw-in-f139.1e100.net
+74.125.195.156 wj-in-f156.1e100.net
 74.125.197.108 pk-in-f108.1e100.net
 74.125.197.109 pk-in-f109.1e100.net
 74.125.197.138 pk-in-f138.1e100.net
@@ -3149,8 +3954,11 @@
 75.2.29.249 a9e7aba54de614616.awsglobalaccelerator.com
 75.2.40.13 aa7557bb34ea5624b.awsglobalaccelerator.com
 75.2.41.202 aae763f5456d53c1d.awsglobalaccelerator.com
+75.98.70.49 Freewheel Media
 76.223.117.242 a8f55b865c8416a23.awsglobalaccelerator.com
 76.223.14.12 a80a9201ee101bbc3.awsglobalaccelerator.com
+76.223.40.250 aa5dacf57429c8adc.awsglobalaccelerator.com
+76.223.73.75 aa9b6b97eb0c627cd.awsglobalaccelerator.com
 76.74.234.208 Cogeco Peer 1
 76.74.234.210 Cogeco Peer 1
 77.238.180.76 e1.ycpi.fra.yahoo.com
@@ -3164,20 +3972,25 @@
 8.240.38.126 windowsupdate.com
 8.249.222.20 Lumen
 8.250.210.126 Lumen
+8.250.90.20 Lumen
 8.252.193.252 Lumen
 8.252.193.254 ctldl.windowsupdate.com
 8.252.194.124 Lumen
 8.252.194.126 Lumen
 8.252.195.124 level 3, many sketchy domains
+8.252.195.126 Level 3 Communications
 8.252.195.254 Level 3 (many sites, some with malware)
 8.252.36.124 Level3 (many sites)
 8.252.36.126 Level 3 Communications
 8.252.36.252 Lumen
+8.252.36.254 Level 3 Communications
 8.252.43.254 Level 3 Communications
 8.252.68.124 Level3 (many sites)
 8.253.133.244 level 3, many domains
+8.253.133.248 Level 3 Communications
 8.253.133.91 Lumen
 8.253.133.94 Lumen
+8.253.151.249 Level 3 Communications
 8.39.36.141 The Rubicon Project
 8.39.36.142 The Rubicon Project
 8.39.36.144 The Rubicon Project
@@ -3190,24 +4003,36 @@
 85.114.159.118 dsp.adfarm1.adition.com
 87.248.106.200 e1.ycpi.waa.yahoo.com
 87.248.107.200 e1.ycpi.ita.yahoo.com
+87.248.114.81 e2.ycpi.lob.yahoo.com
 88.198.33.89 static.88.198.33.89.clients.your-server.de
 88.214.206.142 NatCoWeb Corp.
 89.187.185.162 edge-558.bunnyinfra.net
 89.187.185.163 edge-553.bunnyinfra.net
+93.184.215.201 Verizon Business
 93.184.215.217 Unknown Company
 93.184.216.34 Verizon Business
 93.184.216.38 Edgecast (cdn/ads)
+94.31.29.32 94.31.29.32.IPYX-077437-ZYO.above.net
+95.216.224.9 filter129.adblockplus.org
+95.216.225.71 host-filter205.uplink.eyeo.it
+95.216.240.133 filter206.filter.eyeo.it
 95.216.4.7 filter126.adblockplus.org
 95.216.43.26 filter201.filter.eyeo.it
 95.216.73.8 filter229.filter.eyeo.it
+95.217.108.132 filter168.adblockplus.org
 95.217.38.208 filter200.filter.eyeo.it
+95.217.47.15 filter118.adblockplus.org
 96.6.141.135 a96-6-141-135.deploy.static.akamaitechnologies.com
 96.6.225.236 a96-6-225-236.deploy.static.akamaitechnologies.com
 96.6.226.208 a96-6-226-208.deploy.static.akamaitechnologies.com
 96.6.230.191 a96-6-230-191.deploy.static.akamaitechnologies.com
 96.6.232.148 a96-6-232-148.deploy.static.akamaitechnologies.com
+96.6.98.11 a96-6-98-11.deploy.static.akamaitechnologies.com
+96.7.86.32 a96-7-86-32.deploy.static.akamaitechnologies.com
 98.136.100.149 media-router-flurry71.prod.media.vip.gq1.yahoo.com
 98.136.103.27 media-router-brb71.prod.media.vip.gq1.yahoo.com
+98.136.127.53 o2.ycpi.ne1.yahoo.com
+98.136.127.9 o1.ycpi.ne1.yahoo.com
 98.136.144.138 ats1.l7.search.vip.gq1.yahoo.com
 98.137.11.143 pr-ats-ing.pbp.vip.gq1.yahoo.com
 98.137.11.144 spdc.pbp.vip.gq1.yahoo.com
@@ -3219,40 +4044,64 @@
 99.83.174.87 aae763f5456d53c1d.awsglobalaccelerator.com
 99.83.181.31 a0cb5afe0ce76779e.awsglobalaccelerator.com
 99.83.218.184 a710cf531d4cd2506.awsglobalaccelerator.com
+99.86.32.31 server-99-86-32-31.sea19.r.cloudfront.net
 99.86.32.39 server-99-86-32-39.sea19.r.cloudfront.net
+99.86.37.130 server-99-86-37-130.sea19.r.cloudfront.net
+99.86.37.136 server-99-86-37-136.sea19.r.cloudfront.net
 99.86.37.151 server-99-86-37-151.sea19.r.cloudfront.net
 99.86.37.154 server-99-86-37-154.sea19.r.cloudfront.net
+99.86.37.164 server-99-86-37-164.sea19.r.cloudfront.net
+99.86.37.43 server-99-86-37-43.sea19.r.cloudfront.net
+99.86.37.66 server-99-86-37-66.sea19.r.cloudfront.net
+99.86.37.94 server-99-86-37-94.sea19.r.cloudfront.net
 99.86.37.96 server-99-86-37-96.sea19.r.cloudfront.net
 99.86.38.10 server-99-86-38-10.sea19.r.cloudfront.net
 99.86.38.101 server-99-86-38-101.sea19.r.cloudfront.net
 99.86.38.102 server-99-86-38-102.sea19.r.cloudfront.net
 99.86.38.105 server-99-86-38-105.sea19.r.cloudfront.net
 99.86.38.107 server-99-86-38-107.sea19.r.cloudfront.net
+99.86.38.108 server-99-86-38-108.sea19.r.cloudfront.net
+99.86.38.112 server-99-86-38-112.sea19.r.cloudfront.net
+99.86.38.118 server-99-86-38-118.sea19.r.cloudfront.net
 99.86.38.119 server-99-86-38-119.sea19.r.cloudfront.net
 99.86.38.123 server-99-86-38-123.sea19.r.cloudfront.net
+99.86.38.125 server-99-86-38-125.sea19.r.cloudfront.net
 99.86.38.128 server-99-86-38-128.sea19.r.cloudfront.net
 99.86.38.129 server-99-86-38-129.sea19.r.cloudfront.net
 99.86.38.14 server-99-86-38-14.sea19.r.cloudfront.net
+99.86.38.17 server-99-86-38-17.sea19.r.cloudfront.net
 99.86.38.2 server-99-86-38-2.sea19.r.cloudfront.net
 99.86.38.28 server-99-86-38-28.sea19.r.cloudfront.net
 99.86.38.29 server-99-86-38-29.sea19.r.cloudfront.net
+99.86.38.3 server-99-86-38-3.sea19.r.cloudfront.net
 99.86.38.33 server-99-86-38-33.sea19.r.cloudfront.net
+99.86.38.34 server-99-86-38-34.sea19.r.cloudfront.net
 99.86.38.37 server-99-86-38-37.sea19.r.cloudfront.net
 99.86.38.38 server-99-86-38-38.sea19.r.cloudfront.net
+99.86.38.40 server-99-86-38-40.sea19.r.cloudfront.net
 99.86.38.41 server-99-86-38-41.sea19.r.cloudfront.net
+99.86.38.42 server-99-86-38-42.sea19.r.cloudfront.net
 99.86.38.44 server-99-86-38-44.sea19.r.cloudfront.net
 99.86.38.49 server-99-86-38-49.sea19.r.cloudfront.net
 99.86.38.50 server-99-86-38-50.sea19.r.cloudfront.net
+99.86.38.51 server-99-86-38-51.sea19.r.cloudfront.net
 99.86.38.52 server-99-86-38-52.sea19.r.cloudfront.net
+99.86.38.53 server-99-86-38-53.sea19.r.cloudfront.net
 99.86.38.55 server-99-86-38-55.sea19.r.cloudfront.net
 99.86.38.58 server-99-86-38-58.sea19.r.cloudfront.net
 99.86.38.60 server-99-86-38-60.sea19.r.cloudfront.net
 99.86.38.61 server-99-86-38-61.sea19.r.cloudfront.net
+99.86.38.62 server-99-86-38-62.sea19.r.cloudfront.net
 99.86.38.63 server-99-86-38-63.sea19.r.cloudfront.net
 99.86.38.65 server-99-86-38-65.sea19.r.cloudfront.net
 99.86.38.66 server-99-86-38-66.sea19.r.cloudfront.net
 99.86.38.67 server-99-86-38-67.sea19.r.cloudfront.net
 99.86.38.7 server-99-86-38-7.sea19.r.cloudfront.net
+99.86.38.71 server-99-86-38-71.sea19.r.cloudfront.net
+99.86.38.73 server-99-86-38-73.sea19.r.cloudfront.net
+99.86.38.8 server-99-86-38-8.sea19.r.cloudfront.net
+99.86.38.80 server-99-86-38-80.sea19.r.cloudfront.net
+99.86.38.81 server-99-86-38-81.sea19.r.cloudfront.net
 99.86.38.83 server-99-86-38-83.sea19.r.cloudfront.net
 99.86.38.88 server-99-86-38-88.sea19.r.cloudfront.net
 99.86.38.9 server-99-86-38-9.sea19.r.cloudfront.net
