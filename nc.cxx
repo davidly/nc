@@ -31,6 +31,7 @@
 #include <ip2string.h>
 #include <windns.h>
 #include <ws2tcpip.h>
+#include <wininet.h>
 
 using namespace concurrency;
 using namespace std;
@@ -40,6 +41,7 @@ using namespace std;
 #pragma comment( lib, "dnsapi.lib" )
 #pragma comment( lib, "advapi32.lib" )
 #pragma comment( lib, "ntdll.lib" )
+#pragma comment( lib, "wininet.lib" )
 
 unordered_map<string,string> g_persistentEntries;
 unordered_set<string> g_unknownEntries;
@@ -109,6 +111,60 @@ bool SetDebugPrivilege()
 
     return false;
 } //SetDebugPrivilege
+
+class ihandle
+{
+    private:
+        HINTERNET handle;
+
+    public:
+        ihandle( HINTERNET h ) : handle( h ) {}
+        HINTERNET get() { return handle; }
+        ~ihandle() { if ( 0 != handle ) InternetCloseHandle( handle ); }
+};
+
+static string likelyOwnerFromLookIP( const char * ip )
+{
+    string request = "https://www.lookip.net/ip/";
+    request.append( ip );
+
+    ihandle xinternet( InternetOpenA( "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0", INTERNET_OPEN_TYPE_PRECONFIG, NULL, NULL, 0 ) );
+    if ( 0 == xinternet.get() )
+        return "";
+
+    ihandle xurl( InternetOpenUrlA( xinternet.get(), request.c_str(), NULL, 0, 0, 0 ) );
+    if ( 0 == xurl.get() )
+        return "";
+
+    // <title> is in the first 300 bytes of the response
+    const DWORD chunk = 300;
+    vector<char> response( 1 + chunk );
+    DWORD dwRead = 0;
+    BOOL ok = InternetReadFile( xurl.get(), response.data(), chunk, &dwRead );
+    if ( !ok )
+        return "";
+
+    response[ __min( dwRead, response.size() - 1 ) ] = 0;
+
+    char * title = strstr( response.data(), "<title>" );
+    if ( title )
+    {
+        char * dash = strchr( title, '-' );
+        if ( dash )
+        {
+            char * bar = strchr( dash, '|' );
+            if ( bar )
+            {
+                char * start = dash + 2;
+                size_t len = bar - start - 1;
+                if ( len >= 2 )
+                    return string( start, len );
+            }
+        }
+    }
+
+    return "";
+} //likelyOwnerFromLookIP
 
 static string FindPrefixEntry( char * ip )
 {
@@ -362,6 +418,7 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
 
     bool loop = false;
     int loopPasses = -1;
+    bool useLookIP = false;
     InitializePrefixEntries();
 
     try
@@ -395,6 +452,8 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
                    if ( ':' == pwcArg[ 2 ] )
                        loopPasses = _wtoi( pwcArg + 3 );
                }
+               else if ( 'x' == a1 )
+                   useLookIP = true;
                else
                    Usage( argv[ 0 ] );
             }
@@ -512,7 +571,13 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
                     {
                         conn.conName = ConName::prefixCN;
                     }
-                    else
+                    else if ( useLookIP )
+                    {
+                         conn.remoteName = likelyOwnerFromLookIP( remoteIP );
+                         conn.conName = ConName::lookipCN;
+                    }
+
+                    if ( !conn.remoteName.length() )
                     {
                         conn.remoteName = "(unknown)";
                         conn.conName = ConName::unknownCN;
@@ -533,11 +598,17 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
                         char remoteIP[ maxIP ];
                         RtlIpv4AddressToStringA( (const in_addr *) &conn.tcp.dwRemoteAddr, remoteIP );
 
-                        FILE * fp = _wfopen( pwcDNSEntriesFile, L"a" );
-                        if ( fp )
+                        if ( ! g_persistentEntries.count( remoteIP ) )
                         {
-                            fprintf( fp, "%s %s\n", remoteIP, conn.remoteName.c_str() );
-                            fclose( fp );
+                            g_persistentEntries[ remoteIP ] = conn.remoteName;
+                            printf( "persistent entries count %zd\n", g_persistentEntries.size() );
+
+                            FILE * fp = _wfopen( pwcDNSEntriesFile, L"a" );
+                            if ( fp )
+                            {
+                                fprintf( fp, "%s %s\n", remoteIP, conn.remoteName.c_str() );
+                                fclose( fp );
+                            }
                         }
                     }
                     else if ( ConName::unknownCN == conn.conName )
@@ -559,7 +630,7 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
             }
 
             if ( loop )
-                Sleep( 100 );
+                Sleep( 50 );
         } while ( loop );
     }
     catch( ... )
