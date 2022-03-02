@@ -441,8 +441,7 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
             const WCHAR * pwcArg = argv[iArg];
             WCHAR a0 = pwcArg[0];
     
-            if ( ( L'-' == a0 ) ||
-                 ( L'/' == a0 ) )
+            if ( ( L'-' == a0 ) || ( L'/' == a0 ) )
             {
                WCHAR a1 = towlower( pwcArg[1] );
 
@@ -465,10 +464,6 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
         }
 
         ReadPersistentEntries();
-
-        // Cache all processes so lookups later are faster. (I abandoned this, because it's fast enough as-is).
-        //vector<procinfo> procs;
-        //FindProcesses( procs );
 
         printf( "  State        Local address         Foreign address       Host/Company                                            PID    Process\n" );
         int passes = 0;
@@ -619,9 +614,6 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
                         PrintConnection( conn );
                 }
             }
-          
-            prev.clear();
-            prev.swap( conns );
 
             if ( -1 != loopPasses )
             {
@@ -631,7 +623,10 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
             }
 
             if ( loop )
+            {
+                prev.swap( conns );
                 Sleep( 50 );
+            }
         } while ( loop );
     }
     catch( ... )
@@ -640,6 +635,6 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
     }
 
     return 0;
-} //main
+} //wmain
 
 
