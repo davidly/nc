@@ -209,10 +209,11 @@ void ReadPersistentEntries()
 
 void Usage( WCHAR *pwcApp )
 {
-    wprintf( L"usage: %ws [-l]\n", pwcApp );
+    wprintf( L"usage: %ws [-l] [-x]\n", pwcApp );
     wprintf( L"    Shows outbound Network Connections\n" );
     wprintf( L"    arguments:   [-l]    loop infinitely\n" );
     wprintf( L"                 [-l:X]  loop X times\n" );
+    wprintf( L"                 [-x]    use lookip.net for reverse dns lookups\n" );
     wprintf( L"    notes:       reads from and writes to %ws\n", pwcDNSEntriesFile );
     exit( 1 );
 } //Usage
@@ -457,6 +458,8 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
                else
                    Usage( argv[ 0 ] );
             }
+            else
+               Usage( argv[ 0 ] );
     
             iArg++;
         }
@@ -601,8 +604,6 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
                         if ( ! g_persistentEntries.count( remoteIP ) )
                         {
                             g_persistentEntries[ remoteIP ] = conn.remoteName;
-                            printf( "persistent entries count %zd\n", g_persistentEntries.size() );
-
                             FILE * fp = _wfopen( pwcDNSEntriesFile, L"a" );
                             if ( fp )
                             {
