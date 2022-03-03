@@ -23,6 +23,7 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <omp.h>
+#include <chrono>
 
 #include <winsock2.h>
 #include <windows.h>
@@ -35,6 +36,7 @@
 
 using namespace concurrency;
 using namespace std;
+using namespace std::chrono;
 
 #pragma comment( lib, "iphlpapi.lib" )
 #pragma comment( lib, "ws2_32.lib" )
@@ -199,7 +201,10 @@ void ReadPersistentEntries()
                 string ip( line, 0, sp );
                 string host( line, sp + 1 );
 
-                g_persistentEntries[ ip ] = host;
+                // many entries have "Microsoft Azure" for the host, with duplicate keys with better host names
+
+                if ( !g_persistentEntries.count( ip ) || stricmp( "Microsoft Azure", host.c_str() ) )
+                    g_persistentEntries[ ip ] = host;
             }
         }
     }
@@ -329,6 +334,59 @@ bool IpToName( char * ip, USHORT port, char * name )
     return false;
 } //IpToName
 
+// Find all services running in the process
+
+static string GetServiceNames( DWORD pid )
+{
+    static byte s_buffer[ 256 * 1024 ]; // maximum size for buffer in EnumServicesStatusEx
+    static high_resolution_clock::time_point s_lastUpdate;
+    static DWORD s_serviceCount = 0;
+
+    string result;
+    if ( 0 == pid )
+        return result;
+
+    const long long msCacheLife = 2000;
+    high_resolution_clock::time_point tnow = high_resolution_clock::now();
+    LPENUM_SERVICE_STATUS_PROCESSA lpServices = (LPENUM_SERVICE_STATUS_PROCESSA) s_buffer;
+
+    if ( ( 0 == s_serviceCount ) || ( duration_cast<std::chrono::milliseconds>( tnow - s_lastUpdate ).count() > msCacheLife ) )
+    {
+        s_serviceCount = 0;
+
+        SC_HANDLE hmanager = OpenSCManager( 0, 0, SC_MANAGER_ENUMERATE_SERVICE );
+        if ( 0 == hmanager )
+            return result;
+
+        DWORD bytecount = _countof( s_buffer );
+        BOOL ok = EnumServicesStatusExA( hmanager, SC_ENUM_PROCESS_INFO, SERVICE_WIN32, SERVICE_ACTIVE,
+                                         (LPBYTE) lpServices, bytecount, &bytecount, &s_serviceCount, 0, 0 );
+        CloseServiceHandle( hmanager ); 
+
+        if ( ok )
+            s_lastUpdate = high_resolution_clock::now();
+        else
+            s_serviceCount = 0;
+    }
+
+    for ( int i = 0; i < s_serviceCount; i++ )
+    {
+        if ( pid == lpServices[ i ].ServiceStatusProcess.dwProcessId )
+        {
+            if ( 0 == result.length() )
+                result += " / ";
+            else
+                result += ", ";
+
+            result += lpServices[ i ].lpDisplayName;
+            //printf( "pid %d, service name: %s, display name %s\n",
+            //        lpServices[ i ].ServiceStatusProcess.dwProcessId, lpServices[ i ].lpServiceName, lpServices[ i ].lpDisplayName );
+        }
+    }
+
+    return result;
+ } //GetServiceNames
+
 static void PrintConnection( tcpconnection & conn )
 {
     char localIP[ maxIP ];
@@ -341,8 +399,10 @@ static void PrintConnection( tcpconnection & conn )
 
     WCHAR procname[ MAX_PATH ];
     FindProcessName( conn.tcp.dwOwningPid, procname );
+    string svcnames = GetServiceNames( conn.tcp.dwOwningPid );
         
-    printf( "  %-12s %-21s %-21s %-54s  %-6d %ws\n", TcpState( conn.tcp.dwState ), localIP, remoteIP, conn.remoteName.c_str(), conn.tcp.dwOwningPid, procname );
+    printf( "  %-12s %-21s %-21s %-54s  %-6d %ws%s\n", TcpState( conn.tcp.dwState ), localIP, remoteIP,
+            conn.remoteName.c_str(), conn.tcp.dwOwningPid, procname, svcnames.c_str() );
 } //PrintConnection
 
 static void InitializePrefixEntries()
@@ -599,6 +659,7 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
                         if ( ! g_persistentEntries.count( remoteIP ) )
                         {
                             g_persistentEntries[ remoteIP ] = conn.remoteName;
+
                             FILE * fp = _wfopen( pwcDNSEntriesFile, L"a" );
                             if ( fp )
                             {
