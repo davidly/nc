@@ -49,7 +49,9 @@ unordered_map<string,string> g_persistentEntries;
 unordered_set<string> g_unknownEntries;
 unordered_map<string,string> g_prefixEntries;
 const WCHAR * pwcDNSEntriesFile = L"dns_entries.txt";
+const WCHAR * pwcDNSOutputFile = L"nc_output.txt";
 const int maxIP = 15 + 6 + 1;   // aaa.bbb.ccc.ddd:eeeee + null termination
+FILE * g_fOutput = 0;
 
 enum ConName { unresolvedCN = 0, persistentCN, unknownCN, revipCN, lookipCN, prefixCN };
 
@@ -218,6 +220,7 @@ void Usage( WCHAR *pwcApp )
     wprintf( L"    Shows outbound Network Connections\n" );
     wprintf( L"    arguments:   [-l]    loop infinitely\n" );
     wprintf( L"                 [-l:X]  loop X times\n" );
+    wprintf( L"                 [o]     Append to nc_output.txt with timestamps and connections as a CSV file\n" );
     wprintf( L"                 [-x]    use lookip.net for reverse dns lookups\n" );
     wprintf( L"    notes:       reads from and writes to %ws\n", pwcDNSEntriesFile );
     exit( 1 );
@@ -348,7 +351,7 @@ static string GetServiceNames( DWORD pid )
 
     const long long msCacheLife = 2000;
     high_resolution_clock::time_point tnow = high_resolution_clock::now();
-    LPENUM_SERVICE_STATUS_PROCESSA lpServices = (LPENUM_SERVICE_STATUS_PROCESSA) s_buffer;
+    LPENUM_SERVICE_STATUS_PROCESSA pServices = (LPENUM_SERVICE_STATUS_PROCESSA) s_buffer;
 
     if ( ( 0 == s_serviceCount ) || ( duration_cast<std::chrono::milliseconds>( tnow - s_lastUpdate ).count() > msCacheLife ) )
     {
@@ -360,7 +363,7 @@ static string GetServiceNames( DWORD pid )
 
         DWORD bytecount = _countof( s_buffer );
         BOOL ok = EnumServicesStatusExA( hmanager, SC_ENUM_PROCESS_INFO, SERVICE_WIN32, SERVICE_ACTIVE,
-                                         (LPBYTE) lpServices, bytecount, &bytecount, &s_serviceCount, 0, 0 );
+                                         (LPBYTE) pServices, bytecount, &bytecount, &s_serviceCount, 0, 0 );
         CloseServiceHandle( hmanager ); 
 
         if ( ok )
@@ -371,16 +374,16 @@ static string GetServiceNames( DWORD pid )
 
     for ( int i = 0; i < s_serviceCount; i++ )
     {
-        if ( pid == lpServices[ i ].ServiceStatusProcess.dwProcessId )
+        if ( pid == pServices[ i ].ServiceStatusProcess.dwProcessId )
         {
             if ( 0 == result.length() )
                 result += " / ";
             else
                 result += ", ";
 
-            result += lpServices[ i ].lpDisplayName;
+            result += pServices[ i ].lpDisplayName;
             //printf( "pid %d, service name: %s, display name %s\n",
-            //        lpServices[ i ].ServiceStatusProcess.dwProcessId, lpServices[ i ].lpServiceName, lpServices[ i ].lpDisplayName );
+            //        pServices[ i ].ServiceStatusProcess.dwProcessId, pServices[ i ].lpServiceName, pServices[ i ].lpDisplayName );
         }
     }
 
@@ -403,6 +406,19 @@ static void PrintConnection( tcpconnection & conn )
         
     printf( "  %-12s %-21s %-21s %-54s  %-6d %ws%s\n", TcpState( conn.tcp.dwState ), localIP, remoteIP,
             conn.remoteName.c_str(), conn.tcp.dwOwningPid, procname, svcnames.c_str() );
+
+    if ( g_fOutput ) // && svcnames.length() )
+    {
+        time_t rawtime;
+        time( &rawtime );
+        struct tm* timeinfo = localtime( &rawtime );
+
+        char actime[ 100 ];
+        strftime( actime, _countof( actime ), "%D, %T:%S", timeinfo );
+        fprintf( g_fOutput, "%s, %s, %s, %s, %s, %d, %ws%s\n", actime, TcpState( conn.tcp.dwState ), localIP, remoteIP,
+                 conn.remoteName.c_str(), conn.tcp.dwOwningPid, procname, svcnames.c_str() );
+        fflush( g_fOutput );
+    }
 } //PrintConnection
 
 static void InitializePrefixEntries()
@@ -511,6 +527,15 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
 
                    if ( ':' == pwcArg[ 2 ] )
                        loopPasses = _wtoi( pwcArg + 3 );
+               }
+               else if ( 'o' == a1 )
+               {
+                   g_fOutput = _wfopen( pwcDNSOutputFile, L"a" );
+                   if ( 0 == g_fOutput )
+                   {
+                       printf( "unable to open output file\n" );
+                       exit( 1 );
+                   }
                }
                else if ( 'x' == a1 )
                    useLookIP = true;
@@ -693,6 +718,12 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
     catch( ... )
     {
         wprintf( L"caught an exception in nc.exe, exiting\n" );
+    }
+
+    if ( g_fOutput )
+    {
+        fclose( g_fOutput );
+        g_fOutput = 0;
     }
 
     return 0;
