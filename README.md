@@ -10,6 +10,8 @@ usage: nc [-l] [-o] [-x]
                  [-x]    use lookip.net for reverse dns lookups
     notes:       reads from and writes to dns_entries.txt
     
+What I learned from using this app: https://medium.com/@davidly_33504/who-is-my-pc-talking-to-683779f979b0
+
 Sample usage:
 
 C:\Users\david\OneDrive\nc>nc
