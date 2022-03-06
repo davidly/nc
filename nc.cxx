@@ -216,11 +216,11 @@ void ReadPersistentEntries()
 
 void Usage( WCHAR *pwcApp )
 {
-    wprintf( L"usage: %ws [-l] [-x]\n", pwcApp );
+    wprintf( L"usage: %ws [-l] [-o] [-x]\n", pwcApp );
     wprintf( L"    Shows outbound Network Connections\n" );
     wprintf( L"    arguments:   [-l]    loop infinitely\n" );
     wprintf( L"                 [-l:X]  loop X times\n" );
-    wprintf( L"                 [o]     Append to nc_output.txt with timestamps and connections as a CSV file\n" );
+    wprintf( L"                 [-o]    Append to nc_output.txt with timestamps and connections as a CSV file\n" );
     wprintf( L"                 [-x]    use lookip.net for reverse dns lookups\n" );
     wprintf( L"    notes:       reads from and writes to %ws\n", pwcDNSEntriesFile );
     exit( 1 );
