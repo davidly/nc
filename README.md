@@ -6,7 +6,7 @@ usage: nc [-l] [-o] [-x]
     Shows outbound Network Connections
     arguments:   [-l]    loop infinitely
                  [-l:X]  loop X times
-                 [-o]     Append to nc_output.txt with timestamps and connections as a CSV file
+                 [-o]    Append to nc_output.txt with timestamps and connections as a CSV file
                  [-x]    use lookip.net for reverse dns lookups
     notes:       reads from and writes to dns_entries.txt
     
